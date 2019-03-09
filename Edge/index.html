@@ -66,6 +66,8 @@
     
         <ul>
         
+            <li><a class="toctree-l4" href="#20190309">20190309 驯服自动驾驶的长尾挑战</a></li>
+        
             <li><a class="toctree-l4" href="#20190305-mit-mini-cheetah-bot">20190305 MIT Mini Cheetah Bot</a></li>
         
             <li><a class="toctree-l4" href="#20190304-mit-tech-review-2019">20190304 MIT Tech Review 2019年“全球十大突破性技术”</a></li>
@@ -228,6 +230,7 @@
 <div class="toc">
 <ul>
 <li><a href="#edge">Edge</a><ul>
+<li><a href="#20190309">20190309 驯服自动驾驶的长尾挑战</a></li>
 <li><a href="#20190305-mit-mini-cheetah-bot">20190305 MIT Mini Cheetah Bot</a></li>
 <li><a href="#20190304-mit-tech-review-2019">20190304 MIT Tech Review 2019年“全球十大突破性技术”</a></li>
 <li><a href="#20190228-2018">20190228 中国十大2018年度科学进展</a></li>
@@ -237,6 +240,21 @@
 </li>
 </ul>
 </div>
+<h3 id="20190309">20190309 <a href="https://mp.weixin.qq.com/s/Wqog47SzPuNkhEmSfHAScA">驯服自动驾驶的长尾挑战</a></h3>
+<p><a href="https://youtu.be/Q0nGo2-y0xY">YouTube 链接</a></p>
+<p>经典MIT的Deep Learning for Self-driving Car课程上，邀请到了Waymo首席科学家Drago Anguelov，分享题为“Taming The Long Tail of Autonomous Driving Challenges（驯服自动驾驶的长尾挑战）”，主要是讲在现实世界中的Long Tail现象，各种异常情况该如何收集、融合、发布和测试.</p>
+<ol>
+<li>题目是“长尾”处理；</li>
+<li>可以处理道路维修场景；</li>
+<li>可以识别特殊车辆（警车/救护车/消防车）；</li>
+<li>可以预防闯红灯的车辆；</li>
+<li>可以对马路自行车行为轨迹预测；</li>
+<li>通过NAS学习模型；</li>
+<li>不完全依赖机器学习，可以利用专家知识（domain knowledge）；</li>
+<li>不是E2E学习驾驶行为，而是Mid-2-Mid，就是最近的ChauffeurNet；</li>
+<li>学习的行为预测有自适应性，比如激进的或者温和礼貌的；</li>
+<li>仿真不能解决所有问题，仿真系统需要更多的agent model，要smart。</li>
+</ol>
 <h3 id="20190305-mit-mini-cheetah-bot">20190305 <a href="https://mp.weixin.qq.com/s/HgW-qvLn0-jmMNIlr5NyrQ">MIT Mini Cheetah Bot</a></h3>
 <p>MIT最新公开的新型迷你猎豹机器人是第一个能做后空翻的四足机器人。这只灵活的小豹只有20磅重，四条腿可以自然地弯曲和摆动，它还能在崎岖不平的地面上小跑，速度大约是普通人步行速度的2倍。</p>
 <p>在这次升级中，猎豹被有意设计成<strong>不需依赖摄像头或任何外部传感器就能完成所有这些任务</strong>。它能灵活地 “感觉” 周围的环境，工程师们称之为 <strong>“盲眼运动”（blind locomotion）</strong>，就像人能穿过黑漆漆的房间一样。</p>
