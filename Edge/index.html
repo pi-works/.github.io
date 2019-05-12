@@ -66,6 +66,14 @@
     
         <ul>
         
+            <li><a class="toctree-l4" href="#20190512">20190512 微软命令行工具</a></li>
+        
+            <li><a class="toctree-l4" href="#20190511-siammask">20190511 SiamMask 快速在线对象跟踪和分割</a></li>
+        
+            <li><a class="toctree-l4" href="#20190506-cassie">20190506 深度强化学习训练双足机器人Cassie</a></li>
+        
+            <li><a class="toctree-l4" href="#20190505-real-time-3d-human-body-motion-prediction">20190505 Real-time 3D Human Body Motion Prediction</a></li>
+        
             <li><a class="toctree-l4" href="#20190413">20190413 人类史上首张黑洞照片发布</a></li>
         
             <li><a class="toctree-l4" href="#20190407-handle">20190407 波士顿动力定位于物流应用的Handle机器人硬件平台技术浅析</a></li>
@@ -265,6 +273,10 @@
 <div class="toc">
 <ul>
 <li><a href="#edge">Edge</a><ul>
+<li><a href="#20190512">20190512 微软命令行工具</a></li>
+<li><a href="#20190511-siammask">20190511 SiamMask 快速在线对象跟踪和分割</a></li>
+<li><a href="#20190506-cassie">20190506 深度强化学习训练双足机器人Cassie</a></li>
+<li><a href="#20190505-real-time-3d-human-body-motion-prediction">20190505 Real-time 3D Human Body Motion Prediction</a></li>
 <li><a href="#20190413">20190413 人类史上首张黑洞照片发布</a></li>
 <li><a href="#20190407-handle">20190407 波士顿动力定位于物流应用的Handle机器人硬件平台技术浅析</a></li>
 <li><a href="#20190321-robotic-collectives-inspired-by-biological-cells">20190321 Robotic collectives inspired by biological cells</a></li>
@@ -279,6 +291,22 @@
 </li>
 </ul>
 </div>
+<h3 id="20190512">20190512 <a href="https://mp.weixin.qq.com/s/YYzvi4FXwwCK7Hk-TwZ8kA">微软命令行工具</a></h3>
+<p>Windows Terminal是微软推出的新的命令行应用程序，提供多标签、分割窗口、快捷键、完整的Unicode字符支持等功能。支持PowerShell，Cmd，WSL（Windows的Linux子系统）和SSH等命令行程序，微软还给Windows Terminal加入很多细节功能，让它更美观。Windows Terminal使用的是基于DirectWrite/DirectX的GPU加速文本渲染引擎。这个新的引擎支持显示PC中存在的文本字符，意味着终端里的汉字、日文不再乱码，而且还能玩emoji表情。在微软展示的Demo中，你可以为自己的shell程序通过测试加入emoji表情提示。</p>
+<p><a href="https://github.com/microsoft/Terminal">https://github.com/microsoft/Terminal</a></p>
+<h3 id="20190511-siammask">20190511 <a href="https://zhuanlan.zhihu.com/p/58154634?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=675376553383432192&amp;wechatShare=1&amp;s_s_i=zSj7Ue3xiDKtWNoSF2LSKhrlfRqvgKjN7DXbqlEWl9g%3D&amp;s_r=0&amp;from=timeline&amp;isappinstalled=0">SiamMask 快速在线对象跟踪和分割</a></h3>
+<p><a href="https://github.com/foolwood/SiamMask">https://github.com/foolwood/SiamMask</a></p>
+<p><a href="https://arxiv.org/abs/1812.05050">https://arxiv.org/abs/1812.05050</a></p>
+<p><img alt="img" src="https://pic2.zhimg.com/v2-4efe88cf39f7d976a512a7e7345ea651_b.gif" /></p>
+<p>In this paper we illustrate how to perform both <strong>visual object tracking</strong> and <strong>semi-supervised video object segmentation</strong>, in real-time, with a single simple approach. Our method, dubbed <strong>SiamMask</strong>, improves the offline training procedure of popular fully-convolutional Siamese approaches for object tracking by augmenting their loss with a binary segmentation task. Once trained, SiamMask solely relies on a single bounding box initialisation and operates online, producing class-agnostic object segmentation masks and rotated bounding boxes at 55 frames per second. Despite its simplicity, versatility and fast speed, our strategy allows us to establish a new state of the art among real-time trackers on VOT-2018, while at the same time demonstrating competitive performance and the best speed for the semi-supervised video object segmentation task on DAVIS-2016 and DAVIS-2017. The project website is <a href="http://www.robots.ox.ac.uk/~qwang/SiamMask">this http URL</a>.</p>
+<h3 id="20190506-cassie">20190506 <a href="https://mp.weixin.qq.com/s/3k66lh5_bQCuFkamMEaTTQ">深度强化学习训练双足机器人Cassie</a></h3>
+<p><a href="https://arxiv.org/abs/1903.09537">https://arxiv.org/abs/1903.09537</a></p>
+<p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_gif/LJiau2qPWAcUuc6QyLyXokJ5lBIpjHGbAib5txUibQsbgEUyBhA2tjxsib3ZdMBjCKYtIgjJ5icNTyYlQq4vLJiaUbCQ/640?wx_fmt=gif" /></p>
+<p>深度学习在图像分类、图像分割、动作识别、语义理解、围棋、Flappy Bird、Dota等许多领域的高度非线性任务学习的问题上，取得了巨大的成就，但是将深度学习应用于真实世界机器人，还存在许多挑战和困难，例如需要依赖在虚拟环境下长时间的加速训练、虚拟环境模型与真实世界存在差异、机器人硬件的磨损等等。</p>
+<p>加拿大大不列颠哥伦比亚大学计算机系和俄勒冈州立大学动力机器人实验室的研究人员对此进行了探索。为了让双足机器人学会在不同的速度下平稳地行走，研究人员提出一种简单而有效的方法，奖励函数在每一次迭代中可以重新定义，来学习新的策略，从虚拟环境下获取5-10K样本，然后通过这些少量样本将强化学习和有监督学习结合，学习机器人行走策略，并更成功转移到真实世界的机器人。</p>
+<h3 id="20190505-real-time-3d-human-body-motion-prediction">20190505 <a href="https://mp.weixin.qq.com/s/ZFXZnniR2fBnxong_kAksw">Real-time 3D Human Body Motion Prediction</a></h3>
+<p>东京工业大学研究小组发布了一套格斗训练系统“FuturePose”，通过深度学习能预测 0.5 秒后对手的动作。通过从一个 RGB 相机捕获的图像中，从 30 fps（1帧= 1/30秒）图像中预测15帧后，即0.5秒后的动作，然后进行战斗训练。对战对手不同装束，而受训者可以戴 VR 头盔来同时观察对手的当前姿势和预测的0.5秒后的姿势。</p>
+<p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_gif/wc7YNPm3YxU7kdvuSjasdibUycbKWwacaqJPrqcTetXUIe2zWibkBdAquYCaCpaTYuotXLJLKyS7NXSK8B4ZcuibA/640?wx_fmt=gif" /></p>
 <h3 id="20190413">20190413 <a href="https://mp.weixin.qq.com/s/zKNJBMqCNrF5GFPzQmEzfg">人类史上首张黑洞照片发布</a></h3>
 <p>天文学家公布了人类史上首张黑洞照片。这颗黑洞就是M87星系中心的超大质量黑洞，它的质量是太阳的65亿倍，距离地球5500万光年。由事件视界望远镜（EHT）拍摄的黑洞照片。</p>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_png/YicUhk5aAGtAWR7KMTicXl4micou1JFQYicKLUZsf7zToaVS32wa8V7LofcsPInEiabNjfHFeCibX47XxKAEQYNMaIwA/640?wx_fmt=png" /></p>
