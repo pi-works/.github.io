@@ -66,6 +66,10 @@
     
         <ul>
         
+            <li><a class="toctree-l4" href="#20190526-iithyqreal">20190526 IIT最新一代液压四足机器人(HyQReal)发布</a></li>
+        
+            <li><a class="toctree-l4" href="#20190525-stanford-doggo">20190525 Stanford Doggo全开源四足机器人</a></li>
+        
             <li><a class="toctree-l4" href="#20190513">20190513 普渡大学蜂鸟机器人项目</a></li>
         
             <li><a class="toctree-l4" href="#20190512">20190512 微软命令行工具</a></li>
@@ -275,6 +279,8 @@
 <div class="toc">
 <ul>
 <li><a href="#edge">Edge</a><ul>
+<li><a href="#20190526-iithyqreal">20190526 IIT最新一代液压四足机器人(HyQReal)发布</a></li>
+<li><a href="#20190525-stanford-doggo">20190525 Stanford Doggo全开源四足机器人</a></li>
 <li><a href="#20190513">20190513 普渡大学蜂鸟机器人项目</a></li>
 <li><a href="#20190512">20190512 微软命令行工具</a></li>
 <li><a href="#20190511-siammask">20190511 SiamMask 快速在线对象跟踪和分割</a></li>
@@ -294,6 +300,28 @@
 </li>
 </ul>
 </div>
+<h3 id="20190526-iithyqreal">20190526 <a href="https://mp.weixin.qq.com/s/qPa5BT98Bm_M7eBfM8N4CQ">IIT最新一代液压四足机器人(HyQReal)发布</a></h3>
+<p><a href="https://www.iit.it">Istituto Italiano di Tecnologia </a>  意大利技术研究院</p>
+<p><a href="https://zhuanlan.zhihu.com/p/66805417?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=62270998577152&amp;from=timeline&amp;s_r=0">知乎链接</a></p>
+<p>5月23日，意大利技术研究院（iit）的动态腿足系统实验室（Dynamic Legged System，DLS） 发布了其新一代液压四足机器人：HyQReal，并放出了一段浮夸风溢出的机器人Demo——HyQReal拖拽小型客机，展现了基于液压原理的四足机器人的高负载能力。</p>
+<p><img alt="20190526104537" src="../fig/20190526104537.jpg" /></p>
+<p><strong>1、动力自主性(Power-autonomy)：</strong>这一点对于衡量液压机器人的性能是很重要的。简而言之，动力源外置（锂电池+电动液压泵）总会被别人诟病系统不够紧凑，不能展现真实的运动性能，实用性不够等等——HyQReal终于摆脱外接动力源的“大辫子（液压管道）”了，也意味着不用再给别人揪住缺乏动力自主性的“小辫子”，这是一个极大的进步！</p>
+<p><strong>2、高输出能力(Strength)：</strong>在这个紧凑的几何尺寸下（1.3mx 0.67m x 0.9m），髋关节的侧摆能够达到165Nm的峰值扭矩，髋关节的前后摆腿达到200Nm的峰值扭矩，膝关节的前后摆腿达到225Nm的峰值扭矩，这个数值对比于电机驱动的大尺寸人形机器人也是非常优秀的——体现了无法替代的液压驱动优势。但130kg的自重还是有点超过作者的预计，未来会不会影响其动态运动性能还是未知数，因为腿足式机器人一直强调的是输出扭矩/质量密度和输出功率/质量密度，要把自身的重量考虑在内。但毕竟采用了动力源内置（锂电池+液压动力源）的设计，机器人的自身重量就很难降下来。</p>
+<p><strong>3、坚固可靠性设计(RuggedDesign)：</strong>对于这点作者的理解是，因为采用了模块化、3D金属打印的液压驱动单元（ISA），一方面是极大提高了系统的可维护性与紧凑型，二是几乎消灭了裸露于外部的液压管道，这样就极大地提升了与外界物理交互的鲁棒性。</p>
+<h3 id="20190525-stanford-doggo">20190525 <a href="https://mp.weixin.qq.com/s/hJ9AMwgREPlIvDnqXg8PvA">Stanford Doggo全开源四足机器人</a></h3>
+<p><img alt="20190526103212" src="../fig/20190526103212.gif" /></p>
+<p>Stanford Doggo，它是一种准直接驱动（quasi-direct-drive）的四足机器人，具有很强的动态运动能力。该机器人能媲美或超过当前最优多足机器人的一般性能指标。且在垂直跳跃灵敏度上，即以平均垂直速度为指标，Stanford Doggo 能与表现最好的动物相媲美，并超过此前表现最好的机器人 22%。整体设计架构重点关注准直接驱动的设计方法。复现该机器人的硬件和软件都已经开源，只需要手工工具制造和组装就能完成，总成本低于 3000 美元。</p>
+<ul>
+<li>
+<p>项目地址：<a href="https://github.com/Nate711/StanfordDoggoProject">https://github.com/Nate711/StanfordDoggoProject</a></p>
+</li>
+<li>
+<p>CAD 设计图：<a href="https://a360.co/2OBxTbH">https://a360.co/2OBxTbH</a></p>
+</li>
+<li>
+<p>论文地址：<a href="https://arxiv.org/abs/1905.04254">https://arxiv.org/abs/1905.04254</a></p>
+</li>
+</ul>
 <h3 id="20190513">20190513 <a href="https://mp.weixin.qq.com/s/mV4GB_ziUGQCh0eVQGVdKQ">普渡大学蜂鸟机器人项目</a></h3>
 <p><img alt="img" src="../fig/20190513090130.gif" /></p>
 <p>At Purdue University’s <a href="https://engineering.purdue.edu/~xdeng/">Bio-Robotics Lab</a>, <a href="https://engineering.purdue.edu/ME/People/ptProfile?id=57378">Xinyan Deng</a> </p>
