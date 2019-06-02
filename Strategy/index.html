@@ -70,6 +70,8 @@
     
         <ul>
         
+            <li><a class="toctree-l4" href="#20190602-arm">20190602 ARM技术架构</a></li>
+        
             <li><a class="toctree-l4" href="#20190519">20190519 美国禁令与华为极限生存简析</a></li>
         
             <li><a class="toctree-l4" href="#20190428-ethics-guidelines-for-trustworthy-ai">20190428 ETHICS GUIDELINES FOR TRUSTWORTHY AI</a></li>
@@ -263,6 +265,7 @@
 <div class="toc">
 <ul>
 <li><a href="#strategy">Strategy</a><ul>
+<li><a href="#20190602-arm">20190602 ARM技术架构</a></li>
 <li><a href="#20190519">20190519 美国禁令与华为极限生存简析</a></li>
 <li><a href="#20190428-ethics-guidelines-for-trustworthy-ai">20190428 ETHICS GUIDELINES FOR TRUSTWORTHY AI</a></li>
 <li><a href="#20190428-stackoverflow-developer-survey-results-2019">20190428 Stackoverflow Developer Survey Results 2019</a></li>
@@ -276,6 +279,33 @@
 </li>
 </ul>
 </div>
+<h3 id="20190602-arm">20190602 <a href="https://mp.weixin.qq.com/s/PvbcIcbHxNHrBAxEspLiVw">ARM技术架构</a></h3>
+<p><strong>背景</strong>：据BBC报道称，其最近获得的内部文件显示，英国芯片设计公司ARM已经告诉员工，必须暂停与华为的业务往来。在文件中，ARM指示员工暂停与华为及其子公司的“所有有效合同、支持津贴，以及任何尚未签订的合约”，以遵守美国最近的一项贸易限制措施。</p>
+<p>华为旗下海思设计的许多芯片目前都是使用ARM的基础技术制造的，并需要为此支付专利许可费用。ARM的设计是全球大多数移动设备处理器的基础。各大手机芯片，包括高通骁龙、Apple A系列、华为麒麟芯片、三星Exynos，等它们的底层均是ARM的技术。基于ARM技术的32位微处理器，市场的占有率目前已达到80%。</p>
+<p><strong>ARM 商业模式</strong>： ARM不生产芯片，而是以转授权的方式，将<u>芯片设计方案</u>转让给其他公司，即“Partnership”开放模式。</p>
+<ul>
+<li>
+<p><u>商业模式：IP(Intellectual Property)授权</u>。</p>
+</li>
+<li>
+<p><u>授权方式：处理器、POP以及架构授权。</u></p>
+<ul>
+<li>
+<p>处理器授权：指授权合作厂商使用ARM设计好的处理器，对方不能改变原有设计，但可以根据自己的需要调整产品的频率、功耗等。</p>
+</li>
+<li>
+<p>POP(processor optimization pack，处理器优化包)授权：是处理器授权的高级形式， ARM出售优化后的处理器给授权合作厂商，方便其在特定工艺下设计、生产出性能有保证的处理器。</p>
+</li>
+<li>
+<p>架构授权：授权合作厂商使用自己的架构，方便其根据自己的需要来设计处理器(例如后来高通的Krait架构和苹果的Swift架构，就是在取得ARM的授权后设计完成的)。</p>
+</li>
+<li>
+<p>所以，授权费和版税就成了ARM的主要收入来源。除此之外，就是软件工具和技术支持服务的收入。</p>
+<p><img alt="arm" src="../fig/arm.jpg" /></p>
+</li>
+</ul>
+</li>
+</ul>
 <h3 id="20190519">20190519 <a href="https://mp.weixin.qq.com/s/O944VpIllCyu-5GTxpEiIQ">美国禁令与华为极限生存简析</a></h3>
 <p><a href="https://www.commerce.gov/news/press-releases/2019/05/department-commerce-announces-addition-huawei-technologies-co-ltd">Department of Commerce Announces the Addition of Huawei Technologies Co. Ltd. to the Entity List</a></p>
 <p>WASHINGTON – Today (15 May), the <u>Bureau of Industry and Security (BIS)</u> of the U.S. Department of Commerce announced that it will be <strong>adding Huawei Technologies Co. Ltd. and its affiliates to the Bureau’s Entity List</strong>. This action stems from information available to the Department that provides a reasonable basis to conclude that Huawei is engaged in activities that are contrary to U.S. national security or foreign policy interest. This information includes the activities alleged in the Department of Justice’s public superseding indictment of Huawei, including </p>

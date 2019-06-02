@@ -66,6 +66,10 @@
     
         <ul>
         
+            <li><a class="toctree-l4" href="#20190602-open-source-deep-learning-powered-visual-navigation-engine-for-uavs">20190602 Open Source Deep Learning-powered Visual Navigation Engine for UAVs</a></li>
+        
+            <li><a class="toctree-l4" href="#20190601-closing-the-sim-to-real-loop-adapting-simulation-randomization-with-real-world-experience">20190601 Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience</a></li>
+        
             <li><a class="toctree-l4" href="#20190526-iithyqreal">20190526 IIT最新一代液压四足机器人(HyQReal)发布</a></li>
         
             <li><a class="toctree-l4" href="#20190525-stanford-doggo">20190525 Stanford Doggo全开源四足机器人</a></li>
@@ -279,6 +283,8 @@
 <div class="toc">
 <ul>
 <li><a href="#edge">Edge</a><ul>
+<li><a href="#20190602-open-source-deep-learning-powered-visual-navigation-engine-for-uavs">20190602 Open Source Deep Learning-powered Visual Navigation Engine for UAVs</a></li>
+<li><a href="#20190601-closing-the-sim-to-real-loop-adapting-simulation-randomization-with-real-world-experience">20190601 Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience</a></li>
 <li><a href="#20190526-iithyqreal">20190526 IIT最新一代液压四足机器人(HyQReal)发布</a></li>
 <li><a href="#20190525-stanford-doggo">20190525 Stanford Doggo全开源四足机器人</a></li>
 <li><a href="#20190513">20190513 普渡大学蜂鸟机器人项目</a></li>
@@ -300,6 +306,30 @@
 </li>
 </ul>
 </div>
+<h3 id="20190602-open-source-deep-learning-powered-visual-navigation-engine-for-uavs">20190602 <a href="https://mp.weixin.qq.com/s/z5D7LXkwZ_ZWq7FA3mhD-Q">Open Source Deep Learning-powered Visual Navigation Engine for UAVs</a></h3>
+<p>苏黎世联邦理工学院和博洛尼亚大学的研究人员最近发明了一个名叫PULP Dronet的纳米级无人机，仅重27g，可以说是目前重量最轻的无人机。这个微型无人机搭载顶尖的深度学习算法，可以在一个端到端的闭环视觉管道上运行。</p>
+<p>这个无人机导航系统采用一个摄像头框架，并用最先进的CNN对其进行处理。随后，它决定如何纠正无人机的姿态，使其处于当前场景的中心。同样的CNN也识别出了障碍，如果无人机感觉到迫在眉睫的威胁，就停止它。“基本上，我们的无人机可以沿着一条街道（或类似的道路，例如走廊）行驶，并在遇到意外障碍时避免碰撞和刹车，”研究人员说：“与以前的口袋飞行机器人相比，我们的系统提供的真正飞跃是，实现自主导航所需的所有操作都是直接在机身上执行的，不需要人工操作人员，也不需要特别的基础设施（比如外部摄像机或信号），尤其是没有任何用于计算的远程基站（比如远程笔记本电脑）。”</p>
+<p><img alt="20190602110434" src="../fig/20190602110434.gif" /></p>
+<ul>
+<li>
+<p>参考来源：https://techxplore.com/news/2019-05-pulp-dronet-gram-nano-uav-insects.html</p>
+</li>
+<li>
+<p>论文地址：https://arxiv.org/pdf/1905.04166.pdf</p>
+</li>
+<li>
+<p>GitHub地址：https://github.com/pulp-platform/pulp-dronet</p>
+</li>
+</ul>
+<h3 id="20190601-closing-the-sim-to-real-loop-adapting-simulation-randomization-with-real-world-experience">20190601 Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience</h3>
+<p><a href="https://www.nvidia.com/en-us/research/robotics">Nvidia Research Group</a></p>
+<p>来自西雅图NVIDIA器人研究实验室的研究人员正在展示一种新的概念强化学习方法，<strong>旨在通过仿真训练来提高机器人在现实世界中的表现。</strong></p>
+<p>在他们的实验中，NVIDIA研究人员使用64个NVIDIA Tesla V100 GPU集群，使用cuDNN加速的TensorFlow深度学习框架，训练机器人完成两项任务：将一个挂钩放进一个洞，打开一个抽屉。对于场景的模拟，该团队使用了NVIDIA FleX物理引擎。</p>
+<p><img alt="20190602105003" src="../fig/20190602105003.gif" /></p>
+<p>机器人的整个学习过程大致是这样的，机器人首先在模拟环境中进行建模仿真，并且在虚拟环境中进行不断地训练，将测试得到的数据下载到机器人上，当在真实机器人上尝试学习任务时，系统准确观察它是如何失败的，并将失败的数据与模拟数据进行对比，将结果返回到学习框架进行优化模拟以获得更接近真实的模拟参数。</p>
+<p><img alt="20190602104933" src="../fig/20190602104933.gif" /></p>
+<p><img alt="20190602104946" src="../fig/20190602104946.gif" /></p>
+<p>得益于深度学习框架的<strong>黑盒形态</strong>，虚拟环境的构建者可以<u>摆脱复杂的物理定律、具体的数学模型构建</u>，将这些虚拟环境的参数调整纳入到深度学习框架，经过不断地迭代后<strong>，</strong>系统能够识别出与现实世界中观察到的更接近的模拟参数，从而取得成功，进一步打通了虚拟与现实之间的隔阂。这为构建更为真实的虚拟环境和更具效率的机器人学习提供了另一种手段。</p>
 <h3 id="20190526-iithyqreal">20190526 <a href="https://mp.weixin.qq.com/s/qPa5BT98Bm_M7eBfM8N4CQ">IIT最新一代液压四足机器人(HyQReal)发布</a></h3>
 <p><a href="https://www.iit.it">Istituto Italiano di Tecnologia </a>  意大利技术研究院</p>
 <p><a href="https://zhuanlan.zhihu.com/p/66805417?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=62270998577152&amp;from=timeline&amp;s_r=0">知乎链接</a></p>
