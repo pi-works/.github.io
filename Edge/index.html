@@ -66,6 +66,12 @@
     
         <ul>
         
+            <li><a class="toctree-l4" href="#20190616">20190616 世界首个触觉传输遥操作机器手</a></li>
+        
+            <li><a class="toctree-l4" href="#20190615-40">20190615 基于视觉控制，40美元开源无传感器机械臂</a></li>
+        
+            <li><a class="toctree-l4" href="#20190614-google-weight-agnostic-neural-networks">20190614 Google: Weight Agnostic Neural Networks</a></li>
+        
             <li><a class="toctree-l4" href="#20190602-open-source-deep-learning-powered-visual-navigation-engine-for-uavs">20190602 Open Source Deep Learning-powered Visual Navigation Engine for UAVs</a></li>
         
             <li><a class="toctree-l4" href="#20190601-closing-the-sim-to-real-loop-adapting-simulation-randomization-with-real-world-experience">20190601 Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience</a></li>
@@ -283,6 +289,9 @@
 <div class="toc">
 <ul>
 <li><a href="#edge">Edge</a><ul>
+<li><a href="#20190616">20190616 世界首个触觉传输遥操作机器手</a></li>
+<li><a href="#20190615-40">20190615 基于视觉控制，40美元开源无传感器机械臂</a></li>
+<li><a href="#20190614-google-weight-agnostic-neural-networks">20190614 Google: Weight Agnostic Neural Networks</a></li>
 <li><a href="#20190602-open-source-deep-learning-powered-visual-navigation-engine-for-uavs">20190602 Open Source Deep Learning-powered Visual Navigation Engine for UAVs</a></li>
 <li><a href="#20190601-closing-the-sim-to-real-loop-adapting-simulation-randomization-with-real-world-experience">20190601 Closing the Sim-to-Real Loop: Adapting Simulation Randomization with Real World Experience</a></li>
 <li><a href="#20190526-iithyqreal">20190526 IIT最新一代液压四足机器人(HyQReal)发布</a></li>
@@ -306,6 +315,24 @@
 </li>
 </ul>
 </div>
+<h3 id="20190616">20190616 <a href="https://mp.weixin.qq.com/s/bhhy9zXVlQ0LyHucJW1Z5w">世界首个触觉传输遥操作机器手</a></h3>
+<p><img alt="20190616215632" src="../fig/20190616215632.gif" /></p>
+<h3 id="20190615-40">20190615 <a href="https://mp.weixin.qq.com/s/dZM-KN6dg-WUMaufeg6tnQ">基于视觉控制，40美元开源无传感器机械臂</a></h3>
+<ul>
+<li>
+<p>项目网站：https://craves.ai（含代码和数据）</p>
+</li>
+<li>
+<p>论文地址：https://arxiv.org/abs/1812.00725</p>
+<p><img src="fig/20190616215907.gif" width = "60%" /></p>
+</li>
+</ul>
+<h3 id="20190614-google-weight-agnostic-neural-networks">20190614 <a href="https://mp.weixin.qq.com/s/znwsjfczWNpT8wHjy2CYlA">Google: Weight Agnostic Neural Networks</a></h3>
+<p>来自德国波恩-莱茵-锡格应用技术大学和谷歌大脑的一项新研究提出了一种神经网络架构搜索方法，这些网络可以在不进行显式权重训练的情况下执行各种任务。</p>
+<p>在生物学中，早成性物种是指那些天生就有一些能力的幼生体。很多证据表明蜥蜴和蛇等动物天生就懂得逃避捕食者，鸭子在孵化后也能自己学会游泳和进食。相比之下，我们在训练智能体执行任务时，会选择一个典型的神经网络框架，并相信它有潜力为这个任务编码特定的策略。注意这里只是「有潜力」，我们还要学习权重参数，才能将这种潜力变化为能力。受到自然界早成行为及先天能力的启发，在这项工作中，研究者构建了一个能「自然」执行给定任务的神经网络。也就是说，找到一个先天的神经网络架构，然后只需要随机初始化的权重就能执行任务。研究者表示，这种不用学习参数的神经网络架构在强化学习与监督学习都有很好的表现。</p>
+<p>其实在我们的理解中，如果我们想象神经网络架构提供的就是一个圈，那么常规学习权重就是找到一个最优「点」（或最优参数解）。但是对于不用学习权重的神经网络，它就相当于引入了一个非常强的归纳偏置，以至于，整个架构偏置到能直接解决某个问题。</p>
+<p><img src="fig/20190616213911.JPG" width = "60%" /></p>
+<p><img src="fig/20190616213923.GIF" width = "50%" /></p>
 <h3 id="20190602-open-source-deep-learning-powered-visual-navigation-engine-for-uavs">20190602 <a href="https://mp.weixin.qq.com/s/z5D7LXkwZ_ZWq7FA3mhD-Q">Open Source Deep Learning-powered Visual Navigation Engine for UAVs</a></h3>
 <p>苏黎世联邦理工学院和博洛尼亚大学的研究人员最近发明了一个名叫PULP Dronet的纳米级无人机，仅重27g，可以说是目前重量最轻的无人机。这个微型无人机搭载顶尖的深度学习算法，可以在一个端到端的闭环视觉管道上运行。</p>
 <p>这个无人机导航系统采用一个摄像头框架，并用最先进的CNN对其进行处理。随后，它决定如何纠正无人机的姿态，使其处于当前场景的中心。同样的CNN也识别出了障碍，如果无人机感觉到迫在眉睫的威胁，就停止它。“基本上，我们的无人机可以沿着一条街道（或类似的道路，例如走廊）行驶，并在遇到意外障碍时避免碰撞和刹车，”研究人员说：“与以前的口袋飞行机器人相比，我们的系统提供的真正飞跃是，实现自主导航所需的所有操作都是直接在机身上执行的，不需要人工操作人员，也不需要特别的基础设施（比如外部摄像机或信号），尤其是没有任何用于计算的远程基站（比如远程笔记本电脑）。”</p>

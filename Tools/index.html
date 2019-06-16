@@ -155,6 +155,15 @@
     <li class="toctree-l3"><a href="#tools">Tools</a></li>
     
 
+    <li class="toctree-l3"><a href="#bibtex-error">Bibtex error</a></li>
+    
+
+    <li class="toctree-l3"><a href="#ieeewordtex-fonts">IEEE/Word/Tex Fonts</a></li>
+    
+
+    <li class="toctree-l3"><a href="#set-ipv6-in-priority">Set IPV6 in Priority</a></li>
+    
+
     <li class="toctree-l3"><a href="#resolving-low-level-graphics-issues">Resolving Low-Level Graphics Issues</a></li>
     
 
@@ -254,10 +263,13 @@
             <div class="section">
               
                 <h1 id="tools">Tools</h1>
-<p>summarized by Jianan, 2019. This doc collects and collates some useful tools that not many people would use. </p>
+<p>summarized by Jianan, 2019. This doc collects and collates some useful tools.</p>
 <div class="toc">
 <ul>
 <li><a href="#tools">Tools</a></li>
+<li><a href="#bibtex-error">Bibtex error</a></li>
+<li><a href="#ieeewordtex-fonts">IEEE/Word/Tex Fonts</a></li>
+<li><a href="#set-ipv6-in-priority">Set IPV6 in Priority</a></li>
 <li><a href="#resolving-low-level-graphics-issues">Resolving Low-Level Graphics Issues</a></li>
 <li><a href="#pair-airpods-with-ubuntu">Pair Airpods with Ubuntu</a><ul>
 <li><a href="#general-steps">General Steps</a></li>
@@ -267,6 +279,97 @@
 <li><a href="#vpn">VPN</a></li>
 </ul>
 </div>
+<h1 id="bibtex-error">Bibtex error</h1>
+<ul>
+<li>
+<p><code>Something's wrong--perhaps a missing \item. \end{thebibliography}</code></p>
+<ul>
+<li>
+<p>without abbreviations sample:  Note don't add <code>.bib</code> as <code>Bibliography.bib</code></p>
+<p><code>tex
+\bibliographystyle{IEEEtran}
+\bibliography{Bibliography}</code></p>
+<p><code>tex
+    @inproceedings{jabbari2012dynamic,
+  title={Dynamic IBVS control of an underactuated UAV},
+  author={Jabbari, Hamed and Oriolo, Giuseppe and Bolandi, Hossein},
+  booktitle=booktitle={2012 IEEE International Conference on Robotics and Biomimetics (ROBIO)},
+  pages={1158--1163},
+  year={2012},
+  organization={IEEE}
+}</code></p>
+</li>
+<li>
+<p>With abbreviations sample:</p>
+<p><code>tex
+\bibliographystyle{IEEEtran}
+\bibliography{abrv,Bibliography}</code></p>
+<p><code>tex
+@inproceedings{jabbari2012dynamic,
+  title={Dynamic IBVS control of an underactuated UAV},
+  author={Jabbari, Hamed and Oriolo, Giuseppe and Bolandi, Hossein},
+  booktitle=IEEE_J_JSAC,
+  pages={1158--1163},
+  year={2012},
+  organization={IEEE}
+}</code></p>
+</li>
+<li>
+<p>delete the <code>.bbl</code> and <code>.aux</code> file, and recompile again. </p>
+</li>
+</ul>
+</li>
+<li>
+<p>bibtex - <code>Missing $ inserted</code> issue </p>
+<ul>
+<li><code>\usepackage[strings]{underscore}</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="ieeewordtex-fonts">IEEE/Word/Tex Fonts</h1>
+<ul>
+<li>
+<p>change the mathtype font to tex look: </p>
+<ul>
+<li>open MathType editor, and select the following: </li>
+<li>Preferences --&gt; Equation Preferences --&gt; Load from file... --&gt; Tex Look</li>
+</ul>
+</li>
+<li>
+<p>LaTeX 默认的字体是 Knuth 设计的 Computer Modern 系列字体。XeLaTeX 和 LuaLaTeX 在调用 fontspec 之后默认字体是 Latin Modern 系列字体。</p>
+<ul>
+<li>Computer Moder 字体在这里 <a href="https://www.fontsquirrel.com/fonts/computer-modern">https://www.fontsquirrel.com/fonts/computer-modern</a> 下载 </li>
+</ul>
+</li>
+<li><code>\documentclass[conference,10pt]{IEEEtran}</code> 字体为 times, 具体可以在这里<a href="https://parasol.tamu.edu/pact11/IEEEtran.cls">https://parasol.tamu.edu/pact11/IEEEtran.cls</a>  看到 <ul>
+<li><code>% IEEE uses Times Roman font, so we'll default to Times.</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="set-ipv6-in-priority">Set IPV6 in Priority</h1>
+<p><a href="https://jingyan.baidu.com/article/3ea5148982c61a52e61bba2c.html">https://jingyan.baidu.com/article/3ea5148982c61a52e61bba2c.html</a></p>
+<p><strong>IPv4协议</strong></p>
+<p>目前的全球因特网所采用的协议族是TCP/IP协议族。IP是TCP/IP协议族中网络层的协议，是TCP/IP协议族的核心协议。目前IP协议的版本号是4(简称为IPv4)，发展至今已经使用了30多年。<u>IPv4的地址位数为32位</u>，也就是最多有2的32次方的电脑可以联到Internet上。</p>
+<p><strong>IPv6协议</strong></p>
+<p>IPv6是下一版本的互联网协议，也可以说是下一代互联网的协议，它的提出最初是因为随着互联网的迅速发展，IPv4定义的有限地址空间将被耗尽，地址空间的不足必将妨碍互联网的进一步发展。为了扩大地址空间，拟通过IPv6重新定义地址空间。<u>IPv6采用128位地址长度</u>，几乎可以不受限制地提供地址。按保守方法估算IPv6实际可分配的地址，整个地球的每平方米面积上仍可分配1000多个地址。在IPv6的设计过程中除了一劳永逸地解决了地址短缺问题以外，还考虑了在IPv4中解决不好的其它问题，主要有端到端IP连接、服务质量(QoS)、安全性、多播、移动性、即插即用等。</p>
+<p><strong>IPv6与IPv4相比具有的优点</strong></p>
+<ul>
+<li>
+<p>更大的地址空间： IPv4中规定IP地址长度为32，即有2^32-1个地址;而IPv6中IP地址的长度为128，即有2^128-1个地址。</p>
+</li>
+<li>
+<p>更小的路由表： IPv6的地址分配一开始就遵循聚类(Aggregation)的原则，这使得路由器能在路由表中用一条记录(Entry)表示一片子网，大大减小了路由器中路由表的长度，提高了路由器转发数据包的速度。</p>
+</li>
+<li>
+<p>增强的组播支持以及对流的支持： 这使得网络上的多媒体应用有了长足发展的机会，为服务质量(QoS)控制提供了良好的网络平台.</p>
+</li>
+<li>
+<p>加入了对自动配置的支持： 这是对DHCP协议的改进和扩展，使得网络(尤其是局域网)的管理更加方便和快捷.</p>
+</li>
+<li>
+<p>更高的安全性： 在使用IPv6网络中用户可以对网络层的数据进行加密并对IP报文进行校验,这极大的增强了网络安全</p>
+</li>
+</ul>
 <h1 id="resolving-low-level-graphics-issues">Resolving Low-Level Graphics Issues</h1>
 <ul>
 <li>Problem description:</li>
