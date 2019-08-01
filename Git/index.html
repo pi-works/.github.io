@@ -168,17 +168,35 @@
         
             <li><a class="toctree-l4" href="#_2">简要摘记</a></li>
         
-            <li><a class="toctree-l4" href="#_3">推送步骤</a></li>
+            <li><a class="toctree-l4" href="#github">多个github 账号</a></li>
         
-            <li><a class="toctree-l4" href="#_4">常用命令</a></li>
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#_3">该文件用于配置私钥对应的服务器</a></li>
+    
+
+    <li class="toctree-l3"><a href="#default-github-userchping_2125163com">Default github user(chping_2125@163.com)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#second-usersecondmailcom">second user(second@mail.com)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#github_1">建一个github别名，新建的帐号使用这个别名做克隆和更新</a></li>
+    
+        <ul>
         
-            <li><a class="toctree-l4" href="#_13">基本概念</a></li>
+            <li><a class="toctree-l4" href="#_4">推送步骤</a></li>
+        
+            <li><a class="toctree-l4" href="#_5">常用命令</a></li>
+        
+            <li><a class="toctree-l4" href="#_14">基本概念</a></li>
         
             <li><a class="toctree-l4" href="#git_1">安装Git</a></li>
         
-            <li><a class="toctree-l4" href="#_14">建立版本库</a></li>
+            <li><a class="toctree-l4" href="#_15">建立版本库</a></li>
         
-            <li><a class="toctree-l4" href="#_15">问题</a></li>
+            <li><a class="toctree-l4" href="#_16">问题</a></li>
         
         </ul>
     
@@ -291,7 +309,62 @@ git pull origin master
 git push -u origin master 
 </code></pre>
 
-<h3 id="_3">推送步骤</h3>
+<h3 id="github">多个github 账号</h3>
+<p>https://www.jianshu.com/p/89cb26e5c3e8</p>
+<p>https://www.jianshu.com/p/a3b4f61d4747</p>
+<ul>
+<li>
+<p>到达新的repo, 设置新的用户名和email</p>
+<p><code>bash
+cd iusl/build
+git config user.name "IUSL-westlake"
+git config user.email  "lijianan@westlake.edu.cn"</code></p>
+</li>
+<li>
+<p>生成新的ssh keys. 输入的时候尽量输全地址</p>
+<p><code>bash
+ssh-keygen -t rsa -C "lijianan@westlake.edu.cn"
+/c/Users/Administrator/.ssh/id_rsa_new # 问的时候输入这个，注意原先已经有id_rsa</code></p>
+</li>
+<li>
+<p>添加ssh key </p>
+<p><code>bash
+ssh-add /c/Users/Administrator/.ssh/id_rsa_new</code></p>
+<p>如果出现<code>Could not open a connection to your authentication agent</code>的错误，就试着用以下命令：</p>
+<p><code>bash
+ssh-agent bash
+ssh-add /c/Users/Administrator/.ssh/id_rsa_new</code></p>
+</li>
+<li>
+<p>配置 .ssh/config文件</p>
+<p><code>bash
+touch config</code></p>
+<p>输入</p>
+<p>```bash</p>
+<h1 id="_3">该文件用于配置私钥对应的服务器</h1>
+<h1 id="default-github-userchping_2125163com">Default github user(chping_2125@163.com)</h1>
+<p>Host git@github.com    # 别名，不影响
+HostName https://github.com
+User JIMMMY0
+IdentityFile /c/Users/Administrator/.ssh/id_rsa</p>
+<h1 id="second-usersecondmailcom">second user(second@mail.com)</h1>
+<h1 id="github_1">建一个github别名，新建的帐号使用这个别名做克隆和更新</h1>
+<p>Host git2@github.com
+HostName https://github.com
+User IUSL-westlake
+IdentityFile /c/Users/Administrator/.ssh/id_rsa_new
+```</p>
+</li>
+<li>
+<p>添加新的SSH keys到新github账号的SSH设置中</p>
+</li>
+<li>
+<p>测试一下是否可以</p>
+<p><code>bash
+ssh -T git@github.com          #测试github, git@github.com是别名</code></p>
+</li>
+</ul>
+<h3 id="_4">推送步骤</h3>
 <ul>
 <li>在Github上新建一个仓库(repository)</li>
 <li>在本地创建项目文件夹，也即是本地仓库。我们的目标是要将本地仓库和远程仓库同步起来</li>
@@ -305,8 +378,8 @@ git push -u origin master
 <li><code>git push -u origin master</code> 向github提交，执行完成后，github上的repository就有和你本地一样的代码文件了。</li>
 <li>到github下查看代码是否上传成功</li>
 </ul>
-<h3 id="_4">常用命令</h3>
-<h4 id="_5">分支操作</h4>
+<h3 id="_5">常用命令</h3>
+<h4 id="_6">分支操作</h4>
 <p>git branch 创建分支
 git branch -b 创建并切换到新建的分支上
 git checkout 切换分支
@@ -320,19 +393,19 @@ git branch -d 分支名 删除本地分支
 git branch -D 分支名 强行删除分支
 git branch origin :分支名 删除远处仓库分支
 git merge 分支名 合并分支到当前分支上</p>
-<h4 id="_6">暂存操作</h4>
+<h4 id="_7">暂存操作</h4>
 <p>git stash 暂存当前修改
 git stash apply 恢复最近的一次暂存
 git stash pop 恢复暂存并删除暂存记录
 git stash list 查看暂存列表
 git stash drop 暂存名(例：stash@{0}) 移除某次暂存
 git stash clear 清除暂存</p>
-<h4 id="_7">回退操作</h4>
+<h4 id="_8">回退操作</h4>
 <p>git reset --hard HEAD^ 回退到上一个版本
 git reset --hard ahdhs1(commit_id) 回退到某个版本
 git checkout -- file撤销修改的文件(如果文件加入到了暂存区，则回退到暂存区的，如果文件加入到了版本库，则还原至加入版本库之后的状态)
 git reset HEAD file 撤回暂存区的文件修改到工作区</p>
-<h4 id="_8">标签操作</h4>
+<h4 id="_9">标签操作</h4>
 <p>git tag 标签名 添加标签(默认对当前版本)
 git tag 标签名 commit_id 对某一提交记录打标签
 git tag -a 标签名 -m '描述' 创建新标签并增加备注
@@ -342,7 +415,7 @@ git tag -d 标签名 删除本地标签
 git push origin 标签名 推送标签到远程仓库
 git push origin --tags 推送所有标签到远程仓库
 git push origin :refs/tags/标签名 从远程仓库中删除标签</p>
-<h4 id="_9">常规操作</h4>
+<h4 id="_10">常规操作</h4>
 <p>git push origin test 推送本地分支到远程仓库
 git rm -r --cached 文件/文件夹名字 取消文件被版本控制
 git reflog 获取执行过的命令
@@ -355,14 +428,14 @@ git add -f 文件名 强制将文件提交</p>
 git remote add origin url 关联远程仓库
 git pull
 git fetch 获取远程仓库中所有的分支到本地</p>
-<h4 id="_10">忽略已加入到版本库中的文件</h4>
+<h4 id="_11">忽略已加入到版本库中的文件</h4>
 <p>git update-index --assume-unchanged file 忽略单个文件
 git rm -r --cached 文件/文件夹名字 (. 忽略全部文件)</p>
-<h4 id="_11">取消忽略文件</h4>
+<h4 id="_12">取消忽略文件</h4>
 <p>git update-index --no-assume-unchanged file</p>
-<h4 id="_12">拉取、上传免密码</h4>
+<h4 id="_13">拉取、上传免密码</h4>
 <p>git config --global credential.helper stor</p>
-<h3 id="_13">基本概念</h3>
+<h3 id="_14">基本概念</h3>
 <ul>
 <li>学习github基本概念和操作 https://guides.github.com/activities/hello-world/</li>
 <li><strong>Repository，项目仓库</strong>：used to organize a single project，can contain folders and files, images, videos, spreadsheets, and data sets</li>
@@ -396,7 +469,7 @@ git rm -r --cached 文件/文件夹名字 (. 忽略全部文件)</p>
   git config --global core.editor nanoGit</code></p>
 </li>
 </ul>
-<h3 id="_14">建立版本库</h3>
+<h3 id="_15">建立版本库</h3>
 <ul>
 <li>第一步<strong>创建</strong>版本库</li>
 </ul>
@@ -429,7 +502,7 @@ git rm -r --cached 文件/文件夹名字 (. 忽略全部文件)</p>
   git add file1.txt
   git add file2.txt file3.txt
   git commit -m "add 3 files."</code></p>
-<h3 id="_15">问题</h3>
+<h3 id="_16">问题</h3>
 <ul>
 <li>旧版本说明文档 https://toolchain.gitbook.com/</li>
 <li>gitbook 安装步骤参考 http://www.chengweiyang.cn/gitbook/installation/README.html</li>
