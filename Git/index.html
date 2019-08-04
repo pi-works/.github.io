@@ -173,16 +173,10 @@
         </ul>
     
 
-    <li class="toctree-l3"><a href="#_3">该文件用于配置私钥对应的服务器</a></li>
+    <li class="toctree-l3"><a href="#_3">取消全局 用户名/邮箱 配置</a></li>
     
 
-    <li class="toctree-l3"><a href="#default-github-userchping_2125163com">Default github user(chping_2125@163.com)</a></li>
-    
-
-    <li class="toctree-l3"><a href="#second-usersecondmailcom">second user(second@mail.com)</a></li>
-    
-
-    <li class="toctree-l3"><a href="#github_1">建一个github别名，新建的帐号使用这个别名做克隆和更新</a></li>
+    <li class="toctree-l3"><a href="#repo">单独设置每个repo 用户名/邮箱</a></li>
     
         <ul>
         
@@ -305,14 +299,39 @@ git add .   # 本地暂存
 git status  # 
 git commit -m &quot;annotation&quot; 
 git remote add origin https://github.com/jimmmy0/repository1.git
+git remote add origin git@new.github.com:IUSL-westlake/IUSL-westlake.github.io.git
 git pull origin master 
 git push -u origin master 
 </code></pre>
 
 <h3 id="github">多个github 账号</h3>
+<p>先参考这个，最终解决了我的问题 https://www.jianshu.com/p/3fc93c16ad2d</p>
 <p>https://www.jianshu.com/p/89cb26e5c3e8</p>
 <p>https://www.jianshu.com/p/a3b4f61d4747</p>
-<ul>
+<p><strong>思路</strong></p>
+<p>ssh 方式链接到 Github，需要唯一的公钥，如果想同一台电脑绑定两个Github 帐号，需要两个条件:</p>
+<ol>
+<li>能够生成两对 私钥/公钥</li>
+<li>push 时，可以区分两个账户，推送到相应的仓库</li>
+</ol>
+<p>解决方案:</p>
+<ol>
+<li>生成 私钥/公钥 时，密钥文件命名避免重复</li>
+<li>设置不同 Host 对应同一 HostName 但密钥不同</li>
+<li>
+<p>取消 git 全局<code>用户名/邮箱</code>设置，为每个仓库独立设置 用户名/邮箱</p>
+</li>
+<li>
+<p>取消全局 用户名/邮箱 配置</p>
+<p>```bash</p>
+<h1 id="_3">取消全局 用户名/邮箱 配置</h1>
+<p>git config –global –unset user.name
+git config –global –unset user.email</p>
+<h1 id="repo">单独设置每个repo 用户名/邮箱</h1>
+<p>git config user.email “xxxx@xx.com”
+git config user.name “xxxx”
+```</p>
+</li>
 <li>
 <p>到达新的repo, 设置新的用户名和email</p>
 <p><code>bash
@@ -339,21 +358,20 @@ ssh-add /c/Users/Administrator/.ssh/id_rsa_new</code></p>
 <p>配置 .ssh/config文件</p>
 <p><code>bash
 touch config</code></p>
-<p>输入</p>
-<p>```bash</p>
-<h1 id="_3">该文件用于配置私钥对应的服务器</h1>
-<h1 id="default-github-userchping_2125163com">Default github user(chping_2125@163.com)</h1>
-<p>Host git@github.com    # 别名，不影响
-HostName https://github.com
-User JIMMMY0
-IdentityFile /c/Users/Administrator/.ssh/id_rsa</p>
-<h1 id="second-usersecondmailcom">second user(second@mail.com)</h1>
-<h1 id="github_1">建一个github别名，新建的帐号使用这个别名做克隆和更新</h1>
-<p>Host git2@github.com
-HostName https://github.com
-User IUSL-westlake
-IdentityFile /c/Users/Administrator/.ssh/id_rsa_new
+<p>然后输入</p>
+<p>```bash
+Host github.com #default<br />
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa</p>
+<p>Host new.github.com # two<br />
+HostName github.com
+User git
+IdentityFile ~/.ssh/id_rsa_new
 ```</p>
+</li>
+<li>
+<p>将生成的 <code>id_rsa.pub</code>，<code>id_rsa_new.pub</code>内容copy 到对应的 repo</p>
 </li>
 <li>
 <p>添加新的SSH keys到新github账号的SSH设置中</p>
@@ -361,9 +379,22 @@ IdentityFile /c/Users/Administrator/.ssh/id_rsa_new
 <li>
 <p>测试一下是否可以</p>
 <p><code>bash
-ssh -T git@github.com          #测试github, git@github.com是别名</code></p>
+ssh -T git@new.github.com
+ssh -T git@github.com</code></p>
+<p>Hi IEIT! You've successfully authenticated, but GitHub does not provide shell access. 出现这句，表示链接成功</p>
 </li>
-</ul>
+<li>
+<p>命令行进入项目目录，重建 origin (whatever 为相应项目地址)</p>
+<p><code>bash
+git remote rm origin
+git remote add origin git@new.github.com:whatever</code></p>
+</li>
+<li>
+<p>成功，可以 push 测试一下</p>
+<p><code>bash
+git push origin master</code></p>
+</li>
+</ol>
 <h3 id="_4">推送步骤</h3>
 <ul>
 <li>在Github上新建一个仓库(repository)</li>
