@@ -1,0 +1,958 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Dynamic Knowledge Index (DKI)">
+      
+      
+      
+        <meta name="author" content="JIMMMY">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Frontier - Dynamic Knowledge Index (DKI)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-XXXXXXXX-X", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#frontier" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-header-nav__button md-logo">
+          
+            <img src="../logo7.gif" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Dynamic Knowledge Index (DKI)
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Frontier
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-nav__button md-logo">
+      
+        <img src="../logo7.gif" width="48" height="48">
+      
+    </a>
+    Dynamic Knowledge Index (DKI)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Dynamics 2020
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Dynamics 2020
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Frontier
+      </label>
+    
+    <a href="./" title="Frontier" class="md-nav__link md-nav__link--active">
+      Frontier
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0308-ai" class="md-nav__link">
+    0308 谷歌打造通过AI学走路的四足机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0117" class="md-nav__link">
+    0117 斯坦福打造鸽子机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0105" class="md-nav__link">
+    0105 强化学习基础
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Strategy_2020/" title="Strategy" class="md-nav__link">
+      Strategy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Perspective_2020/" title="Perspective" class="md-nav__link">
+      Perspective
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Dynamics 2019
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Dynamics 2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Edge/" title="Edge" class="md-nav__link">
+      Edge
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Strategy/" title="Strategy" class="md-nav__link">
+      Strategy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Perspective/" title="Perspective" class="md-nav__link">
+      Perspective
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      AI
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        AI
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AI/" title="AI Map" class="md-nav__link">
+      AI Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/AI/AMiner_AI_2019.pdf" title="AI Report 2019 (PDF,Aminer)" class="md-nav__link">
+      AI Report 2019 (PDF,Aminer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AI Index 2018 Annual Report/" title="AI Index 2018 Annual Report" class="md-nav__link">
+      AI Index 2018 Annual Report
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Self-driving
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Self-driving
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Self-driving/" title="Self-driving Map" class="md-nav__link">
+      Self-driving Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/selfdriving_new.pdf" title="Self-driving v2 (PDF,Aminer)" class="md-nav__link">
+      Self-driving v2 (PDF,Aminer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/selfdriving_basic.pdf" title="Self-driving v1 (PDF,Aminer)" class="md-nav__link">
+      Self-driving v1 (PDF,Aminer)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Flying Car
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Flying Car
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Flying car/" title="Flying Car Map" class="md-nav__link">
+      Flying Car Map
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Blockchain
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Blockchain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/blockchain_public.pdf" title="Blockchain Overview (PDF,Aminer)" class="md-nav__link">
+      Blockchain Overview (PDF,Aminer)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Robotics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Robotics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Robotics/" title="Robotics Collections" class="md-nav__link">
+      Robotics Collections
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToRobotics/" title="How to Study Robotics" class="md-nav__link">
+      How to Study Robotics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Gadgets
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Gadgets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tools/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Mirror/" title="Mirror" class="md-nav__link">
+      Mirror
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lifestyle/" title="Lifestyle" class="md-nav__link">
+      Lifestyle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Blog/" title="Blog Deployment" class="md-nav__link">
+      Blog Deployment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToSearch/" title="How to Search" class="md-nav__link">
+      How to Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../KnowledgeSystem/" title="Knowledge System" class="md-nav__link">
+      Knowledge System
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../thinkTank/" title="Think Tanks" class="md-nav__link">
+      Think Tanks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MgtFinEco/" title="MgtFinEco" class="md-nav__link">
+      MgtFinEco
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToBuyFunds/" title="Funds" class="md-nav__link">
+      Funds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Hangzhou/" title="How to Hangzhou" class="md-nav__link">
+      How to Hangzhou
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToBuyCars/" title="How to Cars" class="md-nav__link">
+      How to Cars
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0308-ai" class="md-nav__link">
+    0308 谷歌打造通过AI学走路的四足机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0117" class="md-nav__link">
+    0117 斯坦福打造鸽子机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0105" class="md-nav__link">
+    0105 强化学习基础
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="frontier">Frontier</h1>
+<p>Collected by Jianan, 2020. 本章节会实时收录全球科技动态。部分文字从原文直接引用，如有侵权，立即删除。本文仅供个人参考学习，不作商业用途。</p>
+<div class="toc">
+<ul>
+<li><a href="#frontier">Frontier</a><ul>
+<li><a href="#0308-ai">0308 谷歌打造通过AI学走路的四足机器人</a></li>
+<li><a href="#0117">0117 斯坦福打造鸽子机器人</a></li>
+<li><a href="#0105">0105 强化学习基础</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="0308-ai">0308 <a href="https://mp.weixin.qq.com/s/m-EXDVjnRXqX4WJLkqTajg">谷歌打造通过AI学走路的四足机器人</a></h3>
+<p>谷歌，加州大学伯克利分校和佐治亚理工学院的研究人员联合发表了一篇论文，构建了一个通过AI自学走路的四足机器人，并将它取名为“RainbowDash”。</p>
+<p><strong>Rainbow Dash结合了深度学习和强化学习两种不同类型的AI技术。</strong>通过深度学习，系统可以处理和评估来自其身处环境的原始输入数据；通过强化学习，算法可以反复试验，以学习如何执行任务，并根据完成的程度来获得奖励和惩罚。也就是说，通过上述的这种方式，机器人便可以在其不了解环境中实现自动控制策略</p>
+<p><img alt="20200205141930" src="../fig/6400.gif" /></p>
+<p><a href="#Frontier">Back to Top</a></p>
+<h3 id="0117">0117 <a href="https://mp.weixin.qq.com/s/bbIfNbYCQiov-RMBkQN-cA">斯坦福打造鸽子机器人</a></h3>
+<p>斯坦福的研究人员制造了一种半生物鸽子机器人——PigeonBot, 并提出了一些新的研究成果，准确地了解了鸟类如何通过改变翅膀的形状来维持、控制飞行。</p>
+<p><img alt="20200205141930" src="../fig/20200205141930.gif" /></p>
+<p><a href="#Frontier">Back to Top</a></p>
+<h3 id="0105">0105 <a href="https://mp.weixin.qq.com/s/9CRkNgmIeE83Z863T_CwEw">强化学习基础</a></h3>
+<p>强化学习（RL）是现代人工智能领域中最热门的研究主题之一，其普及度还在不断增长。本文介绍了开始学习RL需要了解的核心要素</p>
+<p><a href="#Frontier">Back to Top</a></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+    
+    <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+            
+            <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+                <div class="md-flex__cell md-flex__cell--shrink">
+                    <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+                </div>
+                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                    <span class="md-flex__ellipsis">
+                        <span class="md-footer-nav__direction">
+                            Previous
+                        </span>
+                        Home
+                    </span>
+                </div>
+            </a>
+            
+            
+            <a href="../Strategy_2020/" title="Strategy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                    <span class="md-flex__ellipsis">
+                        <span class="md-footer-nav__direction">
+                            Next
+                        </span>
+                        Strategy
+                    </span>
+                </div>
+                <div class="md-flex__cell md-flex__cell--shrink">
+                    <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+                </div>
+            </a>
+            
+        </nav>
+    </div>
+    
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    &copy; 2020, Jianan, all rights reserved.
+                </div>
+                
+                Powered by Jimmmy's Studio.&#8482
+            </div>
+            
+        </div>
+    </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
