@@ -1,1285 +1,271 @@
-
-
-
-
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      
-        <meta name="description" content="Dynamic Knowledge Index (DKI)">
-      
-      
-      
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <meta name="author" content="JIMMMY">
-      
-      
-        <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      
-        <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      
-        <meta name="lang:search.language" content="en">
-      
-        <meta name="lang:search.pipeline.stopwords" content="True">
-      
-        <meta name="lang:search.pipeline.trimmer" content="True">
-      
-        <meta name="lang:search.result.none" content="No matching documents">
-      
-        <meta name="lang:search.result.one" content="1 matching document">
-      
-        <meta name="lang:search.result.other" content="# matching documents">
-      
-        <meta name="lang:search.tokenizer" content="[\s\-]+">
-      
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
-    
-    
-      
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
         <title>AI Map - Dynamic Knowledge Index (DKI)</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
-      
-        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
-      
-      
-        
-        
-        <meta name="theme-color" content="#3f51b5">
-      
-    
-    
-      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
-    
-    
-      
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      
-    
-    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
-    
-    
-    
-      
-        
-<script>
-  window.ga = window.ga || function() {
-    (ga.q = ga.q || []).push(arguments)
-  }
-  ga.l = +new Date
-  /* Setup integration and send page view */
-  ga("create", "UA-XXXXXXXX-X", "auto")
-  ga("set", "anonymizeIp", true)
-  ga("send", "pageview")
-  /* Register handler to log search on blur */
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.forms.search) {
-      var query = document.forms.search.query
-      query.addEventListener("blur", function() {
-        if (this.value) {
-          var path = document.location.pathname;
-          ga("send", "pageview", path + "?q=" + this.value)
-        }
-      })
-    }
-  })
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
-      
-    
-    
-  </head>
-  
-    
-    
-    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
-  
-    <svg class="md-svg">
-      <defs>
-        
-        
-      </defs>
-    </svg>
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-    
-      <a href="#ai-map" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
-    
-      <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid">
-    <div class="md-flex">
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-header-nav__button md-logo">
-          
-            <img src="../logo7.gif" width="24" height="24">
-          
-        </a>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-      </div>
-      <div class="md-flex__cell md-flex__cell--stretch">
-        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          
-            <span class="md-header-nav__topic">
-              Dynamic Knowledge Index (DKI)
-            </span>
-            <span class="md-header-nav__topic">
-              
-                AI Map
-              
-            </span>
-          
-        </div>
-      </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-          
-<div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
-      <label class="md-icon md-search__icon" for="__search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
-        &#xE5CD;
-      </button>
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
-          <div class="md-search-result__meta">
-            Type to start searching
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-        
-      </div>
-      
-    </div>
-  </nav>
-</header>
-    
-    <div class="md-container">
-      
-        
-      
-      
-      <main class="md-main" role="main">
-        <div class="md-main__inner md-grid" data-md-component="container">
-          
-            
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" data-md-level="0">
-  <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-nav__button md-logo">
-      
-        <img src="../logo7.gif" width="48" height="48">
-      
-    </a>
-    Dynamic Knowledge Index (DKI)
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
-      Home
-    </a>
-  </li>
+            ga('create', 'UA-XXXXXXXX-X', 'auto');
+            ga('send', 'pageview');
+        </script> 
+    </head>
 
-    
-      
-      
-      
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Dynamic Knowledge Index (DKI)</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Dynamics 2020
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        Dynamics 2020
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Frontier_2020/" title="Frontier" class="md-nav__link">
-      Frontier
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy_2020/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective_2020/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Dynamics 2019
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Dynamics 2019
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Edge/" title="Edge" class="md-nav__link">
-      Edge
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
-    
-    <label class="md-nav__link" for="nav-4">
-      AI
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        AI
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        AI Map
-      </label>
-    
-    <a href="./" title="AI Map" class="md-nav__link md-nav__link--active">
-      AI Map
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    第一章（关键技术）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ml" class="md-nav__link">
-    机器学习(ML)
-  </a>
-  
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dynamics 2020 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Frontier2020/" class="dropdown-item">Frontier</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#knowledge-graph" class="md-nav__link">
-    知识图谱(Knowledge Graph)
-  </a>
-  
+                                    
+<li>
+    <a href="../Strategy2020/" class="dropdown-item">Strategy</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#nlp" class="md-nav__link">
-    自然语言处理(NLP)
-  </a>
-  
+                                    
+<li>
+    <a href="../Perspective2020/" class="dropdown-item">Perspective</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#hci" class="md-nav__link">
-    人机交互(HCI)
-  </a>
-  
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dynamics 2019 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Frontier2019/" class="dropdown-item">Frontier</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#cv" class="md-nav__link">
-    计算机视觉(CV)
-  </a>
-  
+                                    
+<li>
+    <a href="../Strategy2019/" class="dropdown-item">Strategy</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#biometrics" class="md-nav__link">
-    生物特征识别(Biometrics)
-  </a>
-  
+                                    
+<li>
+    <a href="../Perspective2019/" class="dropdown-item">Perspective</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#vrar" class="md-nav__link">
-    虚拟现实/增强现实(VR/AR)
-  </a>
-  
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Artificial Intelligence <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">AI Map</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    技术发展趋势
-  </a>
-  
+                                    
+<li>
+    <a href="../pdf/AI/AMiner_AI_2019.pdf" class="dropdown-item">AI Report 2019 (PDF,Aminer)</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+                                    
+<li>
+    <a href="../AI%20Index%202018%20Annual%20Report/" class="dropdown-item">AI Index 2018 Annual Report</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    第二章（产业分析）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    产业现状及趋势
-  </a>
-  
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Self-driving <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Self-driving/" class="dropdown-item">Self-driving Map</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    智能基础设施
-  </a>
-  
+                                    
+<li>
+    <a href="../pdf/selfdriving_new.pdf" class="dropdown-item">Self-driving v2 (PDF,Aminer)</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    智能信息数据
-  </a>
-  
+                                    
+<li>
+    <a href="../pdf/selfdriving_basic.pdf" class="dropdown-item">Self-driving v1 (PDF,Aminer)</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    智能技术服务
-  </a>
-  
+                                    
+<li>
+    <a href="../Flying%20car/" class="dropdown-item">Flying Car Map</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    智能产品
-  </a>
-  
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blockchain <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../pdf/blockchain_public.pdf" class="dropdown-item">Blockchain Overview (PDF,Aminer)</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    产业发展趋势
-  </a>
-  
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../tutorials_ML_RL/" class="dropdown-item">ML&RL</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+                                    
+<li>
+    <a href="../tutorials_Robotics/" class="dropdown-item">Robotics</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    第三章（标准化）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    标准化工作意义
-  </a>
-  
+                                    
+<li>
+    <a href="../tutorials_Miscellaneous/" class="dropdown-item">Miscellaneous</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    标准需求分析
-  </a>
-  
+                                    
+<li>
+    <a href="../howToRobotics/" class="dropdown-item">How to Study Robotics</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    标准体系结构
-  </a>
-  
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Gadgets <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../Tools/" class="dropdown-item">Tools</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+                                    
+<li>
+    <a href="../Mirror/" class="dropdown-item">Mirror</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    第四章 （应用案例）
-  </a>
-  
+                                    
+<li>
+    <a href="../Lifestyle/" class="dropdown-item">Lifestyle</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
-    第五章（AI全景报告收集）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#2018" class="md-nav__link">
-    中国人工智能标准化白皮书（2018版）
-  </a>
-  
+                                    
+<li>
+    <a href="../Git/" class="dropdown-item">Git</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ai-one-hundred-year-study-on-artificial-intelligence-ai100" class="md-nav__link">
-    斯坦福AI百年研究计划 One Hundred Year Study on Artificial Intelligence (AI100)
-  </a>
-  
+                                    
+<li>
+    <a href="../Blog/" class="dropdown-item">Blog Deployment</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#stateofai-2018" class="md-nav__link">
-    stateof.ai 2018
-  </a>
-  
+                                    
+<li>
+    <a href="../howToSearch/" class="dropdown-item">How to Search</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#stateoftheartai" class="md-nav__link">
-    StateOfTheArt.ai
-  </a>
-  
+                                    
+<li>
+    <a href="../KnowledgeSystem/" class="dropdown-item">Knowledge System</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    高盛人工智能报告中文版
-  </a>
-  
+                                    
+<li>
+    <a href="../thinkTank/" class="dropdown-item">Think Tanks</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    德勤中国人工智能产业白皮书
-  </a>
-  
+                                    
+<li>
+    <a href="../MgtFinEco/" class="dropdown-item">MgtFinEco</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ai-index-2018-annual-report" class="md-nav__link">
-    AI Index 2018 Annual Report
-  </a>
-  
+                                    
+<li>
+    <a href="../howToBuyFunds/" class="dropdown-item">Funds</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    清华大学人工智能研究院---知识智能研究中心
-  </a>
-  
+                                    
+<li>
+    <a href="../Hangzhou/" class="dropdown-item">How to Hangzhou</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+                                    
+<li>
+    <a href="../howToBuyCars/" class="dropdown-item">How to Cars</a>
 </li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/AI/AMiner_AI_2019.pdf" title="AI Report 2019 (PDF,Aminer)" class="md-nav__link">
-      AI Report 2019 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../AI Index 2018 Annual Report/" title="AI Index 2018 Annual Report" class="md-nav__link">
-      AI Index 2018 Annual Report
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Self-driving
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Self-driving
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Self-driving/" title="Self-driving Map" class="md-nav__link">
-      Self-driving Map
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/selfdriving_new.pdf" title="Self-driving v2 (PDF,Aminer)" class="md-nav__link">
-      Self-driving v2 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/selfdriving_basic.pdf" title="Self-driving v1 (PDF,Aminer)" class="md-nav__link">
-      Self-driving v1 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      Flying Car
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        Flying Car
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Flying car/" title="Flying Car Map" class="md-nav__link">
-      Flying Car Map
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
-    
-    <label class="md-nav__link" for="nav-7">
-      Blockchain
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        Blockchain
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/blockchain_public.pdf" title="Blockchain Overview (PDF,Aminer)" class="md-nav__link">
-      Blockchain Overview (PDF,Aminer)
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
-    
-    <label class="md-nav__link" for="nav-8">
-      Robotics
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
-        Robotics
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Robotics/" title="Robotics Collections" class="md-nav__link">
-      Robotics Collections
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToRobotics/" title="How to Study Robotics" class="md-nav__link">
-      How to Study Robotics
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
-    
-    <label class="md-nav__link" for="nav-9">
-      Gadgets
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        Gadgets
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Tools/" title="Tools" class="md-nav__link">
-      Tools
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Mirror/" title="Mirror" class="md-nav__link">
-      Mirror
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Lifestyle/" title="Lifestyle" class="md-nav__link">
-      Lifestyle
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Git/" title="Git" class="md-nav__link">
-      Git
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Blog/" title="Blog Deployment" class="md-nav__link">
-      Blog Deployment
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToSearch/" title="How to Search" class="md-nav__link">
-      How to Search
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../KnowledgeSystem/" title="Knowledge System" class="md-nav__link">
-      Knowledge System
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../thinkTank/" title="Think Tanks" class="md-nav__link">
-      Think Tanks
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../MgtFinEco/" title="MgtFinEco" class="md-nav__link">
-      MgtFinEco
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToBuyFunds/" title="Funds" class="md-nav__link">
-      Funds
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Hangzhou/" title="How to Hangzhou" class="md-nav__link">
-      How to Hangzhou
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToBuyCars/" title="How to Cars" class="md-nav__link">
-      How to Cars
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-  </ul>
-</nav>
-                  </div>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Perspective2019/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../pdf/AI/AMiner_AI_2019.pdf" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
                 </div>
-              </div>
-            
-            
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
     
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    第一章（关键技术）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ml" class="md-nav__link">
-    机器学习(ML)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#knowledge-graph" class="md-nav__link">
-    知识图谱(Knowledge Graph)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#nlp" class="md-nav__link">
-    自然语言处理(NLP)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hci" class="md-nav__link">
-    人机交互(HCI)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cv" class="md-nav__link">
-    计算机视觉(CV)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#biometrics" class="md-nav__link">
-    生物特征识别(Biometrics)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vrar" class="md-nav__link">
-    虚拟现实/增强现实(VR/AR)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    技术发展趋势
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    第二章（产业分析）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    产业现状及趋势
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    智能基础设施
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    智能信息数据
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    智能技术服务
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    智能产品
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    产业发展趋势
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    第三章（标准化）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    标准化工作意义
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_12" class="md-nav__link">
-    标准需求分析
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_13" class="md-nav__link">
-    标准体系结构
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
-    第四章 （应用案例）
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ai" class="md-nav__link">
-    第五章（AI全景报告收集）
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#2018" class="md-nav__link">
-    中国人工智能标准化白皮书（2018版）
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ai-one-hundred-year-study-on-artificial-intelligence-ai100" class="md-nav__link">
-    斯坦福AI百年研究计划 One Hundred Year Study on Artificial Intelligence (AI100)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stateofai-2018" class="md-nav__link">
-    stateof.ai 2018
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stateoftheartai" class="md-nav__link">
-    StateOfTheArt.ai
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
-    高盛人工智能报告中文版
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
-    德勤中国人工智能产业白皮书
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ai-index-2018-annual-report" class="md-nav__link">
-    AI Index 2018 Annual Report
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#-" class="md-nav__link">
-    清华大学人工智能研究院---知识智能研究中心
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
             
-          
-          <div class="md-content">
-            <article class="md-content__inner md-typeset">
-              
-                
-                
-                <h1 id="ai-map">人工智能全景 (AI Map)</h1>
+            <li class="nav-item" data-level="1"><a href="#ai-map" class="nav-link">人工智能全景 (AI Map)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">第一章（关键技术）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_3" class="nav-link">第二章（产业分析）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_10" class="nav-link">第三章（标准化）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_14" class="nav-link">第四章 （应用案例）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#ai" class="nav-link">第五章（AI全景报告收集）</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="ai-map">人工智能全景 (AI Map)</h1>
 <p>by Jianan, 2019.01-02. 本文以不同专业报告为模板进行了适当增删和修改，同时选取并集合了全球高质量的AI全景报告，旨在提供一张快速了解AI全貌的地图。具体学科知识和技术细节请参阅专业课程/书籍/技术文档。<code>源链接</code>将导引至文章来源官网或者直接至PDF, 若源链接失效，请点击<code>本地下载</code>。本文仅供个人参考，禁止用于商业用途。                      </p>
 <div class="toc">
 <ul>
@@ -1625,7 +611,7 @@
 <h2 id="ai">第五章（AI全景报告收集）</h2>
 <h3 id="2018">中国人工智能标准化白皮书（2018版）</h3>
 <ul>
-<li>适合初级入门，了解全貌。技术等级：★☆☆☆☆, <a href="http://www.sgic.gov.cn/upload/f1ca3511-05f2-43a0-8235-eeb0934db8c7/20180122/5371516606048992.pdf"><code>源链接</code></a> <a href="../pdf/AI/人工智能标准化白皮书(2018版).pdf"><code>本地下载</code></a> </li>
+<li>适合初级入门，了解全貌。技术等级：★☆☆☆☆, <a href="http://www.sgic.gov.cn/upload/f1ca3511-05f2-43a0-8235-eeb0934db8c7/20180122/5371516606048992.pdf"><code>源链接</code></a> <a href="../pdf/AI/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A0%87%E5%87%86%E5%8C%96%E7%99%BD%E7%9A%AE%E4%B9%A6%282018%E7%89%88%29.pdf"><code>本地下载</code></a> </li>
 <li>人工智能概述 </li>
 <li>人工智能发展现状及趋势 <ul>
 <li>人工智能关键技术 (机器学习, 知识图谱,  自然语言处理, 视觉) </li>
@@ -1667,18 +653,18 @@
 <h3 id="_15">高盛人工智能报告中文版</h3>
 <ul>
 <li>偏向于行业应用</li>
-<li>技术等级：★★☆☆☆,  <a href="http://www.peol.org/static/temimg/857059.pdf"><code>源链接</code></a> <a href="../pdf/AI/高盛人工智能报告中文版.pdf"><code>本地下载</code></a></li>
+<li>技术等级：★★☆☆☆,  <a href="http://www.peol.org/static/temimg/857059.pdf"><code>源链接</code></a> <a href="../pdf/AI/%E9%AB%98%E7%9B%9B%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8A%A5%E5%91%8A%E4%B8%AD%E6%96%87%E7%89%88.pdf"><code>本地下载</code></a></li>
 </ul>
 <h3 id="_16">德勤中国人工智能产业白皮书</h3>
 <ul>
 <li>偏向于商业化应用，产业链，投资</li>
-<li>技术等级：★★☆☆☆, <a href="https://www2.deloitte.com/content/dam/Deloitte/cn/Documents/innovation/deloitte-cn-innovation-ai-whitepaper-zh-181108.pd"><code>源链接</code></a> <a href="../pdf/AI/德勤中国人工智能产业白皮书.pdf"><code>本地下载</code></a></li>
+<li>技术等级：★★☆☆☆, <a href="https://www2.deloitte.com/content/dam/Deloitte/cn/Documents/innovation/deloitte-cn-innovation-ai-whitepaper-zh-181108.pd"><code>源链接</code></a> <a href="../pdf/AI/%E5%BE%B7%E5%8B%A4%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E4%B8%9A%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf"><code>本地下载</code></a></li>
 </ul>
 <h3 id="ai-index-2018-annual-report">AI Index 2018 Annual Report</h3>
 <ul>
 <li>偏向于领域活力和技术表现研究</li>
-<li>技术等级：★★☆☆☆, <a href="https://aiindex.org/"><code>源链接</code></a> <a href="../pdf/AI/AI Index 2018 Annual Report.pdf"><code>本地下载</code></a></li>
-<li>AI Index 2017 Annual Repor 中文版 <a href="../pdf/AI/AI Index 2017 Chinese Translation.pdf"><code>本地下载</code></a></li>
+<li>技术等级：★★☆☆☆, <a href="https://aiindex.org/"><code>源链接</code></a> <a href="../pdf/AI/AI%20Index%202018%20Annual%20Report.pdf"><code>本地下载</code></a></li>
+<li>AI Index 2017 Annual Repor 中文版 <a href="../pdf/AI/AI%20Index%202017%20Chinese%20Translation.pdf"><code>本地下载</code></a></li>
 </ul>
 <h3 id="-">清华大学人工智能研究院---<a href="http://ai.tsinghua.edu.cn/kirc">知识智能研究中心</a></h3>
 <ul>
@@ -1698,83 +684,86 @@
 <li>为计算机科学相关领域的研究者提供更全面的领域知识和更具针对性的研究话题和合作者信息</li>
 </ul>
 </li>
-</ul>
-                
-                  
-                
-                
-              
-              
-                
-
-
-              
-            </article>
-          </div>
-        </div>
-      </main>
-      
-        
-<footer class="md-footer">
-    
-    <div class="md-footer-nav">
-        <nav class="md-footer-nav__inner md-grid">
-            
-            <a href="../Perspective/" title="Perspective" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-                <div class="md-flex__cell md-flex__cell--shrink">
-                    <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-                </div>
-                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                    <span class="md-flex__ellipsis">
-                        <span class="md-footer-nav__direction">
-                            Previous
-                        </span>
-                        Perspective
-                    </span>
-                </div>
-            </a>
-            
-            
-            <a href="../pdf/AI/AMiner_AI_2019.pdf" title="AI Report 2019 (PDF,Aminer)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                    <span class="md-flex__ellipsis">
-                        <span class="md-footer-nav__direction">
-                            Next
-                        </span>
-                        AI Report 2019 (PDF,Aminer)
-                    </span>
-                </div>
-                <div class="md-flex__cell md-flex__cell--shrink">
-                    <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-                </div>
-            </a>
-            
-        </nav>
-    </div>
-    
-    <div class="md-footer-meta md-typeset">
-        <div class="md-footer-meta__inner md-grid">
-            <div class="md-footer-copyright">
-                
-                <div class="md-footer-copyright__highlight">
-                    &copy; 2020, Jianan, all rights reserved.
-                </div>
-                
-                Powered by Jimmmy's Studio.&#8482
+</ul></div>
             </div>
-            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>&copy; 2020, Jianan, all rights reserved.</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
-</footer>
-      
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
     </div>
-    
-      <script src="../assets/javascripts/application.808e90bb.js"></script>
-      
-      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-      
-    
-  </body>
+</div>
+
+    </body>
 </html>
