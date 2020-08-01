@@ -1,255 +1,914 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Dynamic Knowledge Index (DKI)">
+      
+      
+      
         <meta name="author" content="JIMMMY">
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.1">
+    
+    
+      
         <title>Frontier - Dynamic Knowledge Index (DKI)</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-
-        <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-XXXXXXXX-X', 'auto');
-            ga('send', 'pageview');
-        </script> 
-    </head>
-
-    <body>
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="..">Dynamic Knowledge Index (DKI)</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem">
-                                <a href=".." class="nav-link">Home</a>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dynamics 2020 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="./" class="dropdown-item active">Frontier</a>
-</li>
-                                    
-<li>
-    <a href="../Strategy2020/" class="dropdown-item">Strategy</a>
-</li>
-                                    
-<li>
-    <a href="../Perspective2020/" class="dropdown-item">Perspective</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dynamics 2019 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../Frontier2019/" class="dropdown-item">Frontier</a>
-</li>
-                                    
-<li>
-    <a href="../Strategy2019/" class="dropdown-item">Strategy</a>
-</li>
-                                    
-<li>
-    <a href="../Perspective2019/" class="dropdown-item">Perspective</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Artificial Intelligence <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../AI/" class="dropdown-item">AI Map</a>
-</li>
-                                    
-<li>
-    <a href="../pdf/AI/AMiner_AI_2019.pdf" class="dropdown-item">AI Report 2019 (PDF,Aminer)</a>
-</li>
-                                    
-<li>
-    <a href="../AI%20Index%202018%20Annual%20Report/" class="dropdown-item">AI Index 2018 Annual Report</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Self-driving <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../Self-driving/" class="dropdown-item">Self-driving Map</a>
-</li>
-                                    
-<li>
-    <a href="../pdf/selfdriving_new.pdf" class="dropdown-item">Self-driving v2 (PDF,Aminer)</a>
-</li>
-                                    
-<li>
-    <a href="../pdf/selfdriving_basic.pdf" class="dropdown-item">Self-driving v1 (PDF,Aminer)</a>
-</li>
-                                    
-<li>
-    <a href="../Flying%20car/" class="dropdown-item">Flying Car Map</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blockchain <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../pdf/blockchain_public.pdf" class="dropdown-item">Blockchain Overview (PDF,Aminer)</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../tutorials_ML_RL/" class="dropdown-item">ML&RL</a>
-</li>
-                                    
-<li>
-    <a href="../tutorials_Robotics/" class="dropdown-item">Robotics</a>
-</li>
-                                    
-<li>
-    <a href="../tutorials_Miscellaneous/" class="dropdown-item">Miscellaneous</a>
-</li>
-                                    
-<li>
-    <a href="../howToRobotics/" class="dropdown-item">How to Study Robotics</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Gadgets <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="../Tools/" class="dropdown-item">Tools</a>
-</li>
-                                    
-<li>
-    <a href="../Mirror/" class="dropdown-item">Mirror</a>
-</li>
-                                    
-<li>
-    <a href="../Lifestyle/" class="dropdown-item">Lifestyle</a>
-</li>
-                                    
-<li>
-    <a href="../Git/" class="dropdown-item">Git</a>
-</li>
-                                    
-<li>
-    <a href="../Blog/" class="dropdown-item">Blog Deployment</a>
-</li>
-                                    
-<li>
-    <a href="../howToSearch/" class="dropdown-item">How to Search</a>
-</li>
-                                    
-<li>
-    <a href="../KnowledgeSystem/" class="dropdown-item">Knowledge System</a>
-</li>
-                                    
-<li>
-    <a href="../thinkTank/" class="dropdown-item">Think Tanks</a>
-</li>
-                                    
-<li>
-    <a href="../MgtFinEco/" class="dropdown-item">MgtFinEco</a>
-</li>
-                                    
-<li>
-    <a href="../howToBuyFunds/" class="dropdown-item">Funds</a>
-</li>
-                                    
-<li>
-    <a href="../Hangzhou/" class="dropdown-item">How to Hangzhou</a>
-</li>
-                                    
-<li>
-    <a href="../howToBuyCars/" class="dropdown-item">How to Cars</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" href=".." class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="../Strategy2020/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.5d00201e.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.816e8abc.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#3f51b5">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#frontier2020" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-header-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)">
+      
+  <img src="../logo7.gif" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Dynamic Knowledge Index (DKI)
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Frontier
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)">
+      
+  <img src="../logo7.gif" alt="logo">
+
+    </a>
+    Dynamic Knowledge Index (DKI)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-level="1"><a href="#frontier" class="nav-link">Frontier</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+      
+      
+      
 
-<h1 id="frontier">Frontier</h1>
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Dynamics 2020
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Dynamics 2020" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Dynamics 2020
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Frontier
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Frontier" class="md-nav__link md-nav__link--active">
+      Frontier
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0727-hinton" class="md-nav__link">
+    0727 深度学习之父Hinton：下一代神经网络
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0726-deepmind" class="md-nav__link">
+    0726 通用强化学习用算法发现算法：DeepMind 数据驱动「价值函数」自我更新
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0725-gpt-3" class="md-nav__link">
+    0725 GPT-3发布
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0308-ai" class="md-nav__link">
+    0308 谷歌打造通过AI学走路的四足机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0117" class="md-nav__link">
+    0117 斯坦福打造鸽子机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0105" class="md-nav__link">
+    0105 强化学习基础
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Strategy2020/" title="Strategy" class="md-nav__link">
+      Strategy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Perspective2020/" title="Perspective" class="md-nav__link">
+      Perspective
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Dynamics 2019
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Dynamics 2019" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Dynamics 2019
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Frontier2019/" title="Frontier" class="md-nav__link">
+      Frontier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Strategy2019/" title="Strategy" class="md-nav__link">
+      Strategy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Perspective2019/" title="Perspective" class="md-nav__link">
+      Perspective
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Artificial Intelligence
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Artificial Intelligence" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Artificial Intelligence
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AI/" title="AI Map" class="md-nav__link">
+      AI Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/AI/AMiner_AI_2019.pdf" title="AI Report 2019 (PDF,Aminer)" class="md-nav__link">
+      AI Report 2019 (PDF,Aminer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../AI%20Index%202018%20Annual%20Report/" title="AI Index 2018 Annual Report" class="md-nav__link">
+      AI Index 2018 Annual Report
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Self-driving
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Self-driving" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Self-driving
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Self-driving/" title="Self-driving Map" class="md-nav__link">
+      Self-driving Map
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/selfdriving_new.pdf" title="Self-driving v2 (PDF,Aminer)" class="md-nav__link">
+      Self-driving v2 (PDF,Aminer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/selfdriving_basic.pdf" title="Self-driving v1 (PDF,Aminer)" class="md-nav__link">
+      Self-driving v1 (PDF,Aminer)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Flying%20car/" title="Flying Car Map" class="md-nav__link">
+      Flying Car Map
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Blockchain
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Blockchain
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pdf/blockchain_public.pdf" title="Blockchain Overview (PDF,Aminer)" class="md-nav__link">
+      Blockchain Overview (PDF,Aminer)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Tutorials
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials_ML_RL/" title="ML&RL" class="md-nav__link">
+      ML&RL
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials_Robotics/" title="Robotics" class="md-nav__link">
+      Robotics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tutorials_Miscellaneous/" title="Miscellaneous" class="md-nav__link">
+      Miscellaneous
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToRobotics/" title="How to Study Robotics" class="md-nav__link">
+      How to Study Robotics
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Gadgets
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Gadgets" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Gadgets
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Tools/" title="Tools" class="md-nav__link">
+      Tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Mirror/" title="Mirror" class="md-nav__link">
+      Mirror
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Lifestyle/" title="Lifestyle" class="md-nav__link">
+      Lifestyle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Git/" title="Git" class="md-nav__link">
+      Git
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Blog/" title="Blog Deployment" class="md-nav__link">
+      Blog Deployment
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToSearch/" title="How to Search" class="md-nav__link">
+      How to Search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../KnowledgeSystem/" title="Knowledge System" class="md-nav__link">
+      Knowledge System
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../thinkTank/" title="Think Tanks" class="md-nav__link">
+      Think Tanks
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../MgtFinEco/" title="MgtFinEco" class="md-nav__link">
+      MgtFinEco
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToBuyFunds/" title="Funds" class="md-nav__link">
+      Funds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Hangzhou/" title="How to Hangzhou" class="md-nav__link">
+      How to Hangzhou
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../howToBuyCars/" title="How to Cars" class="md-nav__link">
+      How to Cars
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0727-hinton" class="md-nav__link">
+    0727 深度学习之父Hinton：下一代神经网络
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0726-deepmind" class="md-nav__link">
+    0726 通用强化学习用算法发现算法：DeepMind 数据驱动「价值函数」自我更新
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0725-gpt-3" class="md-nav__link">
+    0725 GPT-3发布
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0308-ai" class="md-nav__link">
+    0308 谷歌打造通过AI学走路的四足机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0117" class="md-nav__link">
+    0117 斯坦福打造鸽子机器人
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0105" class="md-nav__link">
+    0105 强化学习基础
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="frontier2020">Frontier2020</h1>
 <p>Collected by Jianan, 2020. 本章节会实时收录全球科技动态。部分文字从原文直接引用，如有侵权，立即删除。本文仅供个人参考学习，不作商业用途。</p>
 <div class="toc">
 <ul>
-<li><a href="#frontier">Frontier</a><ul>
+<li><a href="#frontier2020">Frontier2020</a><ul>
 <li><a href="#0727-hinton">0727 深度学习之父Hinton：下一代神经网络</a></li>
 <li><a href="#0726-deepmind">0726 通用强化学习用算法发现算法：DeepMind 数据驱动「价值函数」自我更新</a></li>
 <li><a href="#0725-gpt-3">0725 GPT-3发布</a></li>
@@ -265,111 +924,115 @@
 <p>第一种方法，以BERT和变分自编码器为例，使用了深度神经网络来重建其输入。这种方法对于图像来说是有问题的，因为网络的最深层需要对图像的精细细节进行编码。</p>
 <p>第二种方法是Becker和Hinton在1992年提出的:当给定相同图像的两个不同片段作为输入时，训练深度神经网络的两个副本以产生具有高互信息的输出向量。设计此方法的目的是使表征形式不受输入无关细节的束缚。</p>
 <p>Geoffrey Hinton现在是多伦多大学的计算机科学系荣誉退休教授，Google的副总裁兼工程研究员，以及Vector Institute的首席科学顾问。他最早使用反向传播学习单词嵌入，对神经网络研究的其他贡献包括玻尔兹曼机、分布式表示、时延神经网络、专家混合、变分学习和深度学习。2018年，Geoffrey Hinton因在深度学习方面的贡献与Yoshua Bengio、Yann LeCun一同被授予了图灵奖。</p>
-<p><a href="#Frontier">Back to Top</a></p>
+<p><a href="#frontier2020">Back to Top</a></p>
 <h3 id="0726-deepmind">0726 <a href="https://mp.weixin.qq.com/s/GcjoZfasWNZWlTC_xP1_wg">通用强化学习用算法发现算法：DeepMind 数据驱动「价值函数」自我更新</a></h3>
 <blockquote>
 <p>击败卡斯帕罗夫的「深蓝」并不是真正的人工智能，它过度依赖了人类设计的规则，而最近DeepMind的一项深度强化学习新研究表明，不用人工介入，完全数据驱动，算法自己就能发现算法。</p>
 </blockquote>
 <p>DeepMind最近引入了一种新的元学习方法，可以自动生成强化学习算法，称为学习策略梯度（LPG）。研究人员认为，该算法可以从数据中自动发现更新规则，而且能更好地适应特定环境，它既包括预测什么（价值函数），又包括如何从中学习，如何与环境交互。该元学习方法的目标是从环境和初始代理参数的分布中寻找最优的更新规则。</p>
 <p>本文首次尝试了结合「预测内容」和「如何进行引导」来元学习完整的RL的更新规则，从而取代了一些现有的RL概念。但是至少证明了，强化学习从玩具环境迁移到具有挑战性的基准是可能的。DeepMind的这一研究，让我们朝着通用 RL 算法又迈进了一步。</p>
-<p><a href="#Frontier">Back to Top</a></p>
+<p><a href="#frontier2020">Back to Top</a></p>
 <h3 id="0725-gpt-3">0725 <a href="http://www.myzaker.com/article/5f14f4f18e9f09158f23055f">GPT-3发布 </a></h3>
 <p><strong>知识点： GPT = Generative Pre-training Transformer， 是一种自然语言处理算法。这种算法让两个神经网络通过竞争相互完善生成一个处理语言的模型。</strong></p>
 <p>GPT 是 Generative Pre-training Transformer 的简称，是由 Alec Radford 编写的语言模型，2018 年由埃隆 · 马斯克的人工智能研究实验室 OpenAI 发布。 它采用了生成式语言模型（两个神经网络通过竞争相互完善），通过对不同的书面材料集与长篇连载文本的预训练，能够获取世界知识并处理长程依赖关系。</p>
 <p>GPT-2 于 2019 年 2 月宣布，是一个无监督的转化语言模型，它是在 800 万份文档上训练出来的，共 40GB 的文本，来自通过 Reddit 提交分享的文章。埃隆 · 马斯克并不愿意发布它，因为他担心它可能被用来向社交网络发送假新闻。</p>
 <p>2020 年 5 月，OpenAI 发布了 GPT-3，这个模型包含的参数比 GPT-2 多了两个数量级（1750 亿 vs 15 亿个参数），它比 GPT-2 有了极大的改进。</p>
 <p>给予任何文本提示，GPT-3 将返回一个文本完成，试图匹配用户给它的模式。用户可以给它 " 编程 "，只需向它展示几个希望它做的例子，它就会提供一篇完整的文章或故事，比如下面的文字，完全由 GPT-3 编写。</p>
+<p><a href="#frontier2020">Back to Top</a></p>
 <h3 id="0308-ai">0308 <a href="https://mp.weixin.qq.com/s/m-EXDVjnRXqX4WJLkqTajg">谷歌打造通过AI学走路的四足机器人</a></h3>
 <p>谷歌，加州大学伯克利分校和佐治亚理工学院的研究人员联合发表了一篇论文，构建了一个通过AI自学走路的四足机器人，并将它取名为“RainbowDash”。</p>
 <p><strong>Rainbow Dash结合了深度学习和强化学习两种不同类型的AI技术。</strong>通过深度学习，系统可以处理和评估来自其身处环境的原始输入数据；通过强化学习，算法可以反复试验，以学习如何执行任务，并根据完成的程度来获得奖励和惩罚。也就是说，通过上述的这种方式，机器人便可以在其不了解环境中实现自动控制策略</p>
-<p><img alt="20200205141930" src="../fig/6400.gif" /></p>
-<p><a href="#Frontier">Back to Top</a></p>
+<p><img src = '/fig/6400.gif' width=250></p>
+<p><a href="#frontier2020">Back to Top</a></p>
 <h3 id="0117">0117 <a href="https://mp.weixin.qq.com/s/bbIfNbYCQiov-RMBkQN-cA">斯坦福打造鸽子机器人</a></h3>
 <p>斯坦福的研究人员制造了一种半生物鸽子机器人——PigeonBot, 并提出了一些新的研究成果，准确地了解了鸟类如何通过改变翅膀的形状来维持、控制飞行。</p>
-<p><img alt="20200205141930" src="../fig/20200205141930.gif" /></p>
-<p><a href="#Frontier">Back to Top</a></p>
+<p><img src = '/fig/20200205141930.gif' width=250></p>
+<p><a href="#frontier2020">Back to Top</a></p>
 <h3 id="0105">0105 <a href="https://mp.weixin.qq.com/s/9CRkNgmIeE83Z863T_CwEw">强化学习基础</a></h3>
 <p>强化学习（RL）是现代人工智能领域中最热门的研究主题之一，其普及度还在不断增长。本文介绍了开始学习RL需要了解的核心要素</p>
-<p><a href="#Frontier">Back to Top</a></p></div>
-            </div>
+<p><a href="#frontier2020">Back to Top</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
         </div>
-
-        <footer class="col-md-12">
-            <hr>
-                <p>&copy; 2020, Jianan, all rights reserved.</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../js/base.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
-        <script src="../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </main>
+      
+        
+<footer class="md-footer">
+    
+    <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+            
+            <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+                <div class="md-flex__cell md-flex__cell--shrink">
+                    <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+                </div>
+                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                    <span class="md-flex__ellipsis">
+                        <span class="md-footer-nav__direction">
+                            Previous
+                        </span>
+                        Home
+                    </span>
+                </div>
+            </a>
+            
+            
+            <a href="../Strategy2020/" title="Strategy" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+                <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                    <span class="md-flex__ellipsis">
+                        <span class="md-footer-nav__direction">
+                            Next
+                        </span>
+                        Strategy
+                    </span>
+                </div>
+                <div class="md-flex__cell md-flex__cell--shrink">
+                    <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+                </div>
+            </a>
+            
+        </nav>
+    </div>
+    
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    &copy; 2020, Jianan, all rights reserved.
+                </div>
+                
+                Powered by Jimmmy's Studio.&#8482
             </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+            
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+</footer>
+      
     </div>
-</div>
-
-    </body>
+    
+      <script src="../assets/javascripts/vendor.592d4e23.min.js"></script>
+      <script src="../assets/javascripts/bundle.073197b2.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.01088dc6.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
 </html>
