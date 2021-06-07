@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -14,8 +12,9 @@
       
         <meta name="author" content="JIMMMY">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.1">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.7">
     
     
       
@@ -23,22 +22,24 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.5d00201e.min.css">
-      
-        <link rel="stylesheet" href="../assets/stylesheets/palette.816e8abc.min.css">
-      
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
       
         
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
-        <meta name="theme-color" content="#3f51b5">
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
       
     
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
@@ -46,7 +47,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -57,8 +58,12 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -76,45 +81,49 @@
     </div>
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-header-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-header__button md-logo" aria-label="Dynamic Knowledge Index (DKI)" data-md-component="logo">
       
   <img src="../logo7.gif" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             Dynamic Knowledge Index (DKI)
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Self-driving Map
             
           </span>
         </div>
-      
+      </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
@@ -136,8 +145,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -145,12 +152,16 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)">
+    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)" data-md-component="logo">
       
   <img src="../logo7.gif" alt="logo">
 
@@ -164,276 +175,279 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Dynamics 2021
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Dynamics 2021" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
         Dynamics 2021
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Dynamics 2021" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dynamics 2021
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontier2021/" class="md-nav__link">
+        Frontier
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strategy2021/" class="md-nav__link">
+        Strategy
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perspective2021/" class="md-nav__link">
+        Perspective
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Frontier2021/" title="Frontier" class="md-nav__link">
-      Frontier
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy2021/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective2021/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Dynamics 2020
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Dynamics 2020" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
         Dynamics 2020
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Dynamics 2020" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Dynamics 2020
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontier2020/" class="md-nav__link">
+        Frontier
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strategy2020/" class="md-nav__link">
+        Strategy
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perspective2020/" class="md-nav__link">
+        Perspective
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Frontier2020/" title="Frontier" class="md-nav__link">
-      Frontier
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy2020/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective2020/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
-    <label class="md-nav__link" for="nav-4">
-      Dynamics 2019
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Dynamics 2019" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
         Dynamics 2019
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Dynamics 2019" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Dynamics 2019
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontier2019/" class="md-nav__link">
+        Frontier
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strategy2019/" class="md-nav__link">
+        Strategy
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perspective2019/" class="md-nav__link">
+        Perspective
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Frontier2019/" title="Frontier" class="md-nav__link">
-      Frontier
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy2019/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective2019/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Artificial Intelligence
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Artificial Intelligence" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
         Artificial Intelligence
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Artificial Intelligence" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Artificial Intelligence
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI/" class="md-nav__link">
+        AI Map
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/AI/AMiner_AI_2019.pdf" class="md-nav__link">
+        AI Report 2019 (PDF,Aminer)
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI%20Index%202018%20Annual%20Report/" class="md-nav__link">
+        AI Index 2018 Annual Report
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../AI/" title="AI Map" class="md-nav__link">
-      AI Map
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/AI/AMiner_AI_2019.pdf" title="AI Report 2019 (PDF,Aminer)" class="md-nav__link">
-      AI Report 2019 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../AI%20Index%202018%20Annual%20Report/" title="AI Index 2018 Annual Report" class="md-nav__link">
-      AI Index 2018 Annual Report
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
@@ -441,67 +455,63 @@
       
 
   
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+  
+  
     
-    <label class="md-nav__link" for="nav-6">
-      Self-driving
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Self-driving" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
         Self-driving
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Self-driving" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Self-driving
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
-          
-          
-
+            
   
-
-
-  <li class="md-nav__item md-nav__item--active">
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Self-driving Map
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Self-driving Map
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Self-driving Map" class="md-nav__link md-nav__link--active">
-      Self-driving Map
-    </a>
-    
+      </a>
       
+        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -824,343 +834,345 @@
     </ul>
   
 </nav>
-    
-  </li>
+      
+    </li>
+  
 
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/selfdriving_new.pdf" class="md-nav__link">
+        Self-driving v2 (PDF,Aminer)
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/selfdriving_basic.pdf" class="md-nav__link">
+        Self-driving v1 (PDF,Aminer)
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Flying%20car/" class="md-nav__link">
+        Flying Car Map
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../pdf/selfdriving_new.pdf" title="Self-driving v2 (PDF,Aminer)" class="md-nav__link">
-      Self-driving v2 (PDF,Aminer)
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/selfdriving_basic.pdf" title="Self-driving v1 (PDF,Aminer)" class="md-nav__link">
-      Self-driving v1 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Flying%20car/" title="Flying Car Map" class="md-nav__link">
-      Flying Car Map
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
-    
-    <label class="md-nav__link" for="nav-7">
-      Blockchain
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
         Blockchain
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Blockchain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/blockchain_public.pdf" class="md-nav__link">
+        Blockchain Overview (PDF,Aminer)
+      </a>
+    </li>
+  
+
           
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/blockchain_public.pdf" title="Blockchain Overview (PDF,Aminer)" class="md-nav__link">
-      Blockchain Overview (PDF,Aminer)
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
-    
-    <label class="md-nav__link" for="nav-8">
-      Tutorials
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      <label class="md-nav__link" for="__nav_8">
         Tutorials
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials_ML_RL/" class="md-nav__link">
+        ML&RL
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials_Robotics/" class="md-nav__link">
+        Robotics
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials_Miscellaneous/" class="md-nav__link">
+        Miscellaneous
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../tutorials_ML_RL/" title="ML&RL" class="md-nav__link">
-      ML&RL
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToRobotics/" class="md-nav__link">
+        How to Study Robotics
+      </a>
+    </li>
+  
+
           
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials_Robotics/" title="Robotics" class="md-nav__link">
-      Robotics
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials_Miscellaneous/" title="Miscellaneous" class="md-nav__link">
-      Miscellaneous
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToRobotics/" title="How to Study Robotics" class="md-nav__link">
-      How to Study Robotics
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
-    
-    <label class="md-nav__link" for="nav-9">
-      Gadgets
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Gadgets" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      <label class="md-nav__link" for="__nav_9">
         Gadgets
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Gadgets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Gadgets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Blog/" class="md-nav__link">
+        Blog Deployment
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Tools/" title="Tools" class="md-nav__link">
-      Tools
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mirror/" class="md-nav__link">
+        Mirror
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToSearch/" class="md-nav__link">
+        How to Search
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thinkTank/" class="md-nav__link">
+        Think Tanks
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Git/" title="Git" class="md-nav__link">
-      Git
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KnowledgeSystem/" class="md-nav__link">
+        Knowledge System
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MgtFinEco/" class="md-nav__link">
+        MgtFinEco
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToBuyFunds/" class="md-nav__link">
+        Funds
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Blog/" title="Blog Deployment" class="md-nav__link">
-      Blog Deployment
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lifestyle/" class="md-nav__link">
+        Lifestyle
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hangzhou/" class="md-nav__link">
+        How to Hangzhou
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToBuyCars/" class="md-nav__link">
+        How to Cars
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Mirror/" title="Mirror" class="md-nav__link">
-      Mirror
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToSearch/" title="How to Search" class="md-nav__link">
-      How to Search
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../thinkTank/" title="Think Tanks" class="md-nav__link">
-      Think Tanks
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../KnowledgeSystem/" title="Knowledge System" class="md-nav__link">
-      Knowledge System
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../MgtFinEco/" title="MgtFinEco" class="md-nav__link">
-      MgtFinEco
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToBuyFunds/" title="Funds" class="md-nav__link">
-      Funds
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Lifestyle/" title="Lifestyle" class="md-nav__link">
-      Lifestyle
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Hangzhou/" title="How to Hangzhou" class="md-nav__link">
-      How to Hangzhou
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToBuyCars/" title="How to Cars" class="md-nav__link">
-      How to Cars
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
   </ul>
@@ -1170,23 +1182,23 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -1514,15 +1526,12 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  
-                
-                
-                <h1 id="self-driving">无人驾驶全景（Self-driving）</h1>
+                <h1 id="self-driving">无人驾驶全景（Self-driving）<a class="headerlink" href="#self-driving" title="Permanent link">&para;</a></h1>
 <p>Summarized by Jianan, 2019.01.   本文初稿以Aminer报告为模板，进行了适当增删和修改。仅供个人参考，禁止用于商业用途。</p>
 <div class="toc">
 <ul>
@@ -1581,17 +1590,17 @@
 </li>
 </ul>
 </div>
-<h2 id="_1">第一章</h2>
-<h3 id="_2">自动驾驶汽车等级标准</h3>
+<h2 id="_1">第一章<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">自动驾驶汽车等级标准<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <p><img alt="1548491977025" src="../fig/1548491977025.png" /></p>
 <p>通常大家谈论的无人驾驶汽车对应该标准的 Level 4 和 Level 5 级。</p>
 <p>在中国， 与无人驾驶汽车这个术语相关的概念还有<strong>智能汽车</strong>。相对于无人驾驶汽车概念，智能汽车定义涵盖的范围更广。《中国制造 2025》 中将智能网联汽车定义为搭载先进的车载传感器、控制器、执行器等装置，并融合现代通信与网络技术，实现车内网、车外网、车际网的无缝链接，具备信息共享、复杂环境感知、智能化决策、自动化协同等控制功能，与智能公路和辅助设施组成的智能出行系统。</p>
-<h3 id="_3">无人驾驶技术框图</h3>
+<h3 id="_3">无人驾驶技术框图<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <p><img alt="1548492586164" src="../fig/1548492586164.png" /></p>
 <p><img alt="1548493635472" src="../fig/1548493635472.png" /></p>
-<h3 id="_4">自动驾驶技术的价值</h3>
+<h3 id="_4">自动驾驶技术的价值<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p><img alt="1548492658522" src="../fig/1548492658522.png" /></p>
-<h3 id="_5">无人驾驶发展图谱</h3>
+<h3 id="_5">无人驾驶发展图谱<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p><img alt="1548492698350" src="../fig/1548492698350.png" /></p>
 <ul>
 <li>DARPA 于 2004 年—2007 年共举办了 3 届DARPA 无人驾驶挑战赛 </li>
@@ -1604,13 +1613,13 @@
 <li>2016 年 12 月， 谷歌将无人驾驶业务独立出来，成立了独立公司——<strong>Waymo</strong>。 自 2017年 10 月， Google Waymo 已在美国凤凰城 Chandler 镇 100 平方英里范围内，对 600 辆克莱斯勒插电式混合动力 Level 4 级自动驾驶汽车进行社会公测 </li>
 <li>2018 新款奥迪 A8 是全球首款量产搭载 Level 3 级别的自动驾驶系统的车型， 其携带有 12 个超声波传感器、 5 个摄像机、 5 个毫米波雷达、 1 个激光雷达、 1 个红外线摄像机共 24 个车载传感器， 可以在60km/h 以下车速时实现 Level 3 级自动驾驶 </li>
 </ul>
-<h3 id="_6">中国无人驾驶发展图谱</h3>
+<h3 id="_6">中国无人驾驶发展图谱<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <p><img alt="1548493345362" src="../fig/1548493345362.png" /></p>
 <ul>
 <li>百度公司于 2013 年开始了百度无人驾驶汽车项目，其技术核心是“百度汽车大脑”，包括高精度地图、定位、感知、智能决策与控制四大模块</li>
 <li>2018 年 7 月 4 日， 百度在第二届百度 AI 开发者大会(Baidu Create 2018) 上宣布，与厦门金龙合作生产的首款 Level 4 级自驾巴士“阿波龙” 已经量产下线 </li>
 </ul>
-<h3 id="dmv">加州车辆管理局(DMV)年度报告</h3>
+<h3 id="dmv">加州车辆管理局(DMV)年度报告<a class="headerlink" href="#dmv" title="Permanent link">&para;</a></h3>
 <p>本部分取自量子位公众号<a href="https://mp.weixin.qq.com/s/csjbmAhgUBjpqKyhMFtTbA">原文</a>。报告来源于加州机车辆管理局(DMV)自动驾驶接管年度报告/<a href="https://www.dmv.ca.gov/portal/dmv/detail/vr/autonomous/disengagement_report_2018">Autonomous Vehicle Disengagement Reports 2018</a>。</p>
 <p>在加州机车辆管理局（DMV）刚刚披露的这份年度报告中，达到披露标准的48家自动驾驶路测单位，是各个公司自动驾驶实力的一个佐证。这份报告，统计的时间周期是2017年12月1日到2018年11月30日。主要维度有三个：<strong>车辆数</strong>、<strong>里程数</strong>、<strong>人工接管次数</strong>。人工接管次数指报告期间自动驾驶汽车出现脱离，涉及人工接管的次数。车辆数是报告期间在加州公开道路上进行测试的自动驾驶汽车的数量。里程数是指报告期间自动驾驶汽车路测的里程。2018年，提交报告的48家公司一共部署了496辆自动驾驶测试汽车，行驶路程3,258,074公里，相当于围绕着赤道跑了81圈还多。</p>
 <p>持有加州路测许可证的公司一共有62家，但其中部分公司2018年没有进行路测，比如博世；还有一部分公司因为取得时间较晚，DMV没有要求他们提交2018年的报告，比如图森；另外的一些公司没有接管的数据。</p>
@@ -1624,68 +1633,68 @@
 <li><strong>苹果</strong>倒数第二。苹果无人车每次人工接管后平均只能撑<strong>1.8公里</strong>，相当于北京故宫正门到神武门之间的距离，库克家的自动驾驶只能从皇帝家正门跑到后门，也就个扫地车水平。而Uber的<strong>0.6公里</strong>更是让人笑掉大牙，只相当于学校操场的一圈半，看来去Uber当个安全员都要一直手忙脚乱，得加工资呀。如此惨淡的技术成绩，也并非完全意料之外。就在上个月，苹果的自动驾驶项目泰坦（Project Titan）200多名员工被遣散，同时最近的财报也十分糟糕，iPhone的营收史上首次下跌，负责销售的SVP安吉拉·阿伦茨（Angela Ahrendts）即将离职。乔布斯的棺材板都要压不住了，哪还有闲心认真搞自动驾驶。</li>
 <li><strong>Uber</strong>倒数第一，2018年3月在亚利桑那路测时闹出了人命，在亚利桑那的路测资格被吊销。在别家纷纷推出自动驾驶打车、园区公交、货运业务的时候，Uber的自动驾驶几乎停滞了一年。看到0.6公里这个成绩，现在你知道为什么出事的偏偏是Uber了吧。</li>
 </ul>
-<h3 id="_7">技术公司名片</h3>
-<h4 id="waymo">Waymo</h4>
+<h3 id="_7">技术公司名片<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="waymo">Waymo<a class="headerlink" href="#waymo" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>1750亿美元（大摩评估）</p>
 <p><strong>进展：</strong>路测里程达1000万英里；无人出租服务Waymo One已在亚利桑那州开启商业化运营——还非无限制乘客状态，也仍有安全员在驾驶位。</p>
 <p><img alt="waymo" src="../fig/waymo.JPG" /></p>
-<h4 id="gm-cruise">GM Cruise</h4>
+<h4 id="gm-cruise">GM Cruise<a class="headerlink" href="#gm-cruise" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>115亿美元</p>
 <p><strong>进展：</strong>2018年6月1日，软银愿景基金注资22.5亿美元，占股19.6%。通用汽车宣布将在2019年实现自动驾驶规模化商用。</p>
 <p><img alt="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Cruise_Automation_Bolt_EV_third_generation_in_San_Francisco.jpg/1024px-Cruise_Automation_Bolt_EV_third_generation_in_San_Francisco.jpg" /></p>
-<h4 id="zoox">Zoox</h4>
+<h4 id="zoox">Zoox<a class="headerlink" href="#zoox" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>32亿美元</p>
 <p><strong>进展：</strong>2018年7月获5亿美元B轮融资，由办公协作公司Atlassian的联合创始人Michael Cannon-Brookes以及春华资本领投，老股东有IDG和腾讯。Zoox已累计融资8亿美元。B轮融资后，Zoox还更换了创始CEO，并聘请职业经理人——前英特尔执行董事、首席战略官Aicha Evans（艾莎·埃文斯）出任CEO，她也是硅谷最有权势的黑人女性高管之一。此外，Zoox还拿下了加州第一张无人车载客许可证。</p>
 <p><img alt="zoox" src="../fig/zoox.JPG" /></p>
-<h4 id="nuro">Nuro</h4>
+<h4 id="nuro">Nuro<a class="headerlink" href="#nuro" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>27亿美元</p>
 <p><strong>进展：</strong>2019年2月宣布完成软银愿景基金投资的9.4亿美元新融资。加上之前高榕资本、Greylock Partners、网易创始人丁磊在内的投资，历史融资额已超过10亿美元。商业化方面，2018年12月18日开始，Nuro与全美最大的生鲜连锁超市Kroger合作，率先在亚利桑那州上路配送。</p>
 <p><img alt="nuro" src="../fig/nuro.JPG" /></p>
-<h4 id="aurora">Aurora</h4>
+<h4 id="aurora">Aurora<a class="headerlink" href="#aurora" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>25亿美元</p>
 <p><strong>进展：</strong>前Google无人车负责人Chris Urmson创办。2019年2月完成5.3亿美元新融资，亚马逊、红杉资本等入股。Aurora还与传统车企大众、现代以及中国的拜腾等车厂达成合作。</p>
 <p><img alt="Aurora" src="../fig/Aurora.JPG" /></p>
-<h4 id="ponyai">Pony.ai (小马智行)</h4>
+<h4 id="ponyai">Pony.ai (小马智行)<a class="headerlink" href="#ponyai" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>10亿美元</p>
 <p><strong>进展：</strong>2018年7月宣布完成了 1.02 亿美元A1轮融资，估值超过10亿美元，累计融资额达2.3亿美元。运营方面，Pony.ai目前已在广州南沙部署规模化车队，并推出了打车程序提供试乘。</p>
 <p><img alt="pony" src="../fig/pony.JPG" /></p>
-<h4 id="_8">图森未来</h4>
+<h4 id="_8">图森未来<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>10亿美元</p>
 <p><strong>进展：</strong>2019年2月宣布完成9500万美元新融资，新晋独角兽，是首家迈步独角兽的中国自动驾驶货运公司。图森累计融资额已达到1亿7800万美元。在美国，图森未来无人驾驶卡车日均完成3-5次货物运输，服务十三位终端货主客户。将在今年六月将其无人驾驶卡车车队规模扩充到50台。</p>
 <p><img alt="tu" src="../fig/tu.JPG" /></p>
-<h4 id="weride">WeRide (文远知行)</h4>
+<h4 id="weride">WeRide (文远知行)<a class="headerlink" href="#weride" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>6亿美元</p>
 <p><strong>进展：</strong>最近一轮融资由雷诺日产三菱联盟Alliance RNM的战略领投，汉富资本、安托资本、德昌电机、何小鹏、翼迪投资 Idinvest Partners、洋智资本 OceanIQ Capital跟投，其后新增商汤科技和农银国际，规模上亿美元。技术方面，实现了暴雨路测、无GPS信号下穿越1.5公里隧道等纪录。</p>
 <p><img alt="weride" src="../fig/weride.JPG" /></p>
-<h4 id="roadstarai">Roadstar.ai</h4>
+<h4 id="roadstarai">Roadstar.ai<a class="headerlink" href="#roadstarai" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>4亿美元（新一轮投前估值8亿美元）</p>
 <p><strong>进展：</strong>累计完成1.1亿美元融资。获得丰田集团总计200万美元的开发项目，会协助丰田集团在东京奥运会部署无人大巴，以及在上海铺设雷克萨斯的无人专车。</p>
 <p><img alt="roadstar" src="../fig/roadstar.JPG" /></p>
-<h4 id="autox">AutoX</h4>
+<h4 id="autox">AutoX<a class="headerlink" href="#autox" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>1亿美元规模融资进行中。</p>
 <p><strong>进展：</strong>刚落户香港建立研发基地（创始人毕业于港科大），推出任意点对点L4无人驾驶系统xTaxi。2018年8月，AutoX在美国加州推出无人驾驶生鲜递送服务，合作伙伴近10家。已完成今日资本、联发科，上汽等加持的A轮融资。</p>
 <p><img alt="autox" src="../fig/autox.JPG" /></p>
-<h4 id="driveai">Drive.ai</h4>
+<h4 id="driveai">Drive.ai<a class="headerlink" href="#driveai" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>未披露</p>
 <p><strong>进展：</strong>2018年5月在得克萨斯州开启无人驾驶出租试运营。最近一轮融资发生在2017年，A轮，规模为5000万美元。</p>
 <p><img alt="drive" src="../fig/drive.jpg" /></p>
-<h4 id="plusai">PlusAI(智加)</h4>
+<h4 id="plusai">PlusAI(智加)<a class="headerlink" href="#plusai" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>未披露</p>
 <p><strong>进展：</strong>2018年11月，完成新一轮红杉中国领投的A+轮融资，具体金额未公布。此前获满帮集团、金沙江创投、光速中国，华创资本等机构投资。2018年3月，宣布与一汽解放达成战略合作。</p>
 <p><img alt="plus" src="../fig/plus.JPG" /></p>
-<h4 id="aimotiv">AIMotiv</h4>
+<h4 id="aimotiv">AIMotiv<a class="headerlink" href="#aimotiv" title="Permanent link">&para;</a></h4>
 <p><strong>估值：</strong>未披露</p>
 <p><strong>进展：</strong>总部位于匈牙利布达佩斯，主打摄像头方案。2018年1月获获得3800万美元C轮融资，累计融资4750万美元。知名股东有：博世、思科、三星，英伟达。</p>
 <p><img alt="aimotiv" src="../fig/aimotiv.JPG" /></p>
-<h4 id="tesla">Tesla</h4>
+<h4 id="tesla">Tesla<a class="headerlink" href="#tesla" title="Permanent link">&para;</a></h4>
 <p>最后，提到自动驾驶，可能也有人关心钢铁侠马斯克治下的特斯拉。这家自动驾驶“异类”，年度报告依然交白卷，不过依然坚持写一封洋洋洒洒写了一封略显“浮夸”的信件。特斯拉在信中表示，2018年他们没有自动驾驶路测数据。但是特斯拉已经把电动车卖到了全球各地，通过匿名的方式收集车主数据，这是一种“影子测试”方法。特斯拉的自动驾驶Autopilot行驶里程超过10亿英里（16.1亿公里）。但比起2017年，特斯拉今年稍微多了一些数据：</p>
 <blockquote>
 <p>In Q3 2018, Tesla vehicles experienced 1 crash for every 1.92 million miles driven. In the same timeframe, Tesla vehicles experienced 1 crash for every 3.34 million miles driven with Autopilot engaged.</p>
 <p>第三季度，所有特斯拉每192万英里撞一次，开了Autopilot的则334万英里撞一次。</p>
 </blockquote>
 <p><img alt="tesla" src="../fig/tesla.JPG" /></p>
-<h2 id="_9">第二章</h2>
-<h3 id="_10">环境感知</h3>
+<h2 id="_9">第二章<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_10">环境感知<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>摄像机</strong>：摄像机按照芯片类型可分为 CCD 摄像机和 CMOS 摄像机两种。<ul>
 <li>CCD 摄像机， 由光学镜头、时序及同步信号发生器、垂直驱动器及模拟/数字信号处理电路组成，具有体积小、重量轻、 低功耗、无滞后、无灼伤、低电压等特点。</li>
@@ -1707,7 +1716,7 @@
 <li><strong>超声波传感器</strong> 利用超声波的特性研制而成的， 工作在机械波波段，工作频率在 20kHz以上。超声波雷达的数据处理简单快速，检测距离较短，多用于近距离障碍物检测。超声波具有频率高、波长短、绕射现象小、 方向性好、能够成为射线而定向传播等优点。超声波雷达的不足在于距离信息不精准， 一般用于精度要求不高的地方， 如倒车雷达等。 </li>
 <li><strong>环境感知技术有两种技术路线</strong>， 一种是以摄像机为主导的<strong>多传感器融合方案</strong>， 典型代表是特斯拉。另一种是以<strong>激光雷达为主导，其他传感器为辅助</strong>的技术方案， 典型企业代表如谷歌、百度等。 前面介绍激光雷达的时候提到， 随着第三代纯固态激光雷达产品即将量产面世， 特别是成本的大幅降低， 激光雷达在自动驾驶汽车上的应用将更加普及。 当前业界有许多讨论是围绕着是否可以使用成本较低的摄像机去承担更多的环境感知任务 。</li>
 </ul>
-<h3 id="_11">定位系统</h3>
+<h3 id="_11">定位系统<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>惯性导航系统
@@ -1732,7 +1741,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="_12">决策和规划</h3>
+<h3 id="_12">决策和规划<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <p>自动驾驶汽车的行为决策与路径规划是指依据环境感知和导航子系统输出信息，通过一些特定的约束条件如无碰撞、 安全到达终点等，规划出给定起止点之间多条可选安全路径，并在这些路径中选取一条最优的路径作为车辆行驶轨迹。通常情况下， 自动驾驶汽车的决策与规划系统主要包含以下两项内容：</p>
 <ul>
 <li>路径规划： 即路径<strong>局部规划</strong>， 自动驾驶车辆中的路径规划算法会在行驶任务设定之后将完成任务的最佳路径选取出来，避免碰撞和保持安全距离。 在此过程中， 会对路径的曲率和弧长等进行综合考量， 从而实现路径选择的最优化。</li>
@@ -1743,9 +1752,9 @@
 </ul>
 </li>
 </ul>
-<h3 id="_13">自动驾驶芯片</h3>
+<h3 id="_13">自动驾驶芯片<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <p>市场上采用的自动驾驶主流芯片主要分为两种， 一种是英特尔-Mobileye 开发的Mobileye® EyeQX™系列车载计算平台。 另一种是英伟达提供的 NVIDIA Drive PX 系列车载计算平台。</p>
-<h3 id="_14">控制与执行</h3>
+<h3 id="_14">控制与执行<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <ul>
 <li>纵向控制：电机-发动机-传动模型、汽车运行模型和刹车过程模型与不同的控制算法相结合，构成了各种各样
     的纵向控制模式 。</li>
@@ -1766,13 +1775,13 @@
 </ul>
 </li>
 </ul>
-<h3 id="_15">高精地图</h3>
+<h3 id="_15">高精地图<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <p>高精地图拥有精确的车辆位置信息和丰富的道路元素数据信息，起到构建类似于人脑对于空间的整体记忆与认知的功能，可以帮助汽车预知路面复杂信息，如坡度、曲率、航向等，更好地规避潜在的风险， 是自动驾驶汽车的核心技术之一。</p>
 <ul>
 <li>高精地图相比服务于 GPS 导航系统的传统地图而言，最显著的特征是其<strong>表征路面特征的精准性</strong>。传统地图只需要做到米量级的精度就可以实现基于 GPS 的导航，而高精地图需要至少十倍以上的精度， 即达到厘米级的精度才能保证自动驾驶汽车行驶的安全。</li>
 <li>同时，高精地图还需要有比传统地图更高的<strong>实时性</strong>。由于道路路网经常会发生变化，如道路整修、 标识线磨损或重漆、交通标识改变等。这些改变都要及时反映在高精地图上，以确保自动驾驶汽车的行车安全。 </li>
 </ul>
-<h3 id="v2x">车联网 V2X</h3>
+<h3 id="v2x">车联网 V2X<a class="headerlink" href="#v2x" title="Permanent link">&para;</a></h3>
 <p>V2X 表示 Vehicle to X， 其中 X 表示基础设施(Infrastructure)、车辆(Vehicle)、 行人(Pedestrian)、 道路(Road)等。 V2X 网联通信集成了 V2N、 V2V、 V2I 和 V2P 共四类关健技术。</p>
 <ul>
 <li>V2N(Vehicle to Network，车-互联网)，通过网络将车辆连接到云服务器，能够使用云服务器上的娱乐、导航等功能。</li>
@@ -1782,32 +1791,32 @@
 </ul>
 <p>2010 年美国颁布了以 IEEE 802.11P 作为底层通信协议和 IEEE 1609 系列规范作为高层通信协议的 V2X 网联通信标准。 2015 年中国开始相关的研究工作， 2016 年国家无线电委员会确定了中国的 V2X 专用频谱。 2016 年 6月， V2X 技术测试作为第一家“国家智能网联汽车试点示范区” 及封闭测试区的重点布置场景之一。 2017 年 9月，《合作式智能交通系统车用通信系统应用层及应用数据交互标准》正式发布。</p>
 <p>V2X 技术的实现一般基于 RFID、拍照设备、车载传感器等硬件平台。 V2X 网联通信产业分为 DSRC 和 LTE-V2X 两个标准和产业阵营。 </p>
-<h3 id="_16">测试与验证技术</h3>
+<h3 id="_16">测试与验证技术<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>实测</strong>: 让车辆行驶数百万公里，以确定设计的系统是否安全并按照预期运行。该方法的困难在于必须累积的测试里程数，这可能要花费大量的时间。</li>
 <li><strong>软件在环或模型在环仿真</strong>: 另一种更可行的方法是将现实世界的测试与仿真相结合。在仿真软件所构建的各种场景中，通过算法控制车辆进行相应的应对操作， 来证明所设计的系统确实可以在各种场景下做出正确的决定， 这可以大大减少必须完成的测试里程数。</li>
 <li><strong>硬件在环仿真</strong>: 为了验证真实硬件的运行情况， 硬件在环仿真可以对其进行测试，并将预先记录的传感器数据提供给系统，此种技术路线可以降低车辆测试和验证的成本 。</li>
 </ul>
-<h3 id="ai">AI在环境感知中的应用</h3>
+<h3 id="ai">AI在环境感知中的应用<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
 <p>环境感知包括： 可行驶路面检测、 车道线检测、 路缘检测、 护栏检测、 行人检测、 机动车检测、 非机动车检测、 路标检测、 交通标志检测、 交通信号灯检测等。 对于如此复杂的路况检测， 深度学习能够满足视觉感知的高精度需求。 基于深度学习的计算机视觉，可获得较接近于人的感知能力。 有研究报告指出<strong>深度学习在算法和样本量足够的情况下，视觉感知的准确率可以达到 99.9%以上，而传统视觉算法的检测精度极限在 93%左右， 人感知的准确率一般是 95%左右</strong>。</p>
 <p>深度学习按照模型的不同可以分为 CNN、 RNN、 LSTM、 DBN 和 Autoencoder 等 5 种类型，其中 CNN（卷积神经网络） 在处理图像和视频上拥有很好的效果。深度学习一般包括输入层、卷积层、池化层、输出层等 4 种类型的神经网络层。网络的结构可以 10 层甚至上百层，一般层数越多检测精度越精准。随着网络层数和节点数的增加，可以表达更细、更多的识别物的特征， 为检测精度的提高奠定基础。 其中， 卷积层和池化层是深度学习的核心处理层： 卷积层主要是用于负责物体特征的提取， 池化层主要是负责采样。</p>
 <p>深度学习的工作一般可以分为两部分，即<strong>训练</strong>和<strong>测试</strong>。训练一般是将采集到的样本输入到线下的训练网络中，训练网络进行前向输出，调整参数让输出误差在接受范围内从而得到模型。将训练好的模型进行测试和性能评估。测试时网络可以对输入的图像和视频等进行检测和识别。通常情况下，样本的数量越多，识别的精度越高，所以样本的数量是影响深度学习精度重要的一个因素。 由此可见，深度学习需要大数据平台提供支撑。 </p>
-<h3 id="ai_1">AI在决策规划中的应用</h3>
+<h3 id="ai_1">AI在决策规划中的应用<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h3>
 <p>行为决策与路径规划是人工智能在自动驾驶汽车领域中的另一个重要应用。前期决策树、贝叶斯网络等人工智能方法已有大量应用。 近年来兴起的深度卷积神经网络与深度强化学习， 能通过大量学习实现对复杂工况的决策，并能进行在线学习优化，由于需要较多的计算资源，当前是计算机与互联网领域研究自动驾驶汽车的决策与规划处理的热门技术。</p>
 <p>随着深度强化学习的兴起，越来越多的公司和研究者把强化学习应用到无人车的行为与决策中，并取得了不错的效果。 Mobileye 公司是其中的典型代表，根据其最新发表的论文，其设计的车辆模型已经能自如地应对一些复杂的交通任务， 如双向通道变线、复杂十字路口等场景。 Mobileye 将行为决策分解成两个部分，可学习部分和不可学习部分，可学习部分是由强化学习来决策行驶需要的高级策略，不可学习部分则是按照这些策略利用动态规划来实施具体的路径规划。</p>
 <p>可学习部分是将无人车所处的环境映射成一系列抽象策略的过程。他们设计了一张策略选项图，主要包含无人车的加减速、转向以及对周围车辆的反应，并利用策略网络来选择合适的应对选项。其中，策略网络在给定的车辆环境下， 评估每一种应对的可能影响，从而选择最合适的策略。不可学习部分则是将学习到的抽象策略转化成对车辆的实际控制动作。该部分主要对车辆动作进行具体规划，检查抽象策略是否可执行，或者执行满足策略的动作，从而充分保证系统的安全性。</p>
-<h3 id="ai_2">AI在车辆控制中的应用</h3>
+<h3 id="ai_2">AI在车辆控制中的应用<a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h3>
 <p>相对于传统的车辆控制方法，智能控制方法主要体现在对控制对象模型的运用和综合信息学习运用上， 包括神经网络控制和深度学习方法等，这些算法已逐步在车辆控制中广泛应用。</p>
 <p>神经控制， 是研究和利用人脑的某些结构机理以及人的知识和经验对系统的控制。利用神经网络，可以把控制问题看成模式识别问题，被识别的模式映射成“行为”信号的“变化”信号。神经控制最显著的特点是具有学习能力。它是通过不断修正神经元之间的连接权值，并离散存储在连接网络中来实现的。它对非线性系统和难以建模的系统的控制具有良好效果。</p>
 <p>深度神经网络学习， 源于神经网络的研究，可理解为深层的神经网络。通过它可以获得深层次的特征表示，免除人工选取特征的繁复冗杂和高维数据的维度灾难问题。深度学习在特征提取与模型拟合方面显示了其潜力和优势。对于存在高维数据的控制系统，引入深度学习具有一定的意义。 自动驾驶系统需要尽量减少人的参与或者没有人的参与，深度学习自动学习状态特征的能力使得深度学习在自动驾驶系统的研究中具有先天的优势。深度强化学习， 强化学习的灵感来源于生物学中的动物行为训练，训练员通过奖励与惩罚的方式让动物学会一种行为与状态之间的某种联系规则。强化学习就是要解决这类问题：一个能够感知环境的智能体怎样通过学习选择达到其目标的最优动作。 </p>
-<h2 id="_17">第三章</h2>
-<h3 id="_18">人才分布</h3>
+<h2 id="_17">第三章<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<h3 id="_18">人才分布<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
 <p><img alt="1548497724778" src="../fig/1548497724778.png" /></p>
 <p>按国家进行统计来看美国是自动驾驶汽车科技发展的核心。中国的人数紧排在美国之后。其他的专家主要分布在英国、 加拿大、 德国和意大利。</p>
 <p>自动驾驶技术领域的国内代表性研究学者包括贺汉根、 李德毅、杨静宇、郑南宁等， 国外包括 Sebastian Thrun、 Chris Urmson、 Elon Musk、 Amnon Shashua 等。</p>
-<h3 id="_19">应用</h3>
+<h3 id="_19">应用<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
 <p><img alt="1548497831405" src="../fig/1548497831405.png" /></p>
-<h3 id="_20">趋势</h3>
+<h3 id="_20">趋势<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
 <p>据《日本经济新闻》 5 月 18 日报道，欧盟的欧洲委员会当地时间 5 月 17 日公布的自动驾驶时间进度表指出， 计划</p>
 <ul>
 <li>到 2020 年在高速公路上实现自动驾驶，在城市中心区域实现低速自动驾驶；到 2030 年普及完全自动驾驶。为了助力自动驾驶；</li>
@@ -1821,7 +1830,7 @@
 </ul>
 <p>目前， 各大自动驾驶技术研发企业与传统汽车制造厂商均在努力加速实现自动驾驶汽车的商业化进程。百度计划 2020 年实现自动驾驶汽车的全面量产； 宝马计划 2021 年推出完全自动驾驶汽车； 福特计划在 2021 年推出自动驾驶汽车； 戴姆勒称，普通道路上实现自动驾驶的卡车将在 2020 年研发成功。</p>
 <p>到 2020 年， 过去积累的自动驾驶技术科研成果及工程进步都将成为现实。 我们即将进入 10~20 年混合模式的时代。 随着人工智能的飞速发展及自动驾驶汽车与新技术的深度融合， 自动驾驶汽车可实现高度智能化， 真正实现 Level 4+级的自动驾驶技术。在享受科技成果时，我们也需认识到， 自动驾驶技术给我们带来无限憧憬的同时，也会给社会生活带来巨大的冲击， 如汽车驾照与保险可能会消失，出租车可能不再需要“的哥” 等 。</p>
-<h3 id="_21">挑战</h3>
+<h3 id="_21">挑战<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
 <ul>
 <li>技术问题
     目前自动驾驶技术在“人不多、 规定车道、车速不快” 的前提条件下确实可以实现， 但是面对真正的复杂交通环境， 自动驾驶汽车的安全性还需要更长时间来完善。 如人类驾驶员能判断前方车辆的驾驶员是老司机还是新手，从而决定与前车保持多远的距离才合适， 而自动驾驶技术要理解这些细微的预行为就显得很困难。<ul>
@@ -1834,9 +1843,9 @@
 <li>困难和挑战
     自动驾驶的一个很重要的用途是用于某些特殊的环境下，由于在某些特殊的环境下，人员生存困难， 自动驾驶能克服这些问题，但是其也要解决如极寒、道路条件复杂等各种极端环境的影响，这同样也是自动驾驶未来发展所应面临的困难。由于人工智能的大量应用， 自动驾驶技术更依赖于网络，如通过云端获取的高精地图、精准导航等的数据，其安全性显得尤为突出。 如何打造安全可靠的数据链路，不被黑客侵扰等也将是需要长期面临的困难与挑战 。</li>
 </ul>
-<h2 id="_22">版权声明</h2>
+<h2 id="_22">版权声明<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h2>
 <p>本总结以“自动驾驶与人工智能研究报告（前沿版）AMiner 研究报告第七期” 为模板进行了部分增删和修改，原文<a href="https://static.aminer.cn/misc/article/selfdriving-new.pdf">来源于此</a>。仅供个人参阅，禁止用于商业用途。</p>
-<h2 id="_23">参考文献</h2>
+<h2 id="_23">参考文献<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
 <ol>
 <li>SAE International.Automated Driving - Levels of Driving Automation are Defined in NewSAE International Standard J3016.</li>
 <li>陈虹，郭露露，边宁.对汽车智能化进程及其关键技术的思考［J］ .科技导报， 2017， 35（11）： 52-59.</li>
@@ -1856,7 +1865,7 @@
 <li>陈帅.无人驾驶汽车安全行驶的三大系统.中小企业管理与科技， 2018， 4 </li>
 <li>量子位公众号<a href="https://mp.weixin.qq.com/s/csjbmAhgUBjpqKyhMFtTbA">原文</a></li>
 </ol>
-<h2 id="_24">版本记录</h2>
+<h2 id="_24">版本记录<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
 <p>201901 初稿形成，以Aminer报告为模板，进行了适当增删和修改</p>
@@ -1877,6 +1886,7 @@
             </article>
           </div>
         </div>
+        
       </main>
       
         
@@ -1933,19 +1943,13 @@
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
-      <script src="../assets/javascripts/vendor.592d4e23.min.js"></script>
-      <script src="../assets/javascripts/bundle.073197b2.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
-      
-      <script>
-        app = initialize({
-          base: "..",
-          features: [],
-          search: Object.assign({
-            worker: "../assets/javascripts/worker/search.01088dc6.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../assets/javascripts/bundle.76f349be.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       

@@ -1,6 +1,4 @@
 
-
-
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -14,8 +12,9 @@
       
         <meta name="author" content="JIMMMY">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.1">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.7">
     
     
       
@@ -23,22 +22,24 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.5d00201e.min.css">
-      
-        <link rel="stylesheet" href="../assets/stylesheets/palette.816e8abc.min.css">
-      
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
       
         
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
-        <meta name="theme-color" content="#3f51b5">
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
       
     
     
     
       
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
       
     
     
@@ -46,7 +47,7 @@
     
       
         
-<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-XXXXXXXX-X","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){var e;this.value&&(e=document.location.pathname,ga("send","pageview",e+"?q="+this.value))}),"undefined"!=typeof location$&&location$.subscribe(function(e){ga("send","pageview",e.pathname)})})</script>
 <script async src="https://www.google-analytics.com/analytics.js"></script>
       
     
@@ -57,8 +58,12 @@
     
     
     
+    
+    
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -76,45 +81,49 @@
     </div>
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-header-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-header__button md-logo" aria-label="Dynamic Knowledge Index (DKI)" data-md-component="logo">
       
   <img src="../logo7.gif" alt="logo">
 
     </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             Dynamic Knowledge Index (DKI)
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               How to Study Robotics
             
           </span>
         </div>
-      
+      </div>
     </div>
     
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
       </label>
       
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
       </button>
     </form>
     <div class="md-search__output">
@@ -136,8 +145,6 @@
     
     <div class="md-container" data-md-component="container">
       
-        
-      
       
         
       
@@ -145,12 +152,16 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)">
+    <a href=".." title="Dynamic Knowledge Index (DKI)" class="md-nav__button md-logo" aria-label="Dynamic Knowledge Index (DKI)" data-md-component="logo">
       
   <img src="../logo7.gif" alt="logo">
 
@@ -164,396 +175,399 @@
       
       
 
-
-  <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
-      Home
-    </a>
-  </li>
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-    
-    <label class="md-nav__link" for="nav-2">
-      Dynamics 2021
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Dynamics 2021" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
         Dynamics 2021
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Dynamics 2021" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dynamics 2021
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontier2021/" class="md-nav__link">
+        Frontier
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strategy2021/" class="md-nav__link">
+        Strategy
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perspective2021/" class="md-nav__link">
+        Perspective
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Frontier2021/" title="Frontier" class="md-nav__link">
-      Frontier
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy2021/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective2021/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-    
-    <label class="md-nav__link" for="nav-3">
-      Dynamics 2020
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Dynamics 2020" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
         Dynamics 2020
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Dynamics 2020" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Dynamics 2020
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontier2020/" class="md-nav__link">
+        Frontier
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strategy2020/" class="md-nav__link">
+        Strategy
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perspective2020/" class="md-nav__link">
+        Perspective
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Frontier2020/" title="Frontier" class="md-nav__link">
-      Frontier
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy2020/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective2020/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
-    <label class="md-nav__link" for="nav-4">
-      Dynamics 2019
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Dynamics 2019" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
         Dynamics 2019
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Dynamics 2019" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Dynamics 2019
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frontier2019/" class="md-nav__link">
+        Frontier
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Strategy2019/" class="md-nav__link">
+        Strategy
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Perspective2019/" class="md-nav__link">
+        Perspective
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Frontier2019/" title="Frontier" class="md-nav__link">
-      Frontier
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Strategy2019/" title="Strategy" class="md-nav__link">
-      Strategy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Perspective2019/" title="Perspective" class="md-nav__link">
-      Perspective
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Artificial Intelligence
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Artificial Intelligence" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
         Artificial Intelligence
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Artificial Intelligence" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Artificial Intelligence
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI/" class="md-nav__link">
+        AI Map
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/AI/AMiner_AI_2019.pdf" class="md-nav__link">
+        AI Report 2019 (PDF,Aminer)
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AI%20Index%202018%20Annual%20Report/" class="md-nav__link">
+        AI Index 2018 Annual Report
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../AI/" title="AI Map" class="md-nav__link">
-      AI Map
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/AI/AMiner_AI_2019.pdf" title="AI Report 2019 (PDF,Aminer)" class="md-nav__link">
-      AI Report 2019 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../AI%20Index%202018%20Annual%20Report/" title="AI Index 2018 Annual Report" class="md-nav__link">
-      AI Index 2018 Annual Report
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      Self-driving
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Self-driving" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
         Self-driving
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Self-driving" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Self-driving
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Self-driving/" class="md-nav__link">
+        Self-driving Map
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/selfdriving_new.pdf" class="md-nav__link">
+        Self-driving v2 (PDF,Aminer)
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/selfdriving_basic.pdf" class="md-nav__link">
+        Self-driving v1 (PDF,Aminer)
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Self-driving/" title="Self-driving Map" class="md-nav__link">
-      Self-driving Map
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Flying%20car/" class="md-nav__link">
+        Flying Car Map
+      </a>
+    </li>
+  
+
           
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/selfdriving_new.pdf" title="Self-driving v2 (PDF,Aminer)" class="md-nav__link">
-      Self-driving v2 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/selfdriving_basic.pdf" title="Self-driving v1 (PDF,Aminer)" class="md-nav__link">
-      Self-driving v1 (PDF,Aminer)
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Flying%20car/" title="Flying Car Map" class="md-nav__link">
-      Flying Car Map
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
-    
-    <label class="md-nav__link" for="nav-7">
-      Blockchain
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
         Blockchain
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Blockchain" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Blockchain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pdf/blockchain_public.pdf" class="md-nav__link">
+        Blockchain Overview (PDF,Aminer)
+      </a>
+    </li>
+  
+
           
-          
-
-
-  <li class="md-nav__item">
-    <a href="../pdf/blockchain_public.pdf" title="Blockchain Overview (PDF,Aminer)" class="md-nav__link">
-      Blockchain Overview (PDF,Aminer)
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
@@ -561,103 +575,99 @@
       
 
   
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
+  
+  
     
-    <label class="md-nav__link" for="nav-8">
-      Tutorials
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" checked>
+      
+      <label class="md-nav__link" for="__nav_8">
         Tutorials
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials_ML_RL/" title="ML&RL" class="md-nav__link">
-      ML&RL
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials_Robotics/" title="Robotics" class="md-nav__link">
-      Robotics
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../tutorials_Miscellaneous/" title="Miscellaneous" class="md-nav__link">
-      Miscellaneous
-    </a>
-  </li>
-
-        
-          
-          
-          
-
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials_ML_RL/" class="md-nav__link">
+        ML&RL
+      </a>
+    </li>
   
 
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials_Robotics/" class="md-nav__link">
+        Robotics
+      </a>
+    </li>
+  
 
-  <li class="md-nav__item md-nav__item--active">
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials_Miscellaneous/" class="md-nav__link">
+        Miscellaneous
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
       
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          How to Study Robotics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         How to Study Robotics
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="How to Study Robotics" class="md-nav__link md-nav__link--active">
-      How to Study Robotics
-    </a>
-    
+      </a>
       
+        
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
   
   
     
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -800,187 +810,189 @@
     </ul>
   
 </nav>
-    
-  </li>
+      
+    </li>
+  
 
-        
-      </ul>
-    </nav>
-  </li>
+          
+        </ul>
+      </nav>
+    </li>
+  
 
     
       
       
       
 
-
-  <li class="md-nav__item md-nav__item--nested">
+  
+  
+  
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
-    
-    <label class="md-nav__link" for="nav-9">
-      Gadgets
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Gadgets" data-md-level="1">
-      <label class="md-nav__title" for="nav-9">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+      
+      <label class="md-nav__link" for="__nav_9">
         Gadgets
+        <span class="md-nav__icon md-icon"></span>
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
+      <nav class="md-nav" aria-label="Gadgets" data-md-level="1">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Gadgets
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Git/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Blog/" class="md-nav__link">
+        Blog Deployment
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Tools/" title="Tools" class="md-nav__link">
-      Tools
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Mirror/" class="md-nav__link">
+        Mirror
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToSearch/" class="md-nav__link">
+        How to Search
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thinkTank/" class="md-nav__link">
+        Think Tanks
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Git/" title="Git" class="md-nav__link">
-      Git
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../KnowledgeSystem/" class="md-nav__link">
+        Knowledge System
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MgtFinEco/" class="md-nav__link">
+        MgtFinEco
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToBuyFunds/" class="md-nav__link">
+        Funds
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Blog/" title="Blog Deployment" class="md-nav__link">
-      Blog Deployment
-    </a>
-  </li>
-
-        
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lifestyle/" class="md-nav__link">
+        Lifestyle
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Hangzhou/" class="md-nav__link">
+        How to Hangzhou
+      </a>
+    </li>
+  
+
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../howToBuyCars/" class="md-nav__link">
+        How to Cars
+      </a>
+    </li>
+  
 
-
-  <li class="md-nav__item">
-    <a href="../Mirror/" title="Mirror" class="md-nav__link">
-      Mirror
-    </a>
-  </li>
-
-        
           
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToSearch/" title="How to Search" class="md-nav__link">
-      How to Search
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../thinkTank/" title="Think Tanks" class="md-nav__link">
-      Think Tanks
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../KnowledgeSystem/" title="Knowledge System" class="md-nav__link">
-      Knowledge System
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../MgtFinEco/" title="MgtFinEco" class="md-nav__link">
-      MgtFinEco
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToBuyFunds/" title="Funds" class="md-nav__link">
-      Funds
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Lifestyle/" title="Lifestyle" class="md-nav__link">
-      Lifestyle
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../Hangzhou/" title="How to Hangzhou" class="md-nav__link">
-      How to Hangzhou
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../howToBuyCars/" title="How to Cars" class="md-nav__link">
-      How to Cars
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
+        </ul>
+      </nav>
+    </li>
+  
 
     
   </ul>
@@ -990,23 +1002,23 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+  
     
   
   
     <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
@@ -1154,15 +1166,12 @@
               </div>
             
           
-          <div class="md-content">
+          <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  
-                
-                
-                <h1 id="how-to-study-robotics">How to Study Robotics</h1>
+                <h1 id="how-to-study-robotics">How to Study Robotics<a class="headerlink" href="#how-to-study-robotics" title="Permanent link">&para;</a></h1>
 <p>原创： 邱强       公众号文章<a href="https://mp.weixin.qq.com/s/vDKHJrvzU6FNN5QW2miFug">链接</a></p>
 <p>作者Github上发起了一个<a href="https://github.com/qqfly/how-to-learn-robotics">开源机器人学自学指南</a></p>
 <div class="toc">
@@ -1194,11 +1203,11 @@
 </li>
 </ul>
 </div>
-<h2 id="_1">零. 前前言</h2>
+<h2 id="_1">零. 前前言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>本文中含有不少公式，为了方便编辑，采用的是 Latex 格式书写。但是，Github Markdown 不支持 Latex，为了方便阅读，建议采用 Chrome 浏览器，并安装插件 TeX All the Things。安装后，即可将网页上的 Latex 公式转换成大多数人能看懂的形式。</p>
 <p>部分复杂的公式会用 在线LaTeX公式编辑器 转换成图片插入。</p>
 <p>本教材写作时间很短，所以肯定有疏漏。因此放在这里作为一个开源项目，大家可以随时修改并提交 Pull Request；有问题也可以提 issue。</p>
-<h2 id="_2">一. 前言</h2>
+<h2 id="_2">一. 前言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>RVBUST INC. 成立半年有余。面试过不少从事机器人研究的小伙伴后，我发现一个问题：绝大多数大陆的毕业的学生都不像是「科班出身」的。</p>
 <p>当然，如果仅从工作教育经历上看 —— 大部分毕业于机电、计算机专业，甚至是研究机器人的实验室，有过机器人公司的工作经历 —— 这些人应该都算是「专业选手」。</p>
 <p>但是，从面试情况上看，绝大多数人都不具备机器人学的完整知识体系：画电路板的小伙伴不知道怎么进行机器人工作空间分析；设计机构的小伙伴不知道怎么把动力学用在控制上；做控制算法的小伙伴不知道什么的构型空间（Configuration Space）；做运动规划的小伙伴不知道什么是Q-learning；做深度强化学习的小伙伴不知道学习到的控制指令要怎么让实际机器人运动起来。</p>
@@ -1213,7 +1222,7 @@
 <p>当然，并不是说「运动学逆解」、「轨迹插补」之类的知识有多难。我想强调的是，在大陆，一个学生只通过上课，无法掌握、甚至是无法接触到这些机器人学中非常基础的知识。</p>
 <p>当然，这一情况在大陆比较普遍，而国外或者港台高校毕业的学生，基本上都没有这个问题。国外或者港台高校在机器人学这块的教学体系相对比较完整，基本上大作业都会覆盖主要的知识点，并且大都要求编程实现。</p>
 <p>虽然，大多数小伙伴都是「非科班出身」的，但是，根据我的经验，大陆的学生还是非常聪明的，基本只要得到一些简单的正确引导，就能很快通过自学掌握这些知识。所以，我们不妨来看看「非科班出身」如何学习机器人学吧。</p>
-<h2 id="_3">二. 先修知识</h2>
+<h2 id="_3">二. 先修知识<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <p>当然，先修知识会随着研究深度的变换而不同，尤其是数学，数学就像是写轮眼，看同一个石碑，不同层次的「写轮眼」所看到的内容也完全不同。</p>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaRc7QjaDvrg0cdyESvnPWAS0RGUhZVTuB7oGVv8OQYKBia6hhgqMsMX7Q/640?wx_fmt=jpeg" /></p>
 <p>但是，由于机器人学涉及面广，不同方向所需要的基础知识也完全不同，如果一开始就陷入「先修知识」的泥潭中，可能就得不偿失了。</p>
@@ -1235,7 +1244,7 @@
 <li>基本的3D设计：在制作实验平台的时候，经常会遇到需要加工设计小零件的情况，这时候掌握一个3D设计软件可以大大提高开发速度，例如 SolidWorks 就是个不错的选择。配合上 3D 打印机之类的工具就可以实验快速原型设计了。（即使没有 3D 打印机，在网上也可以很容易找到 3D 打印服务，把你设计的 3D 文件发过去就可以了）。</li>
 </ol>
 <p>上面这些知识，基本是一个自动化专业或者机电专业大三学生应该达到的水平。如果对上述几部分有了基本了解，就可以开始看机器人学的知识了。</p>
-<h2 id="_4">三. 入门</h2>
+<h2 id="_4">三. 入门<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <p>对于入门部分，实际上就是了解如何让一个工业机器人动起来。这方面其实研究已经非常成熟了，大家看上个世纪的教材就行，个人推荐的是 John Craig 的教材 《Introduction to Robotics: Mechanics and Control》[1]，在 Youtube 和网易公开课都可以找到斯坦福 Oussama Khatib 大神的视频，基本与 Craig 的教材内容相匹配。</p>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaRL2pnAs3xX7gpOYsxDruBgSyDB2cCXlic1J8241ghSTNVg8VOhdjuSdQ/640?wx_fmt=jpeg" /></p>
 <p>建议从 Craig 的教材开始就看英文版本，Google 一下，很容易找到 PDF 版本。作为一本入门教材，Craig 的教材是相当深入浅出的，配合着 Khatib 的视频，可以快速掌握机器人学的基础。</p>
@@ -1243,15 +1252,15 @@
 <p>然而，真正把教材啃下来的并不多。</p>
 <p>所以，我在这里要换个说法了，「如果你把这本书的内容掌握了，就可以胜任国内绝大多数机器人公司的开发工作了。」</p>
 <p>// 在 Github 上，我有对 Craig 书上的内容进行大概的梳理，在公众号中就先省略了。</p>
-<h2 id="_5">四. 实践</h2>
+<h2 id="_5">四. 实践<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <p>看完 Craig 的书后，你应该对工业机器人的原理有了一个大概的概念，但是，你缺乏实际动手经验，不清楚如何将书上的东西应用到实际机器人上。机器人毕竟是一个实践性的学科，一直停留在理论，不仅无用、而且无趣。</p>
 <p>Get your hands dirty!</p>
-<h3 id="41">4.1 动手</h3>
+<h3 id="41">4.1 动手<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
 <p>如果是本科生的话，非常建议参加一些比赛，如 RoboMaster、飞思卡尔智能车大赛、电子设计大赛等；也可以加入学校的一些科技组织，例如清华的天空工厂。主要是熟悉各种电子电路、培养动手能力。</p>
 <p>但是，以我的观察，很多科技比赛大牛，在理论学习上往往比较弱。这主要是因为科技比赛强调的是系统能力，决定比赛结果的往往是一些小 tricks，而非理论知识；而且，比赛容易让人产生一种虚假的充实感，每天都很忙碌，但是可能只是在重复低级工作。这两个原因很容易让人陷入 local minima，无法在理论方面更进一步。</p>
 <p>所以，我有个不成熟的小建议。参加比赛和学生科技活动的话，有过两次完整的经历就够了。之后应该迅速将重点转向理论学习。</p>
 <p>如果身边有可以玩的机器人硬件，也可以尝试玩一玩，或者在 RobotStudio 里玩 ABB 的机器人。</p>
-<h3 id="42-penns-robotics-specialization">4.2 Penn's Robotics Specialization</h3>
+<h3 id="42-penns-robotics-specialization">4.2 Penn's Robotics Specialization<a class="headerlink" href="#42-penns-robotics-specialization" title="Permanent link">&para;</a></h3>
 <p>之后，不妨抽出几个月时间，看看 Coursera 上宾夕法尼亚大学的 Robotics 专项课程。这个专项课程与机械臂或者工业机器人关系不大，但是由于机器人很多方面是相通的，所以非常建议看一看。</p>
 <ul>
 <li>Aerial Robotics：这门课主要是介绍四旋翼无人机的控制问题，其中的轨迹规划、姿态描述、控制等对机械臂的学习非常有帮助。而且，这门课的作业质量也非常高，提供了基于 Matlab 的数值仿真模块，可以让初学者直观地看到自己代码的控制效果。</li>
@@ -1265,7 +1274,7 @@
 </li>
 </ul>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaRFOEuV6txK4icBxiaXGTXZ8wDLfrrNdKLL11KCRkJoISe3ltNZFicNcE7Q/640?wx_fmt=jpeg" /></p>
-<h3 id="43-ros">4.3 ROS</h3>
+<h3 id="43-ros">4.3 ROS<a class="headerlink" href="#43-ros" title="Permanent link">&para;</a></h3>
 <p>到现在为止，你对机器人的基础知识有了一个比较完整的脉络，而且，也用 Matlab 实现了一些有趣的算法。但是，你发现，机器人是一个非常大的系统，作为初学者，不太可能从头开始一步步搭建机器人所需的各个算法模块。这时候，你就应该开始拥抱伟大的开源世界了。</p>
 <p>很多人可能知道，有一个叫做机器人操作系统的开源项目 (Robot Operating System, ROS)。</p>
 <p>对于学习 ROS，网上可能有不少教程了。但是，我感觉，对于很多机电、自动化方向的学生并不适合直接开始看 ROS。因为他们缺乏基本的 Linux、C++ 知识。所以，我推荐按照如下步骤进行学习：</p>
@@ -1280,29 +1289,29 @@
 <p>之后，就可以根据各自的研究兴趣去看不同模块了。</p>
 <p>如果有条件，能够配合一些 ROS 支持比较好的平台进行研究的话，可以大大提高学习速度。例如 TurtleBot、Baxter、Universal Robot 之类的。（这就看每个人条件了。）</p>
 <p>理论上，在 ROS 环境下，你可以从事绝大多少与实时控制无关的研究，如 SLAM、Navigation、Motion Planning 等。如果你从事的是更加底层的工作，（如控制器设计），目前 ROS 还无法胜任。（如果不清楚为什么，回顾一下实时操作系统、机器人控制方面的知识）。</p>
-<h2 id="_6">五. 进阶</h2>
+<h2 id="_6">五. 进阶<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>至此，你已经是一个不错的机器人工程师了。但是，如果你想从事研发工作，就需要学习更多专业知识。当然，这部分就跟大家的研究方向关系比较密切了，我没法一一细说。只大概介绍一些。</p>
 <p>另外，非常建议入手一本《Springer Handbook of Robotics》[2]。接触一个新的领域时，在 Handbook 里找到相应的章节，通过它了解基本的大纲，并利用提供的参考文献快速补齐知识。</p>
-<h3 id="51">5.1 数学</h3>
+<h3 id="51">5.1 数学<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
 <p>这时候，你的数学基础基本不允许你更进一步了。所以，你需要补充数学知识。</p>
 <ul>
 <li>数值计算方法：很多时候，我们都是通过计算机来实现算法功能的，所以，你必须了解基本的数值计算方法，如数值微分、数值积分等。我没有太好的公开课资源可以推荐。</li>
 <li>凸优化：这个世界很多问题都不存在解析解，我们得用优化方法来计算。所以，你必须了解如何建立优化模型，并知道如何用代码进行求解。这里，我推荐 Stanford 的公开课《Convex Optimization》</li>
 <li>李群李代数：优化方法经常要使用梯度信息，但是，你发现很多时候你不知道怎么定义梯度。李群李代数是一个非常经典的数学工具，可以非常方便描述 SO(3)、SE(3) 空间中的对象。到这里，你之前对于四元数、角速度之类的疑问将一扫而空。这部分的学习资料，我会在后面补充。</li>
 </ul>
-<h3 id="52-modern-robotics">5.2 Modern Robotics</h3>
+<h3 id="52-modern-robotics">5.2 Modern Robotics<a class="headerlink" href="#52-modern-robotics" title="Permanent link">&para;</a></h3>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaReuibZqiciab5ZIortwPiaicPQSXwIpPVKGuQl5ib4W4kbwHYLLGOnPXA35Mw/640?wx_fmt=jpeg" /></p>
 <p>李群李代数对于很多工科学生可能一时无法接受。这里，我推荐从 Modern Robotics 开始，这是一本面向本科生的教材，非常浅显。</p>
 <p>你可以在网上找到它的所有信息，Coursera 上也有对应的课程：《Modern Robotics》。</p>
 <p>上完这门课，你能掌握旋量（Screw）这一全新的建模方式，同时，你会发现机器人运动学、动力学建模变得如此简单、干净。</p>
 <p>这时候，你已经触碰到了一点点李群李代数。之后就可以去看一些针对工科生的李群李代数教材，如《Notes on Differential Geometry and Lie Groups, I &amp; II》</p>
-<h3 id="53">5.3 控制</h3>
+<h3 id="53">5.3 控制<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
 <p>这时候，你可能已经尝试搭建过一些机器人平台，了解了一些基本的控制理论。但是，你发现实际的机器人并不理想，动力学模型可能非常不精确。于是，你需要做机器人的参数辨识。于是，你可以去看 Khalil 的教材《Modeling, identification and control of robots》[3]。其中，你需要了解各种滤波算法（计算加速度）、各种数值优化算法。而且，如果需要对机器人的运动学参数进行标定，你会发现李群李代数可以非常方便地定义各种相关的雅可比。</p>
 <p>现在，你有了一个相对精确的动力学模型，但是你发现，在给机器人控制器做轨迹规划的时候，需要给出速度、加速度约束。你感觉这其中有什么不对。是的，机器人系统中实际上并不存在什么速度、加速度约束，我们所有的操作都是针对电机力矩的。也就是说，我们只有力矩约束。</p>
 <p>那么，问题来了：在力矩约束下，如何让机器人实现最快的运动。于是你就入了最优控制的坑。在这里，各种数值优化方法将非常有用。</p>
 <p>现在你能把单独的一个机器人控制好了，但你发现，机器人一旦跟环境发生接触，只用机器人模型就不够了。你需要对环境进行建模。但是，环境是无法精确建模的。于是，你开始学各种力控、阻抗控制之类的内容。相应地、你就可以实现一些所谓协作机器人的功能了:<a href="https://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&amp;mid=2652786624&amp;idx=1&amp;sn=6b350f00a3cec664837307ffd794c4cc&amp;scene=21#wechat_redirect">《听说现在协作机器人很火，所以我也做了1/7个》</a></p>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_gif/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaR7U3CZ545SgFsjY8e5qOTsTYfALic6GtA9Nsydn85ryFXYVhhmxNTOEg/640?wx_fmt=gif" /></p>
-<h3 id="54">5.4 运动规划</h3>
+<h3 id="54">5.4 运动规划<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
 <p>现在，你能让机器人按照你的要求运动了。但是，你感觉机器人还是太难用了，必须人工指定经过的路径点，否则机器人可能就会与环境发生碰撞。你想，有没有可能让机器人自己找到这些路径点。</p>
 <p>于是，你来到了运动规划的领域。</p>
 <p>当然，一个很自然的想法是，有没有可能直接构建一个目标函数，用优化的方法计算出需要的轨迹。但是，世界有时候并没有那么可爱。运动规划问题常常是一个非凸问题，无法直接求解。所以，对于机械臂，可以有各种 Sampling-based 算法；当然，也有人将其近似成多个凸问题进行优化求解，在比较简单的场景下效果还算不错。</p>
@@ -1316,7 +1325,7 @@
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaRfCMOXh2BtoW6KRtJeBDRjSytDy3ftMF83JA19ygFXkAQJjFiaC16YRA/640?wx_fmt=jpeg" /></p>
 <p>但是，我们可以从另一个角度看问题。机器人的末端姿态就是一个 SE(3) 李群。保持末端水平，可以认为是一个 R3 空间与 SO(2) 空间的半直积，这也是一个李群。于是，我们可以直接在李群内或者 Tangent Space 上跑一个 RRT，例如 Tangent Bundle RRT[6]与 AtlasRRT[7]</p>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaRC3xq3UbeOao8W587a5fjQDodLyFAU2jltS05RGqO9vvR03T3Cb6NSQ/640?wx_fmt=jpeg" /></p>
-<h3 id="55">5.5 机器学习</h3>
+<h3 id="55">5.5 机器学习<a class="headerlink" href="#55" title="Permanent link">&para;</a></h3>
 <p>前面很多工作都是在做建模+辨识的工作。实际上还有一大类工作是基于数据的，也即，给一个通用模型，用数据进行学习拟合。也就是大家常说的机器学习了。</p>
 <p>对于此，我个人的学习路径如下：</p>
 <ul>
@@ -1331,7 +1340,7 @@
 <li>视觉：机器人经成需要跟视觉结合在一起，而 DL 在视觉领域发展迅速，有时候借用这一工具，可以非常快地搭建实验原型；</li>
 <li>强化学习：这个下章介绍。</li>
 </ul>
-<h3 id="56">5.6 强化学习</h3>
+<h3 id="56">5.6 强化学习<a class="headerlink" href="#56" title="Permanent link">&para;</a></h3>
 <p>如果研究过强化学习，肯定会被其极简的理论所折服：所有的理论衍生自一个 Bellman equation。而且，强化学习非常符合人的直觉。因此，很多人认为强化学习是机器人的未来方向。</p>
 <p>对此，我不做过多评论。我只大概介绍如何入门强化学习。</p>
 <p>首先，就是看书。Sutton 的《Introduction to reinforcement learning》[8]可以说是必读圣经了。</p>
@@ -1339,10 +1348,10 @@
 <p>你知道了强化学习就是要通过不断尝试来学习得到一个从 State 到 Action 的查找表。</p>
 <p>于是，你就想，有没有可能简化这个查找表，于是，你知道了有 Function Approximation。如果这个近似函数是神经网络，那么就是现在很火的 Deep Reinforcement Learing 了。</p>
 <p>当然，这些不重要。重要的是理解 Markov Decision Processes。你会发现，它不仅可以用来解决运动规划问题（DP ≈ Dijkstra、Monte Carlo ≈ RRT），还可以用来解决任务规划问题。</p>
-<h3 id="57">5.7 最新论文</h3>
+<h3 id="57">5.7 最新论文<a class="headerlink" href="#57" title="Permanent link">&para;</a></h3>
 <p>至此，你已经能够阅读绝大多数最新的论文了。所以，你应该关注类似 RSS、ICRA、IROS 等相关会议，了解机器人领域的最新进展；通过 IJRR、TRO 等期刊学习最新的理论。</p>
 <p>当然，你也可以通过 Google Scholar 订阅相应的关键词，它会不定期将最新的论文推送到你的邮箱。</p>
-<h2 id="_7">六. 勇者斗恶龙</h2>
+<h2 id="_7">六. 勇者斗恶龙<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <p><img alt="img" src="https://mmbiz.qpic.cn/mmbiz_jpg/0xXXr0YWD8CwPOvSNfqS0tCeZTvQAbiaRtgz69yuRy9Dz27icuhBady4hvicOlCfByRX31fQBjt2ogdTbmaQS92wA/640?wx_fmt=jpeg" /></p>
 <p>自此，你已经知道了如何让一个机器人动起来，并且深入掌握了研究机器人某一领域的知识。然后，你就像一个刚刚斩杀一只史莱姆的勇者一般，举着宝剑，时刻准备着将宝剑刺入恶龙的胸口。</p>
 <p>但是，这时候有人跑过来，往你头上浇了一盆水：</p>
@@ -1363,7 +1372,7 @@
 <p>于是，你意识到，你需要重新打造自己真正的宝剑。</p>
 <p>但是，这不是你一个人可以做到的，你需要一个团队，有人采煤、有人炼钢、有人锻造、有人磨刀……</p>
 <p>这时候，不妨来 <a href="http://mp.weixin.qq.com/s?__biz=MzA5MDE2MjQ0OQ==&amp;mid=2652787013&amp;idx=1&amp;sn=20092d678574921c21f547782dd04e6f&amp;chksm=8be5253bbc92ac2d7ff3dd74a379aed43491bf432e15b3c418b0497044b2f5c6ac555746e741&amp;scene=21#wechat_redirect">RVBUST</a> 看看。</p>
-<h2 id="_8">七. 参考文献</h2>
+<h2 id="_8">七. 参考文献<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p>[1] John J. Craig. Introduction to Robotics: Mechanics and Control[M]. 1986.</p>
 <p>[2] Siciliano, Bruno, and Oussama Khatib, eds. Springer handbook of robotics. Springer, 2016.</p>
 <p>[3] Khalil, Wisama, and Etienne Dombre. Modeling, identification and control of robots. Butterworth-Heinemann, 2004.</p>
@@ -1382,6 +1391,7 @@
             </article>
           </div>
         </div>
+        
       </main>
       
         
@@ -1438,19 +1448,13 @@
 </footer>
       
     </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.b0710199.min.js", "version": null}</script>
     
-      <script src="../assets/javascripts/vendor.592d4e23.min.js"></script>
-      <script src="../assets/javascripts/bundle.073197b2.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
-      
-      <script>
-        app = initialize({
-          base: "..",
-          features: [],
-          search: Object.assign({
-            worker: "../assets/javascripts/worker/search.01088dc6.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+    
+      <script src="../assets/javascripts/bundle.76f349be.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
