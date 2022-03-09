@@ -1007,6 +1007,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#githubcss" class="md-nav__link">
+    Github.css
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#matlab-colors" class="md-nav__link">
     Matlab Colors
   </a>
@@ -1055,16 +1062,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#overthewall" class="md-nav__link">
-    Overthewall
+  <a href="#scientific-internet" class="md-nav__link">
+    Scientific Internet
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Internet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lantern" class="md-nav__link">
+    Lantern
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#shadowsocks" class="md-nav__link">
-    Shadowsocks
+        
+          <li class="md-nav__item">
+  <a href="#just-my-socks" class="md-nav__link">
+    Just my socks
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1427,6 +1454,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#githubcss" class="md-nav__link">
+    Github.css
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#matlab-colors" class="md-nav__link">
     Matlab Colors
   </a>
@@ -1475,16 +1509,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#overthewall" class="md-nav__link">
-    Overthewall
+  <a href="#scientific-internet" class="md-nav__link">
+    Scientific Internet
+  </a>
+  
+    <nav class="md-nav" aria-label="Scientific Internet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lantern" class="md-nav__link">
+    Lantern
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#shadowsocks" class="md-nav__link">
-    Shadowsocks
+        
+          <li class="md-nav__item">
+  <a href="#just-my-socks" class="md-nav__link">
+    Just my socks
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    其他
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1531,6 +1585,7 @@
 <li><a href="#matlab-acitvation">Matlab Acitvation</a></li>
 <li><a href="#matlab">Matlab 黑色画布</a></li>
 <li><a href="#matlab-print-figure-to-pdf">Matlab print figure to pdf</a></li>
+<li><a href="#githubcss">Github.css</a></li>
 <li><a href="#matlab-colors">Matlab Colors</a></li>
 <li><a href="#outlook-crash">Outlook Crash</a></li>
 <li><a href="#iphone-keeps-asking-for-passwords-of-wifi">IPhone keeps asking for passwords of wifi</a></li>
@@ -1539,8 +1594,12 @@
 <li><a href="#useful-references">useful references</a></li>
 </ul>
 </li>
-<li><a href="#overthewall">Overthewall</a></li>
-<li><a href="#shadowsocks">Shadowsocks</a></li>
+<li><a href="#scientific-internet">Scientific Internet</a><ul>
+<li><a href="#lantern">Lantern</a></li>
+<li><a href="#just-my-socks">Just my socks</a></li>
+<li><a href="#_6">其他</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -1638,11 +1697,11 @@ EbookUI [
 <ul>
 <li>win7 中直接搜索 远程桌面连接，然后在同一个局域网内，输入ip 地址，要连接的电脑的用户名和密码即可</li>
 <li>如果出现 终端，卸载 csr 蓝牙这个驱动即可，因为有冲突</li>
-<li>
-<p>要连接的电脑那端，可能需要开启被远程访问的权限许可</p>
-</li>
-<li>
-<p>如果使用穿透工具，出现凭据不工作的情况，查看<a href="https://blog.csdn.net/weixin_38004638/article/details/82290796">这里</a></p>
+<li>要连接的电脑那端，可能需要开启被远程访问的权限许可</li>
+<li>如果使用穿透工具，出现凭据不工作的情况，查看<a href="https://blog.csdn.net/weixin_38004638/article/details/82290796">这里</a></li>
+<li>远程控制不在同一局域网内的电脑以及端口映射介绍, 查看<a href="https://blog.csdn.net/int_louis/article/details/80271975">这里</a><ul>
+<li>突破外网最重要的一步就是端口映射，登陆路由器，在转发规则-虚拟服务器中实现端口映射，被控端的ip和端口填上，这里举个例子：端口是3389,ip为本机ip，协议为all，填写好后保存。这个端口是实现远程控制必须要用的端口。</li>
+</ul>
 </li>
 </ul>
 <h2 id="_5">远程协作工具<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
@@ -1847,6 +1906,16 @@ jupyter notebook</code></p>
 <p>https://ww2.mathworks.cn/help/matlab/ref/opengl.html</p>
 <h2 id="matlab-print-figure-to-pdf">Matlab print figure to pdf<a class="headerlink" href="#matlab-print-figure-to-pdf" title="Permanent link">&para;</a></h2>
 <p>如果生成的是位图而不是矢量图，用 <code>set(hf, 'Renderer', 'Painters');</code> 即可</p>
+<h2 id="githubcss">Github.css<a class="headerlink" href="#githubcss" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nt">li</span> <span class="nt">p</span><span class="p">.</span><span class="nc">first</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="kc">inline-block</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">li</span> <span class="p">{</span>
+    <span class="k">margin</span><span class="p">:</span> <span class="mf">-0.5</span><span class="kt">em</span> <span class="mi">0</span> <span class="mf">-0.5</span><span class="kt">em</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
 <h2 id="matlab-colors">Matlab Colors<a class="headerlink" href="#matlab-colors" title="Permanent link">&para;</a></h2>
 <ul>
 <li>背景浅蓝色： c1e0f5 [193,224,245] /225   </li>
@@ -1894,18 +1963,18 @@ jupyter notebook</code></p>
 <h3 id="useful-references">useful references<a class="headerlink" href="#useful-references" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p><a href="https://askubuntu.com/questions/764273/ubuntu-16-04-wont-output-sound-to-bluetooth-headphones">Ubuntu 16.04 won't output sound to Bluetooth headphones</a></p>
+<p>[Ubuntu 16.04 won't output sound to Bluetooth headphones](https://askubuntu.com/questions/764273/ubuntu-16-04-wont-output-sound-to-bluetooth-headphones</p>
 </li>
 <li>
 <p><a href="https://askubuntu.com/questions/922860/pairing-apple-airpods-as-headset">Pairing Apple Airpods as Headset</a></p>
 </li>
 </ul>
-<h2 id="overthewall">Overthewall<a class="headerlink" href="#overthewall" title="Permanent link">&para;</a></h2>
+<h2 id="scientific-internet">Scientific Internet<a class="headerlink" href="#scientific-internet" title="Permanent link">&para;</a></h2>
+<h3 id="lantern">Lantern<a class="headerlink" href="#lantern" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>Lantern download
-    https://github.com/getlantern/download/wiki</p>
-<ul>
+<p>https://github.com/getlantern/download/wiki</p>
+</li>
 <li>
 <p>to share lantern network from a PC's hotspot</p>
 </li>
@@ -1915,27 +1984,59 @@ jupyter notebook</code></p>
 <li>
 <p>手机端设置：确保手机和电脑在同一个局域网内，进入WiFi选项，点击你所连接的WiFi后面的小叹号，进入设置，修改下面的HTTP代理为手动，服务器里填电脑ip <code>192.168.137.1</code>，端口填<code>8787</code></p>
 </li>
-<li>problem and sol.
-http://www.kexueren.com.cn/12372.html</li>
-<li>cracking guide
-https://black1ce.com/software/windows-lantern.html</li>
-<li><a href="https://www.lcdhgy.com/">旋风</a> /damaged</li>
-<li>psiphone</li>
-</ul>
+<li>
+<p>cracking guide
+    https://black1ce.com/software/windows-lantern.html</p>
 </li>
 </ul>
-<h2 id="shadowsocks">Shadowsocks<a class="headerlink" href="#shadowsocks" title="Permanent link">&para;</a></h2>
+<h3 id="just-my-socks">Just my socks<a class="headerlink" href="#just-my-socks" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>网址 justmysocks2.com， 登录账户</p>
+<p>网址 justmysocks2.net， 登录账户</p>
 </li>
 <li>
-<p>技术支援 --&gt; 知识库 --&gt; Software download links 下载软件</p>
+<p>技术支援 --&gt; 知识库 --&gt; Software download links 下载软件，可以选择 ShadowSocks 或者 V2Ray. 个人感觉 V2ray 比较强大，在连接的时候还会显示连接情况，这样连接不成功的话可以看到报错情况，方便 debug.</p>
 </li>
 <li>
-<p>解压，右键点击图标，系统代理中选择 “全局模式”，然后服务器一栏选择 “扫描屏幕上的二维码” 即可</p>
-<p>an</p>
+<p>然后配置服务器，有两种方式，一种是手动配置，另一种是新增订阅（V2Ray 支持订阅，注意不是所有软件都支持订阅，订阅的好处是可以一键更新服务器地址），新增订阅的话会把你买的服务的所有的服务器节点都自动设置好，比较方便。其中必填的项包括</p>
+<p>```bash
+地址(address)
+端口(port)
+用户ID(id)
+加密方式(security)
+传输协议(network) 一般选 tcp
+如果是 shadowsocks 的话还需要填密码</p>
+<p>Supported Protocols (SS)TCP + UDP [help]
+ShadowSocks Encryption  Depends on server, see server details
+ShadowSocks Port      xxxxx
+ShadowSocks Password  xxxxxxxxxxx</p>
+<p>V2RAY Port   xxxxx
+V2RAY UUID   xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+V2RAY Protocol  VMess
+V2RAY Transport  tcp
+V2RAY Encryptionauto  /aes-128-gcm/chacha20-poly1305
+V2RAY AlterId      0
+V2RAY Camouflage   None
+```</p>
 </li>
+<li>
+<p>在选择服务器之前，可以先测试一下各个节点的链接情况，有可能出现部分节点不能连接，然后选择延迟小的服务器即可。</p>
+</li>
+<li>
+<p>然后在 Http 代理中选择代理模式，比如全局还是 PAC 等</p>
+</li>
+<li>
+<p>Debug ，如果出现 failed to find an available destination 等情况</p>
+<ul>
+<li>尝试同步一下 windows 时间</li>
+</ul>
+</li>
+</ul>
+<h3 id="_6">其他<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.lcdhgy.com/">旋风</a> /damaged</li>
+<li>psiphone</li>
+<li>panda??</li>
 </ul>
                 
               
