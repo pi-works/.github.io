@@ -1077,23 +1077,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lantern" class="md-nav__link">
-    Lantern
+  <a href="#ubuntu-vpn" class="md-nav__link">
+    Ubuntu 下配置 VPN
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#just-my-socks" class="md-nav__link">
-    Just my socks
-  </a>
-  
-</li>
+    <nav class="md-nav" aria-label="Ubuntu 下配置 VPN">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    其他
+    参考资料
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    需要下载的原材料：
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    步骤：
+  </a>
+  
+    <nav class="md-nav" aria-label="步骤：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qv2ray-v2ray-core" class="md-nav__link">
+    配置 Qv2ray 和 v2ray-core
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1531,23 +1557,49 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#lantern" class="md-nav__link">
-    Lantern
+  <a href="#ubuntu-vpn" class="md-nav__link">
+    Ubuntu 下配置 VPN
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#just-my-socks" class="md-nav__link">
-    Just my socks
-  </a>
-  
-</li>
+    <nav class="md-nav" aria-label="Ubuntu 下配置 VPN">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
-    其他
+    参考资料
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    需要下载的原材料：
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    步骤：
+  </a>
+  
+    <nav class="md-nav" aria-label="步骤：">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qv2ray-v2ray-core" class="md-nav__link">
+    配置 Qv2ray 和 v2ray-core
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1610,11 +1662,25 @@
 </ul>
 </li>
 <li><a href="#scientific-internet">Scientific Internet</a><ul>
-<li><a href="#lantern">Lantern</a></li>
-<li><a href="#just-my-socks">Just my socks</a></li>
-<li><a href="#_6">其他</a></li>
+<li><a href="#ubuntu-vpn">Ubuntu 下配置 VPN</a><ul>
+<li><a href="#_6">参考资料</a></li>
+<li><a href="#_7">需要下载的原材料：</a></li>
+<li><a href="#_8">步骤：</a><ul>
+<li><a href="#qv2ray-v2ray-core">配置 Qv2ray 和 v2ray-core</a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#v2ray">V2Ray 核心可执行文件路径</a></li>
+<li><a href="#v2ray_1">V2Ray 资源目录</a><ul>
+<li><a href="#_9">订阅节点</a></li>
+<li><a href="#lantern">Lantern</a></li>
+<li><a href="#just-my-socks">Just my socks</a></li>
+<li><a href="#_10">其他</a></li>
 </ul>
 </li>
 </ul>
@@ -1999,6 +2065,88 @@ C:\Program Files (x86)\texstudio\dictionaries</code></p>
 </li>
 </ul>
 <h2 id="scientific-internet">Scientific Internet<a class="headerlink" href="#scientific-internet" title="Permanent link">&para;</a></h2>
+<h3 id="ubuntu-vpn">Ubuntu 下配置 VPN<a class="headerlink" href="#ubuntu-vpn" title="Permanent link">&para;</a></h3>
+<h4 id="_6">参考资料<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ul>
+<li>https://rumosky.com/archives/217?ivk_sa=1024320u</li>
+<li>https://bbs.deepin.org/post/188998?offset=1&amp;limit=20#reback_title</li>
+<li>https://qv2ray.net/lang/zh/getting-started/step2.html#%E4%B8%8B%E8%BD%BD-v2ray-%E6%A0%B8%E5%BF%83%E6%96%87%E4%BB%B6</li>
+<li>https://xugaoxiang.com/2020/10/17/qv2ray/</li>
+</ul>
+<h4 id="_7">需要下载的原材料：<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>这个是显示界面： https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0 </p>
+</li>
+<li>
+<p>这个是代理核心： https://github.com/v2fly/v2ray-core/releases/tag/v4.45.2   </p>
+<ul>
+<li>for ubuntu users, select v2ray-linux-32.zip  我测试过 v2ray-linux-64.zip 不行， 会显示  <code>v2ray核心运行失败 退出代码2</code></li>
+</ul>
+</li>
+<li>你还需要买一个 vpn 服务，也就是订阅节点</li>
+</ul>
+<h4 id="_8">步骤：<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<h5 id="qv2ray-v2ray-core">配置 Qv2ray 和 v2ray-core<a class="headerlink" href="#qv2ray-v2ray-core" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p>下载 <a href="https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0">Qv2ray</a>, 下载得到的是一个 <code>.AppImage</code> 文件，然后 <code>chmod 777</code> 它或者右键点击然后修改它为最高权限（可读可写）</p>
+<ul>
+<li>对于 ubuntu 22 用户，可能需要 <code>sudo apt install fuse</code></li>
+</ul>
+</li>
+<li>
+<p>然后打开 Qv2ray <code>./Qv2ray-v2.7.0-linux-x64.AppImage</code>， 先放一边</p>
+</li>
+<li>
+<p>到 <code>home/username/.config/qv2ray</code> 文件夹下，新建文件夹 <code>vcore</code> </p>
+</li>
+<li>
+<p>下载 <a href="https://github.com/v2fly/v2ray-core/releases/tag/v4.45.2">v2ray-core</a> 到<code>vcore</code> 的文件夹内并解压， </p>
+<ul>
+<li>
+<p>ubuntu 用户选择  <code>v2ray-linux-32.zip</code>，  我测试过 <code>v2ray-linux-64.zip</code> 不行， 会显示  <code>v2ray核心运行失败 退出代码2</code></p>
+</li>
+<li>
+<p>主要文件的目录结构为</p>
+<p><code>bash
+/.config/qv2ray/vcore/
+    v2ray
+    v2ctl
+    geoip.dat
+    geosite.dat
+    systemd/</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>在 Qv2ray 中点击首选项，选择内核设置，配置</p>
+<p>```bash</p>
+<h1 id="v2ray">V2Ray 核心可执行文件路径<a class="headerlink" href="#v2ray" title="Permanent link">&para;</a></h1>
+<p>/home/username/.config/qv2ray/vcore/v2ray</p>
+<h1 id="v2ray_1">V2Ray 资源目录<a class="headerlink" href="#v2ray_1" title="Permanent link">&para;</a></h1>
+<p>/home/username/.config/qv2ray/vcore
+```</p>
+<ul>
+<li>点击 检查 V2Ray 核心设置，如果设置正确，会显示 <code>路径配置检查通过</code></li>
+</ul>
+</li>
+</ul>
+<h5 id="_9">订阅节点<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h5>
+<ul>
+<li>
+<p>在 Qv2ray 中点击<code>分组</code>，然后新建一个分组，选择 <code>订阅设置</code>， 勾选 <code>此分组是一个订阅</code>， 输入订阅地址，点击 <code>更新订阅</code> 即可</p>
+</li>
+<li>
+<p>ubuntu 设置中检查 <code>Network</code>， 然后选择 <code>Network Proxy</code>， 选择 <code>Manual</code>, 确保 HTTP Proxy 和 Socks Host 设置和 Qv2ray 中的匹配一致， 一般为</p>
+<p><code>bash
+HTTP Proxy: 127.0.0.1/8889
+HTTPS Proxy: 127.0.0.1/8889
+FTP Proxy: 127.0.0.1/8889
+Socks Host: 127.0.0.1/1089
+Ignore Hosts: localhost, 127.0.0.0/8, ::1</code></p>
+</li>
+</ul>
 <h3 id="lantern">Lantern<a class="headerlink" href="#lantern" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -2061,7 +2209,7 @@ V2RAY Camouflage   None
 </ul>
 </li>
 </ul>
-<h3 id="_6">其他<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_10">其他<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="https://www.lcdhgy.com/">旋风</a> /damaged</li>
 <li>psiphone</li>
