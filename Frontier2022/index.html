@@ -300,8 +300,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#1216-robotics-transformer" class="md-nav__link">
+    1216 Robotics Transformer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1212-pythoncodon" class="md-nav__link">
+    1212 高性能Python编译器Codon开源
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1214-llnl" class="md-nav__link">
     1214 LLNL实验室可控核聚变点火成功
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1203-pytorch-20-30" class="md-nav__link">
+    1203 PyTorch 2.0 发布,一行代码提速 30%
   </a>
   
 </li>
@@ -1214,8 +1235,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#1216-robotics-transformer" class="md-nav__link">
+    1216 Robotics Transformer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1212-pythoncodon" class="md-nav__link">
+    1212 高性能Python编译器Codon开源
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1214-llnl" class="md-nav__link">
     1214 LLNL实验室可控核聚变点火成功
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1203-pytorch-20-30" class="md-nav__link">
+    1203 PyTorch 2.0 发布,一行代码提速 30%
   </a>
   
 </li>
@@ -1254,13 +1296,33 @@
 <div class="toc">
 <ul>
 <li><a href="#frontier">Frontier</a><ul>
+<li><a href="#1216-robotics-transformer">1216 Robotics Transformer</a></li>
+<li><a href="#1212-pythoncodon">1212 高性能Python编译器Codon开源</a></li>
 <li><a href="#1214-llnl">1214 LLNL实验室可控核聚变点火成功</a></li>
+<li><a href="#1203-pytorch-20-30">1203 PyTorch 2.0 发布,一行代码提速 30%</a></li>
 <li><a href="#0403-darpa-xai">0403 DARPA 可解释人工智能（XAI计划）的四年总结</a></li>
 <li><a href="#0107-web-30">0107 Web 3.0</a></li>
 </ul>
 </li>
 </ul>
 </div>
+<h3 id="1216-robotics-transformer">1216 <a href="https://mp.weixin.qq.com/s/VGkLfqjmzKdQVA5sS2LRcw">Robotics Transformer</a><a class="headerlink" href="#1216-robotics-transformer" title="Permanent link">&para;</a></h3>
+<p>谷歌机器人团队等提出了 Robotics Transformer 1 (RT-1)</p>
+<ul>
+<li>
+<p>输入：相机中获取瞬时图像以及以自然语言表达的任务描述</p>
+</li>
+<li>
+<p>输出： tokenized 动作</p>
+</li>
+</ul>
+<p>图像 tokenization。该团队通过在 ImageNet 上预训练的 EfficientNet-B3 模型传递图像，然后将生成的 9×9×512 空间特征图展平为 81 个 tokens。图像 tokenizer 以自然语言任务指令为条件，并使用初始化为身份的 FiLM 层在早期提取与任务相关的图像特征。</p>
+<p>动作 tokenization。机器人的动作维度包括手臂运动的 7 个变量（x、y、z、翻转、俯仰、摇摆、打开夹具）、3 个基本运动变量（x、y、摇摆）以及一个在控制臂、控制 base 或终止 episode 三种模式之间切换的额外具体变量。每个动作维度被离散化为 256 个 bins。</p>
+<p><a href="#frontier">Back to Top</a></p>
+<h3 id="1212-pythoncodon">1212 <a href="https://mp.weixin.qq.com/s/p29go0yNMaWJfSxXRLGe9g">高性能Python编译器Codon开源</a><a class="headerlink" href="#1212-pythoncodon" title="Permanent link">&para;</a></h3>
+<p>作为高性能 Python 编译器，Codon 可将 Python 代码编译为本机机器代码，而无需任何运行时开销。在单线程上，Python 的典型加速大约为 10-100 倍或更多。Codon 的性能通常与 C/C++ 的性能相当。</p>
+<p>注意是类python的语言。codon编译的性质决定了python某些动态的功能无法被支持。</p>
+<p><a href="#frontier">Back to Top</a></p>
 <h3 id="1214-llnl">1214 <a href="https://mp.weixin.qq.com/s/h1314KMsXTUOxiAH5Za1WA">LLNL实验室可控核聚变点火成功</a><a class="headerlink" href="#1214-llnl" title="Permanent link">&para;</a></h3>
 <p>目前的核聚变反应堆，通常使用以下两种方法来产生所需的热量：</p>
 <ul>
@@ -1271,6 +1333,35 @@
 <p>而两种反应堆的最大区别，在于聚变反应所需的时间。</p>
 <p>磁反应堆可以使聚变过程持续更长时间，但需要更多的能量。</p>
 <p>相比之下，基于激光的反应堆，可以让核聚变在很短的时间内发生，而且现在已经一定程度上跨过了净能量增益的门槛。</p>
+<p><a href="#frontier">Back to Top</a></p>
+<h3 id="1203-pytorch-20-30">1203 <a href="https://mp.weixin.qq.com/s/7y9xS5qjlxOMAyiq_tjtxQ">PyTorch 2.0 发布,一行代码提速 30%</a><a class="headerlink" href="#1203-pytorch-20-30" title="Permanent link">&para;</a></h3>
+<p>什么是 torch.compile?</p>
+<ul>
+<li>是Pytorch的一个新特性，将 PyTorch 的部分实现从 C++ 中迁移到 Python 中。</li>
+</ul>
+<p>如何使用 torch.compile ?</p>
+<ul>
+<li>只需使用 torch.compile 对模型进行编译，就可以享受 PyTorch 2.0 给模型速度带来的极致提升，简单示例代码如下:</li>
+</ul>
+<p><code>python
+  import torch
+  import torchvision.models as models
+  model = models.resnet18().cuda()
+  optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
+  compiled_model = torch.compile(model) # 关键一行
+  x = torch.randn(16, 3, 224, 224).cuda()
+  optimizer.zero_grad()out = compiled_model(x)
+  out.sum().backward()
+  optimizer.step()</code></p>
+<ul>
+<li>
+<p>运行效率如何？</p>
+</li>
+<li>
+<p>PyTorch 团队在 163 个开源模型（包括图像分类、目标检测、图像生成等领域）进行验证，结论是模型在 NVIDIA A100 GPU 上的运行速度快了 43%。</p>
+</li>
+</ul>
+<p><a href="#frontier">Back to Top</a></p>
 <h3 id="0403-darpa-xai">0403 <a href="https://mp.weixin.qq.com/s/3hdCT_3sOkBhI3cTQWbQng">DARPA 可解释人工智能（XAI计划）的四年总结</a><a class="headerlink" href="#0403-darpa-xai" title="Permanent link">&para;</a></h3>
 <p>可解释人工智能的概念最早来自于美国DARPA（美国防部高级研究计划局），2017年，为期4年的XAI研究计划启动。作者：David Gunning, Eric Vorm, Jennifer Yunyan Wang, Matt Turek</p>
 <p>“可解释人工智能”（XAI）项目旨在创建一套机器学习技术：</p>
@@ -1279,7 +1370,8 @@
 <li>使人类用户能够理解，适当地信任并有效地管理新一代人工智能合作伙伴。</li>
 </ul>
 <p><strong>该计划分为三个主要技术领域（technical areas，TAs）</strong>，如图 1 所示：（1）开发新的 XAI 机器学习和可解释技术以产生有效的解释性；（2）通过总结、延伸和应用可解释心理学理论，来理解可解释心理；(3) 在两个挑战问题领域评估新的 XAI 技术：数据分析和自主性。</p>
-<p>学习表现和可解释性之间似乎存在一种自然的矛盾关系。然而，在整个计划过程中，我们发现了可解释性可以提高性能（Kim et al. 2021, Watkins et al. 2021）。从直观的角度来看，训练系统以产生解释，通过额外的损失函数、训练数据或其他机制来提供额外的监督，以鼓励系统学习更有效的世界表征。虽然这可能并非在所有情况下都是正确的，并且在可解释的技术何时将具有更高性能时仍有大量工作要做，但它提供了希望，未来的 XAI 系统可以在满足用户解释需求的同时比当前系统具有更高的性能</p>
+<p>学习表现和可解释性之间似乎存在一种自然的矛盾关系。然而，在整个计划过程中，我们发现了可解释性可以提高性能（Kim et al. 2021, Watkins et al. 2021）。从直观的角度来看，训练系统以产生解释，通过额外的损失函数、训练数据或其他机制来提供额外的监督，以鼓励系统学习更有效的世界表征。虽然这可能并非在所有情况下都是正确的，并且在可解释的技术何时将具有更高性能时仍有大量工作要做，但它提供了希望，未来的 XAI 系统可以在满足用户解释需求的同时比当前系统具有更高的性能。</p>
+<p><a href="#frontier">Back to Top</a></p>
 <h3 id="0107-web-30">0107 <a href="https://mp.weixin.qq.com/s/x1LHLXX0NNgNqw8Jb6D2NA">Web 3.0</a><a class="headerlink" href="#0107-web-30" title="Permanent link">&para;</a></h3>
 <p>Web 1.0</p>
 <p>Web 这个概念最早诞生于1989 年欧洲粒子物理研究所的一项研究中。当时，为了方便全球的研究人员能在不同计算机之间共享和更新信息，英国科学家Tim Berners-Lee提交了一项关于“在全球范围内建立超媒体信息检索系统”的提案，并将这个系统命名为World Wide Web（万维网）。其设想是，互联网上的资源可以在一个网页里比较直观的表示出来，而这些资源可以在网页上相互链接。<strong>但这些信息是静态的、只读的，用户只能是观众，并无法参与其中。</strong></p>
@@ -1296,6 +1388,50 @@
   
 
 
+
+  <form class="md-feedback" name="feedback" hidden>
+    <fieldset>
+      <legend class="md-feedback__title">
+        Was this page helpful?
+      </legend>
+      <div class="md-feedback__inner">
+        <div class="md-feedback__list">
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page was helpful" data-md-value="1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m7 0c0 .8-.7 1.5-1.5 1.5S14 10.3 14 9.5 14.7 8 15.5 8s1.5.7 1.5 1.5m-5 7.73c-1.75 0-3.29-.73-4.19-1.81L9.23 14c.45.72 1.52 1.23 2.77 1.23s2.32-.51 2.77-1.23l1.42 1.42c-.9 1.08-2.44 1.81-4.19 1.81Z"/></svg>
+            </button>
+          
+            <button class="md-feedback__icon md-icon" type="submit" title="This page could be improved" data-md-value="0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8m2 0a10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2a10 10 0 0 1 10 10m-6.5-4c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5-1.5-.7-1.5-1.5.7-1.5 1.5-1.5M10 9.5c0 .8-.7 1.5-1.5 1.5S7 10.3 7 9.5 7.7 8 8.5 8s1.5.7 1.5 1.5m2 4.5c1.75 0 3.29.72 4.19 1.81l-1.42 1.42C14.32 16.5 13.25 16 12 16s-2.32.5-2.77 1.23l-1.42-1.42C8.71 14.72 10.25 14 12 14Z"/></svg>
+            </button>
+          
+        </div>
+        <div class="md-feedback__note">
+          
+            <div data-md-value="1" hidden>
+              
+              
+                
+              
+              
+                Thanks for your feedback!
+              
+            </div>
+          
+            <div data-md-value="0" hidden>
+              
+              
+                
+              
+              
+                Thanks for your feedback! Help us improve this page by using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+              
+            </div>
+          
+        </div>
+      </div>
+    </fieldset>
+  </form>
 
 
                 
@@ -1350,10 +1486,10 @@
             <div class="md-footer-copyright">
                 
                 <div class="md-footer-copyright__highlight">
-                    &copy; 2023, JL., all rights reserved.
+                    &copy; 2019-2025, JL., all rights reserved.
                 </div>
                 
-                Powered by Jimmmy's Studio.&#8482
+                Powered by JL.'s Studio.&#8482
             </div>
             <div class="md-social">
   
