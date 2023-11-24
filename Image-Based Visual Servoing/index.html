@@ -303,9 +303,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Visual Servoing I
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Visual Servoing I
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -361,6 +406,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -378,11 +452,26 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/22V6hpXLhJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <blockquote>
-<p>If the video fails to load, consider using a network proxy or visiting this <a href="www.youtube.com/embed/22V6hpXLhJ0">page</a>.</p>
+<p>If the YouTube video fails to load, consider using a network proxy or directly visiting <a href="https://youtu.be/22V6hpXLhJ0?si=ruY9O1dTv5W2G9iJ">YouTube</a>.</p>
 </blockquote>
+<h3 id="abstract">Abstract</h3>
 <p>This letter for the first time extends the virtual camera image-based visual servoing (IBVS) scheme to enable an underactuated rotorcraft UAV to <strong>regulate its translational motion and heading relative to a planar visual target of arbitrary orientation</strong>. The conversion from real camera images to virtual camera images of visual targets are proposed based on a set of rotation matrices. Hence, image moment features can be reused due to the simplicity and decoupled structure of the interaction matrix, and satisfactory 3D Cartesian trajectory of UAVs. </p>
 <p>In the design of the IBVS control law, the external disturbance and model uncertainties are estimated by an integral-based filter. In addition, to enable tracking of a moving visual target, a velocity estimator is developed. The global asymptotic stability of the error dynamics is proven. Both of the simulation and experimental results of tracking of a tilted moving planar target are provided to show the efficacy of the proposed IBVS scheme.  </p>
-<p>The paper is available <a href="https://ieeexplore.ieee.org/document/9507280/">here</a>.</p>
+<h3 id="resources">Resources</h3>
+<p><a href="https://ieeexplore.ieee.org/document/9507280/">PDF</a>  |  <a href="https://youtu.be/22V6hpXLhJ0?si=ruY9O1dTv5W2G9iJ">YouTube</a></p>
+<h3 id="citation">Citation</h3>
+<p>J. Li, H. Xie, K. H. Low, J. Yong and B. Li, “Image-based visual servoing of rotorcrafts to planar visual targets of arbitrary orientation,” in IEEE Robotics and Automation Letters, vol. 6, no. 4, pp. 7861-7868, Oct. 2021, doi: 10.1109/LRA.2021.3101878.  </p>
+<pre><code>@article{li2021image,
+  title={Image-based visual servoing of rotorcrafts to planar visual targets of arbitrary orientation},
+  author={Li, Jianan and Xie, Hui and Low, Kin Huat and Yong, Jianwen and Li, Boyang},
+  journal={IEEE Robotics and Automation Letters},
+  volume={6},
+  number={4},
+  pages={7861--7868},
+  year={2021},
+  publisher={IEEE}
+}
+</code></pre>
 
 
   
@@ -427,15 +516,15 @@
       <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
         
-          <script src="../javascripts/katex.js"></script>
+          <script src="../javascripts/mathjax.js"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         
       
     

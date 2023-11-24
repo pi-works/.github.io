@@ -288,9 +288,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Predator-Prey Swarming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Predator-Prey Swarming
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -361,6 +406,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -375,14 +449,39 @@
 
 
 <h1 id="predator-prey-survival-pressure-is-sufficient-to-evolve-swarming-behaviors">Predator-prey survival pressure is sufficient to evolve swarming behaviors</h1>
+<p>Video abstract in Chinese Mandarin （中文视频解说）:</p>
 <iframe src="//player.bilibili.com/player.html?aid=958075356&bvid=BV1zp4y1772H&cid=1257023214&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="560" height="315"> 
 </iframe>
 <blockquote>
-<p>If the video fails to load, consider using a VPN or directly visiting this <a href="https://www.bilibili.com/video/BV1zp4y1772H/?spm_id_from=333.999.0.0">page</a>.</p>
+<p>If the Bilibili video fails to load, consider using a VPN or directly visiting <a href="https://youtu.be/Gt9v7cN6FII">Youtube</a> | <a href="https://www.bilibili.com/video/BV1zp4y1772H/?spm_id_from=333.999.0.0">Bilibili</a>.</p>
 </blockquote>
+<p><br></p>
+<p>Video abstract in English:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Gt9v7cN6FII?si=KjLozpOi_LRL3ygZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<blockquote>
+<p>If the Youtube video fails to load, consider using a VPN or directly visiting <a href="https://youtu.be/Gt9v7cN6FII">Youtube</a> | <a href="https://www.bilibili.com/video/BV1zp4y1772H/?spm_id_from=333.999.0.0">Bilibili</a>.</p>
+</blockquote>
+<h3 id="abstract">Abstract</h3>
 <p>The comprehension of how local interactions arise in global collective behavior is of utmost importance in both biological and physical research. Traditional agent-based models often rely on static rules that fail to capture the dynamic strategies of the biological world. Reinforcement learning has been proposed as a solution, but most previous methods adopt handcrafted reward functions that implicitly or explicitly encourage the emergence of swarming behaviors. </p>
 <p>In this study, we propose a minimal predator-prey coevolution framework based on mixed cooperative-competitive multiagent reinforcement learning, and adopt a reward function that is solely based on the fundamental survival pressure, that is, <strong>prey receive a reward of -1 if caught by predators while predators receive a reward of +1</strong>. Surprisingly, our analysis of this approach reveals an unexpectedly rich diversity of emergent behaviors for both prey and predators, including <strong>flocking</strong> and <strong>swirling</strong> behaviors for prey, as well as dispersion tactics, <strong>confusion</strong>, and marginal predation phenomena for predators. Overall, our study provides novel insights into the collective behavior of organisms and highlights the potential applications in swarm robotics.  </p>
-<p>The paper is available <a href="https://iopscience.iop.org/article/10.1088/1367-2630/acf33a/meta">here</a>.</p>
+<h3 id="resources">Resources</h3>
+<p><a href="https://iopscience.iop.org/article/10.1088/1367-2630/acf33a/meta">PDF-official</a>  |  <a href="https://arxiv.org/pdf/2308.12624v1.pdf">PDF-two-column version in arXiv</a>  |  <a href="https://youtu.be/Gt9v7cN6FII">Youtube</a>  |  <a href="https://www.bilibili.com/video/BV1zp4y1772H/?spm_id_from=333.999.0.0&amp;vd_source=288648f5b920459d12ebbcfd2da00a19">Bilibili</a></p>
+<p>As per the request of numerous researchers, the code for this project is set to be released in early 2024, upon the completion of my doctoral thesis. Nevertheless, reproducing the results of this project should be straightforward, as no advanced algorithms involved (only vanilla DDPG). If you have any questions, please directly contact me via lijianan [at] westlake.edu.cn.</p>
+<p>By the way, the <a href="https://arxiv.org/pdf/2308.12624v1.pdf">PDF-two-column version on arXiv</a> contains identical content to the <a href="https://iopscience.iop.org/article/10.1088/1367-2630/acf33a/meta">official PDF</a>, but it's presented in a more condensed format, potentially making it easier for you to read.</p>
+<h3 id="citation">Citation</h3>
+<p>J. Li, L. Li, and S. Zhao, "<a href="https://iopscience.iop.org/article/10.1088/1367-2630/acf33a/meta">Predator-prey survival pressure is sufficient to evolve swarming behaviors</a>", 2023 <em>New Journal of Physics</em>, 25 092001. </p>
+<pre><code class="language-text">@article{li2023predator,
+  title={Predator-prey survival pressure is sufficient to evolve swarming behaviors},
+  author={Li, Jianan and Li, Liang and Zhao, Shiyu},
+  journal={New Journal of Physics},
+  volume={25},
+  number={9},
+  pages={092001},
+  year={2023},
+  publisher={IOP Publishing}
+}
+</code></pre>
 
 
   
@@ -427,15 +526,15 @@
       <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
         
-          <script src="../javascripts/katex.js"></script>
+          <script src="../javascripts/mathjax.js"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         
       
     

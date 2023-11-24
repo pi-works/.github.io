@@ -273,9 +273,88 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Target Pursuit
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Target Pursuit
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivation-of-u-plkf" class="md-nav__link">
+    Derivation of u-PLKF
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivation of u-PLKF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#state-transition" class="md-nav__link">
+    State Transition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-eq" class="md-nav__link">
+    Measurement Eq.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overall-u-plkf" class="md-nav__link">
+    Overall u-PLKF
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -361,6 +440,69 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#derivation-of-u-plkf" class="md-nav__link">
+    Derivation of u-PLKF
+  </a>
+  
+    <nav class="md-nav" aria-label="Derivation of u-PLKF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#state-transition" class="md-nav__link">
+    State Transition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#measurement-eq" class="md-nav__link">
+    Measurement Eq.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overall-u-plkf" class="md-nav__link">
+    Overall u-PLKF
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -378,14 +520,129 @@
 <iframe src="//player.bilibili.com/player.html?aid=816993309&bvid=BV1LG4y1h7Gv&cid=872482485&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="560" height="315"> </iframe>
 
 <blockquote>
-<p>If the video fails to load, consider using a VPN or visiting this <a href="https://www.bilibili.com/video/BV1LG4y1h7Gv/?spm_id_from=333.999.0.0&amp;vd_source=45de5593fb064668a29bc8e99c922564">page</a>.</p>
+<p>If the Bilibili video fails to load, consider using a VPN or directly visiting <a href="https://youtu.be/3GzE3O0QR1U">Youtube</a> |  <a href="https://www.bilibili.com/video/BV1LG4y1h7Gv/?spm_id_from=333.999.0.0&amp;vd_source=288648f5b920459d12ebbcfd2da00a19">Bilibili</a>.</p>
 </blockquote>
+<h3 id="abstract">Abstract</h3>
 <p>This paper studies the problem of air-to-air target following of micro aerial vehicles (MAVs) motivated by the defense against malicious MAVs. When the bearing of the target MAV can be measured by onboard visual sensors of the pursuer MAV, the problem becomes <strong>three-dimensional (3D) bearing-only target following</strong>, which has been rarely studied in the literature and faces some unique challenges. To solve this problem, we propose a series of novel results on target estimation, observability analysis, and observability enhancement. The novelty of the results is summarized as follows.</p>
 <p>First, in order to estimate the motion of the target MAV from 3D bearing measurements, we propose a <strong>new pseudo-linear Kalman filter</strong>, which has a <u>concise expression yet superior stability</u> properties compared to the classic ones including the conventional extended Kalman filter and modified polar coordinate filter. </p>
 <p>Second, we propose a novel approach to analyze the observability of state estimate of the target when only bearing information is available. While the existing ones by optimizing the determinant of <strong>Fisher information</strong> matrix are applicable to 2D single-step horizon cases, our approach can handle more general 3D multiple-step horizon cases.</p>
 <p>Third, based on the theoretical conclusion of our observability analysis, we design a new 3D <strong>helical guidance law</strong> that can better exploit the additional degree of freedom in 3D. The guidance law is adapted to quadcopter's dynamics and a low-level flight controller is designed based on <strong>geometric control</strong>.</p>
 <p>Extensive numerical simulation results verify the superior performance of the proposed algorithms compared to the state-of-the-art ones. Flight experiments on real quadrotor platforms further show the effectiveness and robustness of the proposed algorithms in practice.</p>
-<p>The paper is available <a href="https://ieeexplore.ieee.org/document/9946840/">here</a>.</p>
+<h3 id="resources">Resources</h3>
+<p><a href="https://ieeexplore.ieee.org/document/9946840/">PDF</a> | <a href="https://youtu.be/3GzE3O0QR1U">Youtube</a> | <a href="https://www.bilibili.com/video/BV1LG4y1h7Gv/?spm_id_from=333.999.0.0&amp;vd_source=288648f5b920459d12ebbcfd2da00a19">Bilibili</a> </p>
+<h3 id="citation">Citation</h3>
+<p>J. Li, Z. Ning, S. He, C.-H. Lee, and S. Zhao, "<a href="https://shiyuzhao.westlake.edu.cn/Three-Dimensional_Bearing-Only_Target_Following_via_Observability-Enhanced_Helical_Guidance.pdf">Three-dimensional bearing-only target following via observability-enhanced helical guidance</a>",  <em>IEEE Transactions on Robotics</em>, vol. 39, no. 2, pp. 1509-1526, 2023. </p>
+<pre><code class="language-text">@article{li2022three,
+  title={Three-Dimensional Bearing-Only Target Following via Observability-Enhanced Helical Guidance},
+  author={Li, Jianan and Ning, Zian and He, Shaoming and Lee, Chang-Hun and Zhao, Shiyu},
+  journal={IEEE Transactions on Robotics},
+  volume={39},
+  number={2},
+  pages={1509--1526},
+  year={2022},
+  publisher={IEEE}
+}
+</code></pre>
+<h3 id="derivation-of-u-plkf">Derivation of u-PLKF</h3>
+<p><strong>Very Useful Result !</strong> This section introduces a novel bearing-only uniform pseudo-linear Kalman filter (u-PLKF) to estimate the position and velocity of the target from noisy bearing measurements in 3D. </p>
+<h4 id="state-transition">State Transition</h4>
+<p>Denote the states of the target and pursuer as <span class="arithmatex">\(x_T=[p_T^T,v_T^T]^T \in \mathbb{R}^6\)</span> and <span class="arithmatex">\(x_P=[p^T,v^T]^T \in \mathbb{R}^6\)</span>, respectively. Here, <span class="arithmatex">\(x_P\)</span> is known and <span class="arithmatex">\(x_T\)</span> is to be estimated. The discrete double-integrator dynamics of the states are described by
+$$
+x_{T,k} = Ax_{T,k-1} + Bq_k
+$$
+$$
+x_{P,k} = Ax_{P,k-1} + Bu_k
+$$</p>
+<p>where
+$$
+A = \begin{bmatrix}
+        I_{3\times 3} &amp; \Delta tI_{3\times 3} \
+        0_{3\times 3} &amp; I_{3\times 3}
+    \end{bmatrix},~~
+    B = \begin{bmatrix}
+        \frac{1}{2}\Delta t^2 I_{3\times 3} \
+        \Delta t I_{3\times 3}
+    \end{bmatrix},
+$$
+and <span class="arithmatex">\(\Delta t\)</span> is the sampling time.
+Here, <span class="arithmatex">\(u_k\in \mathbb{R}^3\)</span> is the control input of the pursuer, <span class="arithmatex">\(q_k\)</span> is a process noise drawn from a zero-mean normal distribution, that is,
+<span class="arithmatex">\(q_k \sim \mathcal{N}(0,Q_k)\)</span> where we assume the acceleration of the target is unknown.</p>
+<p>Subtracting the above two equations leads to the dynamical equation of the <em>relative</em> state <span class="arithmatex">\(x=x_T-x_P\)</span>:
+$$
+x_k = Ax_{k-1} - Bu_k + Bq_k.
+$$</p>
+<p>The term <span class="arithmatex">\(Bu_k\)</span> could be calculated by <span class="arithmatex">\(Bu_k=x_{P,k}-Ax_{P,k-1}\)</span>.</p>
+<h4 id="measurement-eq">Measurement Eq.</h4>
+<p>While <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(p_T\)</span> are the position of the pursuer and target MAVs, respectively, we know that
+$$
+\lambda = \frac{p_T - p}{||p_T - p||} 
+$$
+is a unit vector representing the relative bearing of the target with respect to the pursuer.
+In our work, we use the unit vector instead of angles to represent 3D bearings to avoid complicated trigonometric functions.</p>
+<p>In practice, we are only able to obtain a noise-corrupted bearing, denoted as <span class="arithmatex">\(\tilde{\lambda}\)</span>:
+$$
+\tilde{\lambda} = \lambda + \nu
+$$
+where <span class="arithmatex">\(\nu \in \mathbb{R}^3\)</span> is the measurement noise assumed to be normally distributed: <span class="arithmatex">\(\nu \sim \mathcal{N}(0, \Sigma), \Sigma = \sigma^2 I_{3\times 3}\)</span>.</p>
+<p>It is noticed that <span class="arithmatex">\(\tilde{\lambda}\)</span> is a nonlinear function of <span class="arithmatex">\(p_T\)</span>. In order to obtain a linear measurement equation, we introduce an orthogonal projection operator. For any nonzero vector <span class="arithmatex">\(g\in \mathbb{R}^3\)</span>, define
+$$
+P_g = I_{3\times3} - \frac{g}{|g|}\frac{g^T}{|g|}
+$$
+The interpretation of <span class="arithmatex">\(P_g\)</span> is that, for any vector <span class="arithmatex">\(z \in \mathbb{R}^3\)</span>, its orthogonal projection onto the plane perpendicular to <span class="arithmatex">\(g\)</span> is <span class="arithmatex">\(P_g z\)</span>. The matrix <span class="arithmatex">\(P_g\)</span> satisfies <span class="arithmatex">\(P_g=P_g^T\)</span>, <span class="arithmatex">\(P_g^2 = P_g\)</span> and <span class="arithmatex">\(\text{ker}(P_g) = \text{span}(g)\)</span>.</p>
+<p>Multiplying <span class="arithmatex">\(rP_{\tilde{\lambda}}\)</span> on both sides of  <span class="arithmatex">\(\tilde{\lambda} = \lambda + \nu\)</span> gives
+$$
+0_{3\times 1} = P_{\tilde{\lambda}}(p_T-p) + rP_{\tilde{\lambda}}\nu
+$$
+where <span class="arithmatex">\(r=||p_T-p||\)</span> and the left-hand side is zero because <span class="arithmatex">\(P_{\tilde{\lambda}}\tilde{\lambda} = 0\)</span>.
+Thus, the nonlinear bearing function becomes a pseudo-linear equation.
+Furthermore, since the relative state to be estimated is <span class="arithmatex">\(x:=[(p-p_T)^T,  (v-v_T)^T]^T\in\mathbb{R}^6\)</span>, the final measurement equation is obtained as
+$$
+0_{3\times 1} = \begin{bmatrix}
+        P_{\tilde{\lambda}} &amp;  0_{3\times 3}
+    \end{bmatrix} x + rP_{\tilde{\lambda}}\nu.
+$$
+Note <span class="arithmatex">\(\nu\)</span> is assumed to be normally distributed and the term <span class="arithmatex">\(rP_{\tilde{\lambda}}\)</span> can be considered as a time-varying noise transition matrix. By inspection we can conclude this transition depends on the true range <span class="arithmatex">\(r\)</span> and the orientation of the vector <span class="arithmatex">\(\tilde{\lambda}\)</span>.
+One problem for estimating the noise transition matrix is that the true range <span class="arithmatex">\(r\)</span> is not known in practice, so in the filter we replace <span class="arithmatex">\(r\)</span> with a predicted one. Such replacement has been used in other research works and verified to be effective in our simulation and experimental results. </p>
+<h4 id="overall-u-plkf">Overall u-PLKF</h4>
+<p>The steps of the proposed 3D bearing-only uniform pseudo-linear Kalman filter (u-PLKF) is summarized below. </p>
+<p>The prediction step is</p>
+<div class="arithmatex">\[
+\hat{x}_k^- = A(\hat{x}_{k-1} + x_{P,k-1}) - x_{P,k}
+\]</div>
+<p>$$
+P_k^- = AP_{k-1}A^T + BQ_kB^T
+$$
+where <span class="arithmatex">\(\hat{x}_k^-\)</span> and <span class="arithmatex">\(P_k^-\)</span> are the priori state estimate and error covariance. </p>
+<p>The correction step is</p>
+<div class="arithmatex">\[
+K_k = P_k^-H_k^T(H_kP_k^-H_k^T+V_k\Sigma V_k^T)^{\dagger}
+\]</div>
+<div class="arithmatex">\[
+\hat{x}_k = \hat{x}_k^- -K_kH_k\hat{x}_k^- 
+\]</div>
+<div class="arithmatex">\[
+P_k = (I_{6\times 6}-K_kH_k)P_k^-
+\]</div>
+<p>where <span class="arithmatex">\(H_k = \begin{bmatrix} P_{\tilde{\lambda}_k} &amp;  0_{3\times 3} \end{bmatrix}\)</span>, <span class="arithmatex">\(K_k\)</span> is the observer gain, <span class="arithmatex">\(V_k = \hat{r}_k^-P_{\tilde{\lambda}_k}\)</span> and <span class="arithmatex">\(\hat{r}_k^-\)</span> is simply the norm of the first three components of <span class="arithmatex">\(\hat{x}_k^-\)</span>,
+<span class="arithmatex">\(\hat{x}_k\)</span> and <span class="arithmatex">\(P_k\)</span> are the posterior state estimate and error covariance, and symbol <span class="arithmatex">\(\dagger\)</span> denotes the pseudo-inverse.
+The reason for using pseudo-inverse is that the matrix <span class="arithmatex">\((H_kP_k^-H_k^T+V_k\Sigma V_k^T)\)</span> is rank deficient since <span class="arithmatex">\(P_{\tilde{\lambda}_k}\)</span> in <span class="arithmatex">\(H_k\)</span> is rank deficient.
+The usage of pseudo-inverse in the Kalman filter is a common practice when the inverse does not exist.</p>
+<p>Denote <span class="arithmatex">\(z_k\)</span> as the measurement in a classic Kalman filter.
+According to the measurement equation, it is noticeable that in our model <span class="arithmatex">\(z_k\)</span> is actually <span class="arithmatex">\(0_{3\times 1}\)</span>. 
+With <span class="arithmatex">\(z_k=0_{3\times 1}\)</span>, the standard step of updating the posterior estimate <span class="arithmatex">\(\hat{x}_k\)</span> is thus reduced as follows:
+$$
+    \hat{x}_k
+    = \hat{x}_k^- +K_k(z_k - H_k\hat{x}_k^- )
+    = \hat{x}_k^- -K_kH_k\hat{x}_k^-.
+$$
+Actually, the measurement information has been implicitly contained in matrix <span class="arithmatex">\(H_k\)</span>, and this is also where the name <em>pseudo-linear</em> comes from because <span class="arithmatex">\(H_k\)</span> is varying.
+In addition, the observation matrix <span class="arithmatex">\(H_k\)</span> has the same mathematical expression in both 2D and 3D cases. Particularly, <span class="arithmatex">\(H_k\)</span> can be written as <span class="arithmatex">\(H_k = \begin{bmatrix} P_{\tilde{\lambda}_k} &amp; 0_{d\times d} \end{bmatrix}\)</span> where <span class="arithmatex">\(\tilde{\lambda} \in \mathbb{R}^d\)</span> and <span class="arithmatex">\(d\)</span> is space dimension which can be <span class="arithmatex">\(2\)</span> or <span class="arithmatex">\(3\)</span>.
+By contrast, the observation matrices for common EKF methods have more complicated expressions when dimension is lifted from 2 to 3. 
+This is how the name <em>uniform</em> PLKF, or <em>u-PLKF</em> is coined as.</p>
+<blockquote>
+<p>Use this concise result in your Kalman filter design ! </p>
+<p>Feel free to contact me via lijianan [at] westlake.edu.cn if you have any questions.</p>
+</blockquote>
 
 
   
@@ -430,15 +687,15 @@
       <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
         
-          <script src="../javascripts/katex.js"></script>
+          <script src="../javascripts/mathjax.js"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         
       
     

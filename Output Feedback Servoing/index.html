@@ -318,9 +318,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Visual Servoing II
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Visual Servoing II
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -361,6 +406,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    Abstract
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#citation" class="md-nav__link">
+    Citation
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -378,11 +452,37 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/u1dqNY6afbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <blockquote>
-<p>If the video fails to load, consider using a network proxy or visiting this <a href="www.youtube.com/embed/u1dqNY6afbg">page</a>.</p>
+<p>If the YouTube video fails to load, consider using a network proxy or directly visiting <a href="www.youtube.com/embed/u1dqNY6afbg">YouTube</a>.</p>
 </blockquote>
+<h3 id="abstract">Abstract</h3>
 <p>This paper presents an improved output feedback based image-based visual servoing (IBVS) law for rotorcraft unmanned aerial vehicles (RUAVs). The control law enables a RUAV with a minimal set of sensors, i.e. an inertial measurement unit (IMU) and a single downward facing camera, to <strong>regulate its position and heading relative to a planar visual target consisting of multiple points</strong>. </p>
 <p>As compared to our previous work, twofold improvement is made. First, the desired value of the image feature of controlling the vertical motion of the RUAV is a function of other image features instead of a constant. This modification helps to <u>keep the visual target stay in the camera’s field of view</u> by indirectly adjusting the height of the vehicle. Second, the proposed approach simplifies our previous output feedback law by <u>reducing the dimension of the observer filter state space</u> while the same asymptotic stability result is kept. Both simulation and experimental results are presented to demonstrate the performance of the proposed controller  </p>
-<p>The paper is available <a href="https://ieeexplore.ieee.org/document/7991340">here</a> and <a href="https://ieeexplore.ieee.org/document/7991340">here</a>.</p>
+<h3 id="resources">Resources</h3>
+<p><a href="https://link.springer.com/article/10.1007/s10846-018-0826-4">PDF-journal</a>   |  <a href="https://ieeexplore.ieee.org/document/7991340">PDF-conference</a>  |  <a href="https://youtu.be/u1dqNY6afbg?si=53_hXRphrmbxxde4">YouTube</a></p>
+<h3 id="citation">Citation</h3>
+<p>J. Li, H. Xie, R. Ma and K. Low, “Output feedback image-based visual servoing of rotorcrafts,” in Journal of Intelligent &amp; Robotic Systems, vol. 93, no. 1, pp. 277287, 2019. https://doi.org/10.1007/s10846-018-0826-4</p>
+<pre><code class="language-text">@article{li2019output,
+  title={Output feedback image-based visual servoing of rotorcrafts},
+  author={Li, Jianan and Xie, Hui and Ma, Rui and Low, Kin Huat},
+  journal={Journal of Intelligent \&amp; Robotic Systems},
+  volume={93},
+  pages={277--287},
+  year={2019},
+  publisher={Springer}
+}
+</code></pre>
+<p>H. Xie, J. Li and K. H. Low, “Dynamic output feedback image-based visual servoing of rotorcraft UAVs,” 2017
+International Conference on Unmanned Aircraft Systems (ICUAS), Miami, FL, USA, 2017, pp. 1361-1367,
+doi: 10.1109/ICUAS.2017.7991340.  </p>
+<pre><code class="language-text">@inproceedings{xie2017dynamic,
+  title={Dynamic output feedback image-based visual servoing of rotorcraft UAVs},
+  author={Xie, Hui and Li, Jianan and Low, Kin H},
+  booktitle={2017 International Conference on Unmanned Aircraft Systems (ICUAS)},
+  pages={1361--1367},
+  year={2017},
+  organization={IEEE}
+}
+</code></pre>
 
 
   
@@ -427,15 +527,15 @@
       <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
         
-          <script src="../javascripts/katex.js"></script>
+          <script src="../javascripts/mathjax.js"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         
       
         
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         
       
     
