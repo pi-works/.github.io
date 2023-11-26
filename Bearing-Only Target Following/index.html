@@ -572,7 +572,9 @@ $$
 A = \begin{bmatrix}
     I_{3\times 3} &amp; \Delta tI_{3\times 3} \
     0_{3\times 3} &amp; I_{3\times 3}
-\end{bmatrix},~~
+\end{bmatrix},
+$$
+$$
 B = \begin{bmatrix}
     \frac{1}{2}\Delta t^2 I_{3\times 3} \
     \Delta t I_{3\times 3}
@@ -585,7 +587,7 @@ x_k = Ax_{k-1} - Bu_k + Bq_k.
 $$
 The term <span class="arithmatex">\(Bu_k\)</span> could be calculated by <span class="arithmatex">\(Bu_k=x_{P,k}-Ax_{P,k-1}\)</span>.</p>
 </details>
-<details class="note" open="open">
+<details class="note">
 <summary>Measurement Equation</summary>
 <p>While <span class="arithmatex">\(p\)</span> and <span class="arithmatex">\(p_T\)</span> are the position of the pursuer and target MAVs, respectively, we know that
 $$
@@ -616,7 +618,7 @@ $$
 Note <span class="arithmatex">\(\nu\)</span> is assumed to be normally distributed and the term <span class="arithmatex">\(rP_{\tilde{\lambda}}\)</span> can be considered as a time-varying noise transition matrix. By inspection we can conclude this transition depends on the true range <span class="arithmatex">\(r\)</span> and the orientation of the vector <span class="arithmatex">\(\tilde{\lambda}\)</span>.
 One problem for estimating the noise transition matrix is that the true range <span class="arithmatex">\(r\)</span> is not known in practice, so in the filter we replace <span class="arithmatex">\(r\)</span> with a predicted one. Such replacement has been used in other research works and verified to be effective in our simulation and experimental results. </p>
 </details>
-<details class="note" open="open">
+<details class="note">
 <summary>Overall u-PLKF</summary>
 <p>The steps of the proposed 3D bearing-only uniform pseudo-linear Kalman filter (u-PLKF) is summarized below. </p>
 <p>The prediction step is</p>
